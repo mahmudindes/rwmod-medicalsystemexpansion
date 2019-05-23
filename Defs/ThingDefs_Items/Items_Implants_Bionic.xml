@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_BrainImplantBionic">
+		<defName>Joywire</defName>
+		<label>joywire</label>
+		<description>A brain implant that stimulates the brain's pleasure centers. While it dramatically improves a user's mood, the blanket of happiness makes it hard to concentrate on anything real. Joywires are illegal on many worlds, and are known for destroying whole cultures.</description>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BrainImplantBionic">
+		<defName>Painstopper</defName>
+		<label>painstopper</label>
+		<description>A brain implant which inhibits nociception, or pain sensation. While it does allow the user to accomplish more, it turns out pain has a purpose. When you don't feel it, you can get hurt really bad really easily.</description>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>0.08</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--=============== Muscle Implants ================-->
+
+	<ThingDef ParentName="MSE_ImplantBionic">
+		<defName>EndoskeletonStimulator</defName>
+		<label>endoskeleton stimulator</label>
+		<description>A torso implant that stimulates the overall muscles so they can operate at maximum performance.</description>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--================ Brain Implants ================-->
+
+	<ThingDef ParentName="MSE_BrainImplantBionic">
+		<defName>BuilderAI</defName>
+		<label>builder AI</label>
+		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for building. Requires brain implants research before installing.</description>
+		<costList>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BrainImplantBionic">
+		<defName>FarmerAI</defName>
+		<label>farmer AI</label>
+		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for farming. Requires brain implants research before installing.</description>
+		<costList>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BrainImplantBionic">
+		<defName>DoctorAI</defName>
+		<label>doctor AI</label>
+		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for doctoring. Requires brain implants research before installing.</description>
+		<costList>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BrainImplantBionic">
+		<defName>MinerAI</defName>
+		<label>miner AI</label>
+		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for mining. Requires brain implants research before installing.</description>
+		<costList>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BrainImplantBionic">
+		<defName>DiplomatAI</defName>
+		<label>diplomat AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user's brain and act as a guide for diplomacy. Requires brain implants research before installing.</description>
+		<costList>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

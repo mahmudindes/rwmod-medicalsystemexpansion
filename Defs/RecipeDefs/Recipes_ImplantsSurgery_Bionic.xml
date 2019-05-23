@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
+		<defName>InstallJoywire</defName>
+		<label>install joywire</label>
+		<description>Install a joywire.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing joywire.</jobString>
+		<workAmount>3700</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Joywire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Joywire</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Joywire</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
+		<defName>InstallPainstopper</defName>
+		<label>install painstopper</label>
+		<description>Install a painstopper.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing painstopper.</jobString>
+		<workAmount>3700</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Painstopper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Painstopper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Painstopper</addsHediff>
+	</RecipeDef>
+
+	<!--=============== Muscle Implants ================-->
+
+	<RecipeDef ParentName="MSE_SurgeryBionicImplant">
+		<defName>InstallEndoskeletonStimulator</defName>
+		<label>install endoskeleton stimulator</label>
+		<description>Install an endoskeleton stimulator.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing endoskeleton stimulator.</jobString>
+		<workAmount>2775</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EndoskeletonStimulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EndoskeletonStimulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EndoskeletonStimulator</addsHediff>
+	</RecipeDef>
+
+	<!--================ Brain Implants ================-->
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
+		<defName>InstallBuilderAI</defName>
+		<label>install builder AI</label>
+		<description>Install a builder AI.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing builder AI.</jobString>
+		<workAmount>5550</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BuilderAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BuilderAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BuilderAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
+		<defName>InstallFarmerAI</defName>
+		<label>install farmer AI</label>
+		<description>Install a farmer AI.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing farmer AI.</jobString>
+		<workAmount>5550</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FarmerAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>FarmerAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>FarmerAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
+		<defName>InstallDoctorAI</defName>
+		<label>install doctor AI</label>
+		<description>Install a doctor AI.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing doctor AI.</jobString>
+		<workAmount>5550</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DoctorAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>DoctorAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DoctorAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
+		<defName>InstallMinerAI</defName>
+		<label>install miner AI</label>
+		<description>Install a miner AI.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing miner AI.</jobString>
+		<workAmount>5550</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MinerAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MinerAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MinerAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
+		<defName>InstallDiplomatAI</defName>
+		<label>install diplomat AI</label>
+		<description>Install a diplomat AI.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing diplomat AI.</jobString>
+		<workAmount>5550</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DiplomatAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>DiplomatAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DiplomatAI</addsHediff>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="MSE_ImplantHediff" ParentName="ImplantHediffBase" Abstract="True">
+		<defaultLabelColor>(118, 255, 3)</defaultLabelColor>
+	</HediffDef>
+	<HediffDef Name="MSE_ImplantBrainHediff" ParentName="MSE_ImplantHediff" Abstract="True">
+		<defaultLabelColor>(198, 255, 0)</defaultLabelColor>
+	</HediffDef>
+
+</Defs>

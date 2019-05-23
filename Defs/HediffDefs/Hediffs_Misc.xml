@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Module ready body part -->
+	<HediffDef>
+		<hediffClass>OrenoMSE.Hediff_BodyPartModule</hediffClass>
+		<defName>MSE_BodyPartModule</defName>
+		<label>module ready body part</label>
+		<labelNoun>a module ready body part</labelNoun>
+		<labelNounPretty>a module ready {1}</labelNounPretty>
+		<defaultLabelColor>(0.5, 0.5, 0.5, 1)</defaultLabelColor>
+	</HediffDef>
+
+	<!-- <HediffDef ParentName="DiseaseBase">
+		<defName>OrganTransplantRejection</defName>
+		<label>organ transplant rejection</label>
+		<labelNoun>an organ transplant rejection</labelNoun>
+		<initialSeverity>0.35</initialSeverity>
+		<chanceToCauseNoPain>0.35</chanceToCauseNoPain>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>96</baseTendDurationHours>
+				<severityPerDayTended>-0.12</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_GrowthMode">
+				<severityPerDayGrowing>0.05</severityPerDayGrowing>
+				<severityPerDayRemission>-0.02</severityPerDayRemission>
+				<severityPerDayGrowingRandomFactor>
+					<min>0.45</min>
+					<max>1.35</max>
+				</severityPerDayGrowingRandomFactor>
+				<severityPerDayRemissionRandomFactor>
+					<min>0.60</min>
+					<max>1.40</max>
+				</severityPerDayRemissionRandomFactor>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.10</partEfficiencyOffset>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>4</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+				<vomitMtbDays>2</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>chronic rejection</label>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.60</partEfficiencyOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.0</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef> -->
+
+</Defs>

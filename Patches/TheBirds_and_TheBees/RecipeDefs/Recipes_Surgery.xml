@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>The Birds and the Bees</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef[@Name="MSE_SurgeryNatural"]</xpath>
+					<value>
+						<RecipeDef ParentName="MSE_SurgeryNatural">
+							<defName>InstallNaturalReproductiveOrgans</defName>
+							<label>install reproductive organ</label>
+							<description>Install a biological reproductive organ.</description>
+							<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+							<jobString>Installing reproductive organ.</jobString>
+							<workAmount>4200</workAmount>
+							<skillRequirements>
+								<Medicine>8</Medicine>
+							</skillRequirements>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ReproductiveOrgans</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>ReproductiveOrgans</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>ReproductiveOrgans</li>
+							</appliedOnFixedBodyParts>
+						</RecipeDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@ParentName="SurgeryFlesh"][defName="InstallBionicReproductiveOrgans"]</xpath>
+					<value>
+						<RecipeDef ParentName="MSE_SurgeryBionic">
+							<defName>InstallBionicReproductiveOrgans</defName>
+							<label>install bionic reproductive organs</label>
+							<description>Install a bionic reproductive organs.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Installing bionic reproductive organs.</jobString>
+							<workAmount>1500</workAmount>
+							<skillRequirements>
+								<Medicine>8</Medicine>
+							</skillRequirements>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>BionicReproductiveOrgans</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>BionicReproductiveOrgans</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>ReproductiveOrgans</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>BionicReproductiveOrgans</addsHediff>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

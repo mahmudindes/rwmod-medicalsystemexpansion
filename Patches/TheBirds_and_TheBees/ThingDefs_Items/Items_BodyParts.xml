@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>The Birds and the Bees</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[@Name="MSE_BodyPartNatural"]</xpath>
+					<value>
+						<ThingDef ParentName="MSE_BodyPartNatural">
+							<defName>ReproductiveOrgans</defName>
+							<label>reproductive organs</label>
+							<description>A biological human reproductive organs.</description>
+							<statBases>
+								<MarketValue>125</MarketValue>
+								<Mass>6</Mass>
+							</statBases>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="BodyPartArtificialBase"][defName="BionicReproductiveOrgans"]</xpath>
+					<value>
+						<ThingDef ParentName="MSE_BodyPartBionic">
+							<defName>BionicReproductiveOrgans</defName>
+							<label>bionic reproductive organs</label>
+							<description>An advanced artifical reproductive organs.</description>
+							<costList>
+								<Plasteel>10</Plasteel>
+								<ComponentSpacer>4</ComponentSpacer>
+							</costList>
+							<statBases>
+								<WorkToMake>38000</WorkToMake>
+								<Mass>0.3</Mass>
+							</statBases>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

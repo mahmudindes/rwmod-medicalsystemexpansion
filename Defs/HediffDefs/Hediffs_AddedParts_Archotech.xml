@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechEye</defName>
+		<label>archotech eye</label>
+		<labelNoun>an archotech eye</labelNoun>
+		<spawnThingOnRemoved>ArchotechEye</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechArm</defName>
+		<label>archotech arm</label>
+		<labelNoun>an archotech arm</labelNoun>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>14.4</power>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ArchotechArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechLeg</defName>
+		<label>archotech leg</label>
+		<labelNoun>an archotech leg</labelNoun>
+		<spawnThingOnRemoved>ArchotechLeg</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<!--============== Archotech Organs ================-->
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechHeart</defName>
+		<label>archotech heart</label>
+		<labelNoun>a archotech heart</labelNoun>
+		<spawnThingOnRemoved>ArchotechHeart</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechStomach</defName>
+		<label>archotech stomach</label>
+		<labelNoun>a archotech stomach</labelNoun>
+		<spawnThingOnRemoved>ArchotechStomach</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechLung</defName>
+		<label>archotech lung</label>
+		<labelNoun>a archotech lung</labelNoun>
+		<spawnThingOnRemoved>ArchotechLung</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechKidney</defName>
+		<label>archotech kidney</label>
+		<labelNoun>a archotech kidney</labelNoun>
+		<spawnThingOnRemoved>ArchotechKidney</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechLiver</defName>
+		<label>archotech liver</label>
+		<labelNoun>a archotech liver</labelNoun>
+		<spawnThingOnRemoved>ArchotechLiver</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<!--=============== Archotech Parts ================-->
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechEar</defName>
+		<label>archotech ear</label>
+		<labelNoun>a archotech ear</labelNoun>
+		<spawnThingOnRemoved>ArchotechEar</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechFoot</defName>
+		<label>archotech foot</label>
+		<labelNoun>a archotech foot</labelNoun>
+		<spawnThingOnRemoved>ArchotechFoot</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechToe</defName>
+		<label>archotech toe</label>
+		<labelNoun>a archotech toe</labelNoun>
+		<spawnThingOnRemoved>ArchotechToe</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechShoulder</defName>
+		<label>archotech shoulder</label>
+		<labelNoun>a archotech shoulder</labelNoun>
+		<spawnThingOnRemoved>ArchotechShoulder</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechHand</defName>
+		<label>archotech hand</label>
+		<labelNoun>a archotech hand</labelNoun>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>claw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>15.8</power>
+						<cooldownTime>1.6</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ArchotechHand</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechFinger</defName>
+		<label>archotech finger</label>
+		<labelNoun>a archotech finger</labelNoun>
+		<spawnThingOnRemoved>ArchotechFinger</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechJaw</defName>
+		<label>archotech jaw</label>
+		<labelNoun>a archotech jaw</labelNoun>
+		<spawnThingOnRemoved>ArchotechJaw</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<!--=============== Archotech Bones ================-->
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechSpine</defName>
+		<label>archotech spine</label>
+		<labelNoun>a archotech spine</labelNoun>
+		<spawnThingOnRemoved>ArchotechSpine</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechClavicle</defName>
+		<label>archotech clavicle</label>
+		<labelNoun>a archotech clavicle</labelNoun>
+		<spawnThingOnRemoved>ArchotechClavicle</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechSternum</defName>
+		<label>archotech sternum</label>
+		<labelNoun>a archotech sternum</labelNoun>
+		<spawnThingOnRemoved>ArchotechSternum</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechRib</defName>
+		<label>archotech rib</label>
+		<labelNoun>a archotech rib</labelNoun>
+		<spawnThingOnRemoved>ArchotechRib</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechPelvis</defName>
+		<label>archotech pelvis</label>
+		<labelNoun>a archotech pelvis</labelNoun>
+		<spawnThingOnRemoved>ArchotechPelvis</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechHumerus</defName>
+		<label>archotech humerus</label>
+		<labelNoun>a archotech humerus</labelNoun>
+		<spawnThingOnRemoved>ArchotechHumerus</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechRadius</defName>
+		<label>archotech radius</label>
+		<labelNoun>a archotech radius</labelNoun>
+		<spawnThingOnRemoved>ArchotechRadius</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechFemur</defName>
+		<label>archotech femur</label>
+		<labelNoun>a archotech femur</labelNoun>
+		<spawnThingOnRemoved>ArchotechFemur</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+		<defName>ArchotechTibia</defName>
+		<label>archotech tibia</label>
+		<labelNoun>a archotech tibia</labelNoun>
+		<spawnThingOnRemoved>ArchotechTibia</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+</Defs>

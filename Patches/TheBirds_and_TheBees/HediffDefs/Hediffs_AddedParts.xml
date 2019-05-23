@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>The Birds and the Bees</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicReproductiveOrgans"]</xpath>
+					<value>
+						<HediffDef ParentName="MSE_AddedBodyPartBionic">
+							<defName>BionicReproductiveOrgans</defName>
+							<label>bionic reproductive organ</label>
+							<labelNoun>a bionic reproductive organ</labelNoun>
+							<spawnThingOnRemoved>BionicReproductiveOrgans</spawnThingOnRemoved>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>1.25</partEfficiency>
+								</addedPartProps>
+						</HediffDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

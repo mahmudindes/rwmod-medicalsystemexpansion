@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Medical System Expansion</name>
+	<author>Oreno</author>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<description>An expansion of vanilla medical system and how they work. Not only adds many new body part replacements and implants, but also new exclusive bionic and archotech body part system and modules, and many other features.
+
+&lt;size=24&gt;Main Features&lt;/size&gt;
+- Installed prostheses body parts can keep there child parts. So now you don't get missing fingers or toes when installed arm or leg body parts.
+- New exclusive body part system and modules. You can install modules on installed bionic and archotech body part counterparts.
+
+All Other Features
+- About 50+ new prostheses body parts and implants.
+- Balancing vanilla prostheses body parts.
+- Almost all vanilla body parts and organs can be harvested.
+- Harvested body parts and organs can rot and decay.
+- Now bones can be destroyed by damage or attack not just shattered.
+- Split rib cage to 12 pair of ribs.
+
+Many new features are still being planned. This mod doesn't add new workbench and items texture because i cannot make it, but i try to make it next time. As much as possible this mod uses xpath or harmony to patch vanilla or any other mod so i can use it with 300+ mod modlist i have.
+
+&lt;size=24&gt;Known issues&lt;/size&gt;
+- Currently there are no known issues. This mod should be compatible with any other mod that not modifies vanilla prostheses. It also can be added to an existing save.</description>
+</ModMetaData>

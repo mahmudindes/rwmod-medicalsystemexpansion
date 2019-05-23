@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="MSE_AddedModuleBionic" ParentName="AddedBodyPartBase" Abstract="True">
+		<hediffClass>OrenoMSE.Hediff_AddedPartModule</hediffClass>
+		<defaultLabelColor>(255, 171, 64)</defaultLabelColor>
+	</HediffDef>
+
+</Defs>

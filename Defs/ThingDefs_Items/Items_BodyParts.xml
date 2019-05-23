@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="MSE_BodyPartNatural" ParentName="BodyPartNaturalBase" Abstract="True">
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>0.3</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="MSE_BodyPartBasicBase" ParentName="BodyPartArtificialBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemProsthetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<researchPrerequisite>MSE_BasicProsthetics</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories Inherit="False">
+			<li>BasicProstheses</li>
+		</thingCategories>
+		<tradeTags>
+			<li>MSE_BasicProstheses</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef Name="MSE_BodyPartSimple" ParentName="BodyPartProstheticBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<thingCategories Inherit="False">
+			<li>SimpleProstheses</li>
+		</thingCategories>
+		<tradeTags>
+			<li>MSE_SimpleProstheses</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartSimpleBone" ParentName="MSE_BodyPartSimple" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_BoneReplacement</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartSimpleOrgan" ParentName="MSE_BodyPartSimple" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_ProstheticOrgans</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="MSE_BodyPartBionic" ParentName="BodyPartBionicBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<thingCategories Inherit="False">
+			<li>BionicProstheses</li>
+		</thingCategories>
+		<tradeTags>
+			<li>MSE_BionicProstheses</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartBionicBone" ParentName="MSE_BodyPartBionic" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartBionicOrgan" ParentName="MSE_BodyPartBionic" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_BionicOrgans</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartBionicSpecial" ParentName="MSE_BodyPartBionic" Abstract="True">
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>MSE_SpecialBionics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartArchotechBase" Abstract="True">
+		<techLevel>Archotech</techLevel>
+		<thingCategories Inherit="False">
+			<li>ArchotechProstheses</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

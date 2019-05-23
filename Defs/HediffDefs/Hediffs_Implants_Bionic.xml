@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="MSE_ImplantBrainHediff">
+		<defName>Joywire</defName>
+		<label>joywire</label>
+		<labelNoun>a joywire</labelNoun>
+		<stages>
+			<li>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>Joywire</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantBrainHediff">
+		<defName>Painstopper</defName>
+		<label>painstopper</label>
+		<labelNoun>a painstopper</labelNoun>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>Painstopper</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!--=============== Muscle Implants ================-->
+
+	<HediffDef ParentName="MSE_ImplantHediff">
+		<defName>EndoskeletonStimulator</defName>
+		<label>endoskeleton stimulator</label>
+		<labelNoun>an endoskeleton stimulator</labelNoun>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>EndoskeletonStimulator</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!--================ Brain Implants ================-->
+
+	<HediffDef ParentName="MSE_ImplantBrainHediff">
+		<defName>BuilderAI</defName>
+		<label>builder AI</label>
+		<spawnThingOnRemoved>BuilderAI</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<ConstructionSpeed>0.15</ConstructionSpeed>
+					<ConstructSuccessChance>0.15</ConstructSuccessChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantBrainHediff">
+		<defName>FarmerAI</defName>
+		<label>farmer AI</label>
+		<spawnThingOnRemoved>FarmerAI</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<PlantWorkSpeed>0.15</PlantWorkSpeed>
+					<PlantHarvestYield>0.15</PlantHarvestYield>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantBrainHediff">
+		<defName>DoctorAI</defName>
+		<label>doctor AI</label>
+		<spawnThingOnRemoved>DoctorAI</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<MedicalOperationSpeed>0.15</MedicalOperationSpeed>
+					<MedicalSurgerySuccessChance>0.15</MedicalSurgerySuccessChance>
+					<MedicalTendSpeed>0.15</MedicalTendSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantBrainHediff">
+		<defName>MinerAI</defName>
+		<label>miner AI</label>
+		<spawnThingOnRemoved>MinerAI</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<MiningSpeed>0.15</MiningSpeed>
+					<MiningYield>0.15</MiningYield>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantBrainHediff">
+		<defName>DiplomatAI</defName>
+		<label>diplomat AI</label>
+		<spawnThingOnRemoved>DiplomatAI</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<NegotiationAbility>0.15</NegotiationAbility>
+					<SocialImpact>0.15</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

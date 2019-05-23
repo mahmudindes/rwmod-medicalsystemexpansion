@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicModule">
+		<defName>InstallBionicArmModule</defName>
+		<label>install bionic arm module</label>
+		<description>Install a bionic arm module.</description>
+		<jobString>Installing bionic arm module.</jobString>
+		<workAmount>3125</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>BionicArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicArmModule</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicModule">
+		<defName>InstallBionicHandModule</defName>
+		<label>install bionic hand module</label>
+		<description>Install a bionic hand module.</description>
+		<jobString>Installing bionic hand module.</jobString>
+		<workAmount>1875</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>BionicHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicHandModule</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicModule">
+		<defName>InstallBionicFingerModule</defName>
+		<label>install bionic finger module</label>
+		<description>Install a bionic finger module.</description>
+		<jobString>Installing bionic finger module.</jobString>
+		<workAmount>1250</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>BionicFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFingerModule</addsHediff>
+	</RecipeDef>
+
+</Defs>

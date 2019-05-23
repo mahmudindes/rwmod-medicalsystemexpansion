@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="MSE_AddedBodyPartBasic" ParentName="AddedBodyPartBase" Abstract="True">
+		<defaultLabelColor>(100, 255, 218)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartSimple" ParentName="AddedBodyPartBase" Abstract="True">
+		<defaultLabelColor>(64, 196, 255)</defaultLabelColor>
+	</HediffDef>
+	<HediffDef Name="MSE_AddedBodyPartSimpleImplant" ParentName="MSE_AddedBodyPartSimple" Abstract="True">
+		<defaultLabelColor>(128, 216, 255)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartBionic" ParentName="AddedBodyPartBase" Abstract="True">
+		<hediffClass>OrenoMSE.Hediff_AddedPartSystem</hediffClass>
+		<defaultLabelColor>(83, 109, 254)</defaultLabelColor>
+	</HediffDef>
+	<HediffDef Name="MSE_AddedBodyPartBionicSpecial" ParentName="MSE_AddedBodyPartBionic" Abstract="True">
+		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartArchotech" ParentName="AddedBodyPartBase" Abstract="True">
+		<hediffClass>OrenoMSE.Hediff_AddedPartSystem</hediffClass>
+		<defaultLabelColor>(224, 64, 251)</defaultLabelColor>
+	</HediffDef>
+
+</Defs>

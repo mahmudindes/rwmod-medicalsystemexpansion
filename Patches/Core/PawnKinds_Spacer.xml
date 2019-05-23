@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/PawnKindDef[defName="SpaceRefugee"]/techHediffsTags[li="Poor"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/PawnKindDef[defName="SpaceRefugee"]/techHediffsTags/[li="Poor"]</xpath>
+			</li>
+		</operations>
+	</Operation> -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/PawnKindDef[defName="SpaceRefugee"]/techHediffsTags[li="Advanced"]</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="SpaceRefugee"]/techHediffsTags</xpath>
+				<value>
+					<li>Advanced</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicEye</defName>
+		<label>install bionic eye</label>
+		<description>Install a bionic eye.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic eye.</jobString>
+		<workAmount>3500</workAmount>
+		<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicEye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicEye</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicEye</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicArm</defName>
+		<label>install bionic arm</label>
+		<description>Install a bionic arm.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic arm.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicArm</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicLeg</defName>
+		<label>install bionic leg</label>
+		<description>Install a bionic leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic leg.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicLeg</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBone">
+		<defName>InstallBionicSpine</defName>
+		<label>install bionic spine</label>
+		<description>Install a bionic spine.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic spine.</jobString>
+		<workAmount>3500</workAmount>
+		<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicSpine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicSpine</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicOrgan">
+		<defName>InstallBionicHeart</defName>
+		<label>install bionic heart</label>
+		<description>Install a bionic heart.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic heart.</jobString>
+		<workAmount>3500</workAmount>
+		<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicHeart</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicOrgan">
+		<defName>InstallBionicStomach</defName>
+		<label>install bionic stomach</label>
+		<description>Install a bionic stomach.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic stomach.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicStomach</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicStomach</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicStomach</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicEar</defName>
+		<label>install bionic ear</label>
+		<description>Install a bionic ear.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic ear.</jobString>
+		<workAmount>3500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicEar</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicEar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ear</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicEar</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicSpecial">
+		<defName>InstallPowerClaw</defName>
+		<label>install power claw</label>
+		<description>Install a power claw.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing power claw.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>PowerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PowerClaw</addsHediff>
+	</RecipeDef>
+
+	<!--================ Bionic Organs =================-->
+
+	<RecipeDef ParentName="MSE_SurgeryBionicOrgan">
+		<defName>InstallBionicLung</defName>
+		<label>install bionic lung</label>
+		<description>Install a bionic lung.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic lung.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicLung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicLung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Lung</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicLung</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicOrgan">
+		<defName>InstallBionicKidney</defName>
+		<label>install bionic kidney</label>
+		<description>Install a bionic kidney.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic kidney.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicKidney</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicKidney</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Kidney</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicKidney</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicOrgan">
+		<defName>InstallBionicLiver</defName>
+		<label>install bionic liver</label>
+		<description>Install a bionic liver.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic liver.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicLiver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicLiver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicLiver</addsHediff>
+	</RecipeDef>
+
+	<!--================= Bionic Parts =================-->
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicFoot</defName>
+		<label>install bionic foot</label>
+		<description>Install a bionic foot.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic foot.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicFoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFoot</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicToe</defName>
+		<label>install bionic toe</label>
+		<description>Install a bionic toe.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic toe.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicToe</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicToe</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicToe</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicShoulder</defName>
+		<label>install bionic shoulder</label>
+		<description>Install a bionic shoulder.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic shoulder.</jobString>
+		<workAmount>4000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicShoulder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicShoulder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicShoulder</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicHand</defName>
+		<label>install bionic hand</label>
+		<description>Install a bionic hand.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic hand.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicHand</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicFinger</defName>
+		<label>install bionic finger</label>
+		<description>Install a bionic finger.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic finger.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFinger</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionic">
+		<defName>InstallBionicJaw</defName>
+		<label>install bionic jaw</label>
+		<description>Install a bionic jaw.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic jaw.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicJaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicJaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicJaw</addsHediff>
+	</RecipeDef>
+
+	<!--================= Bionic Bones =================-->
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBone">
+		<defName>InstallBionicClavicle</defName>
+		<label>install bionic clavicle</label>
+		<description>Install a bionic clavicle.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic clavicle.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicClavicle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicClavicle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicClavicle</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBone">
+		<defName>InstallBionicSternum</defName>
+		<label>install bionic sternum</label>
+		<description>Install a bionic sternum.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic sternum.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicSternum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicSternum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Sternum</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicSternum</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBone">
+		<defName>InstallBionicRib</defName>
+		<label>install bionic rib</label>
+		<description>Install a bionic rib.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic rib.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicRib</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicRib</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ribcage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicRib</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBone">
+		<defName>InstallBionicPelvis</defName>
+		<label>install bionic pelvis</label>
+		<description>Install a bionic pelvis.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic pelvis.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicPelvis</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicPelvis</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pelvis</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicPelvis</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBone">
+		<defName>InstallBionicHumerus</defName>
+		<label>install bionic humerus</label>
+		<description>Install a bionic humerus.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic humerus.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHumerus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicHumerus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Humerus</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicHumerus</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBone">
+		<defName>InstallBionicRadius</defName>
+		<label>install bionic radius</label>
+		<description>Install a bionic radius.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic radius.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicRadius</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicRadius</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Radius</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicRadius</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBone">
+		<defName>InstallBionicFemur</defName>
+		<label>install bionic femur</label>
+		<description>Install a bionic femur.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic femur.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFemur</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicFemur</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Femur</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFemur</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBone">
+		<defName>InstallBionicTibia</defName>
+		<label>install bionic tibia</label>
+		<description>Install a bionic tibia.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic tibia.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicTibia</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicTibia</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicTibia</addsHediff>
+	</RecipeDef>
+
+	<!--=============== Special Bionics ================-->
+
+	<RecipeDef ParentName="MSE_SurgeryBionicSpecial">
+		<defName>InstallPowerArm</defName>
+		<label>install power arm</label>
+		<description>Install a power arm.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing power arm.</jobString>
+		<workAmount>5200</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>PowerArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PowerArm</addsHediff>
+	</RecipeDef>
+
+</Defs>

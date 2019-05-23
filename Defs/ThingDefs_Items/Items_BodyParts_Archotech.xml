@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechEye</defName>
+		<label>archotech eye</label>
+		<description>An artifical eye built by an archotech. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Externally, it looks like a natural human eye, except it can change color at will. Its internal workings are a mystery to all human minds.</description>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechArm</defName>
+		<label>archotech arm</label>
+		<description>An artifical arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechLeg</defName>
+		<label>archotech leg</label>
+		<description>An artifical leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>7</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--============== Archotech Organs ================-->
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechHeart</defName>
+		<label>archotech heart</label>
+		<description>An artifical heart built by an archotech.</description>
+		<statBases>
+			<MarketValue>5600</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechStomach</defName>
+		<label>archotech stomach</label>
+		<description>An artifical stomach built by an archotech.</description>
+		<statBases>
+			<MarketValue>4200</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechLung</defName>
+		<label>archotech lung</label>
+		<description>An artifical lung built by an archotech.</description>
+		<statBases>
+			<MarketValue>4200</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechKidney</defName>
+		<label>archotech kidney</label>
+		<description>An artifical kidney built by an archotech.</description>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechLiver</defName>
+		<label>archotech liver</label>
+		<description>An artifical liver built by an archotech.</description>
+		<statBases>
+			<MarketValue>4200</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Archotech Parts ================-->
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechEar</defName>
+		<label>archotech ear</label>
+		<description>An artifical ear built by an archotech.</description>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechFoot</defName>
+		<label>archotech foot</label>
+		<description>An artifical foot built by an archotech.</description>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechToe</defName>
+		<label>archotech toe</label>
+		<description>An artifical toe built by an archotech.</description>
+		<statBases>
+			<MarketValue>700</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechShoulder</defName>
+		<label>archotech shoulder</label>
+		<description>An artifical shoulder built by an archotech.</description>
+		<statBases>
+			<MarketValue>4200</MarketValue>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechHand</defName>
+		<label>archotech hand</label>
+		<description>An artifical hand built by an archotech.</description>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechFinger</defName>
+		<label>archotech finger</label>
+		<description>An artifical finger built by an archotech.</description>
+		<statBases>
+			<MarketValue>700</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechJaw</defName>
+		<label>archotech jaw</label>
+		<description>An artifical jaw built by an archotech.</description>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Archotech Bones ================-->
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechSpine</defName>
+		<label>archotech spine</label>
+		<description>An artifical spine built by an archotech.</description>
+		<statBases>
+			<MarketValue>5600</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechClavicle</defName>
+		<label>archotech clavicle</label>
+		<description>An artifical clavicle built by an archotech.</description>
+		<statBases>
+			<MarketValue>700</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechSternum</defName>
+		<label>archotech sternum</label>
+		<description>An artifical sternum built by an archotech.</description>
+		<statBases>
+			<MarketValue>700</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechRib</defName>
+		<label>archotech rib</label>
+		<description>An artifical rib built by an archotech.</description>
+		<statBases>
+			<MarketValue>350</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechPelvis</defName>
+		<label>archotech pelvis</label>
+		<description>An artifical pelvis built by an archotech.</description>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechHumerus</defName>
+		<label>archotech humerus</label>
+		<description>An artifical humerus built by an archotech.</description>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechRadius</defName>
+		<label>archotech radius</label>
+		<description>An artifical radius built by an archotech.</description>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechFemur</defName>
+		<label>archotech femur</label>
+		<description>An artifical femur built by an archotech.</description>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechTibia</defName>
+		<label>archotech tibia</label>
+		<description>An artifical tibia built by an archotech.</description>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

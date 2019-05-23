@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+		<defName>InstallNaturalKidney</defName>
+		<label>install kidney</label>
+		<description>Install a biological kidney.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing kidney.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Kidney</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Kidney</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Kidney</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+		<defName>InstallNaturalLiver</defName>
+		<label>install liver</label>
+		<description>Install a biological liver.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing liver.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Liver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Liver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+		<defName>InstallNaturalLung</defName>
+		<label>install lung</label>
+		<description>Install a lung.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing lung.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Lung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Lung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Lung</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+		<defName>InstallNaturalHeart</defName>
+		<label>install heart</label>
+		<description>Install a biological heart.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing heart.</jobString>
+		<workAmount>3700</workAmount>
+		<deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Heart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<!--================ Natural Organs ================-->
+
+	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+		<defName>InstallNaturalStomach</defName>
+		<label>install stomach</label>
+		<description>Install a biological stomach.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing stomach.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Stomach</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Stomach</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<!--================= Natural Parts ================-->
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalLeg</defName>
+		<label>install leg</label>
+		<description>Install a biological leg.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing leg.</jobString>
+		<workAmount>4900</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Leg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Leg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalFoot</defName>
+		<label>install foot</label>
+		<description>Install a biological foot.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing foot.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Foot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Foot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalToe</defName>
+		<label>install toe</label>
+		<description>Install a biological toe.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing toe.</jobString>
+		<workAmount>1300</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Toe</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Toe</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalArm</defName>
+		<label>install arm</label>
+		<description>Install a biological arm.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing arm.</jobString>
+		<workAmount>4900</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Arm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Arm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalHand</defName>
+		<label>install hand</label>
+		<description>Install a biological hand.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing hand.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Hand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalFinger</defName>
+		<label>install finger</label>
+		<description>Install a biological finger.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing finger.</jobString>
+		<workAmount>1300</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Finger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Finger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalEye</defName>
+		<label>install eye</label>
+		<description>Install a biological eye.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing eye.</jobString>
+		<workAmount>4900</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Eye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Eye</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalEar</defName>
+		<label>install ear</label>
+		<description>Install a biological ear.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing ear.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ear</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Ear</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ear</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalNose</defName>
+		<label>install nose</label>
+		<description>Install a biological nose.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing nose.</jobString>
+		<workAmount>1300</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nose</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Nose</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Nose</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalJaw</defName>
+		<label>install jaw</label>
+		<description>Install a biological jaw.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing jaw.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Jaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+</Defs>
