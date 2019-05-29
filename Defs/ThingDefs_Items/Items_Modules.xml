@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="MSE_ModuleBase" ParentName="BodyPartProstheticBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemBionic3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>MSE_ModulesCrafting</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef Name="MSE_ModuleBionic" ParentName="MSE_ModuleBase" Abstract="True">
+		<recipeMaker>
+			<soundWorking>MSE_Assembling</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>TableBionicProstheses</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories>
+			<li>MSE_ProsthesisModules</li>
+		</thingCategories>
+		<tradeTags>
+			<li>MSE_BionicModules</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

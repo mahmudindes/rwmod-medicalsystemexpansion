@@ -41,6 +41,7 @@
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>Joywire</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
@@ -83,6 +84,7 @@
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>Painstopper</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<!--=============== Muscle Implants ================-->
@@ -93,7 +95,7 @@
 		<description>Install an endoskeleton stimulator.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
 		<jobString>Installing endoskeleton stimulator.</jobString>
-		<workAmount>2775</workAmount>
+		<workAmount>2800</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -129,6 +131,90 @@
 		<addsHediff>EndoskeletonStimulator</addsHediff>
 	</RecipeDef>
 
+	<RecipeDef ParentName="MSE_SurgeryBionicImplant">
+		<defName>InstallArmMuscleStimulator</defName>
+		<label>install arm muscle stimulator</label>
+		<description>Install an arm muscle stimulator.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing arm muscle stimulator.</jobString>
+		<workAmount>2800</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MuscleStimulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MuscleStimulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArmMuscleStimulator</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicImplant">
+		<defName>InstallLegMuscleStimulator</defName>
+		<label>install leg muscle stimulator</label>
+		<description>Install a leg muscle stimulator.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing leg muscle stimulator.</jobString>
+		<workAmount>2800</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MuscleStimulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MuscleStimulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>LegMuscleStimulator</addsHediff>
+	</RecipeDef>
+
 	<!--================ Brain Implants ================-->
 
 	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
@@ -137,7 +223,7 @@
 		<description>Install a builder AI.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
 		<jobString>Installing builder AI.</jobString>
-		<workAmount>5550</workAmount>
+		<workAmount>5600</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -179,7 +265,7 @@
 		<description>Install a farmer AI.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
 		<jobString>Installing farmer AI.</jobString>
-		<workAmount>5550</workAmount>
+		<workAmount>5600</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -221,7 +307,7 @@
 		<description>Install a doctor AI.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
 		<jobString>Installing doctor AI.</jobString>
-		<workAmount>5550</workAmount>
+		<workAmount>5600</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -263,7 +349,7 @@
 		<description>Install a miner AI.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
 		<jobString>Installing miner AI.</jobString>
-		<workAmount>5550</workAmount>
+		<workAmount>5600</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -305,7 +391,7 @@
 		<description>Install a diplomat AI.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
 		<jobString>Installing diplomat AI.</jobString>
-		<workAmount>5550</workAmount>
+		<workAmount>5600</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -339,6 +425,48 @@
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>DiplomatAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicBrainImplant">
+		<defName>InstallTamerAI</defName>
+		<label>install tamer AI</label>
+		<description>Install a tamer AI.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing tamer AI.</jobString>
+		<workAmount>5600</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TamerAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>TamerAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TamerAI</addsHediff>
 	</RecipeDef>
 
 </Defs>

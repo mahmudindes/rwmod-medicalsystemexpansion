@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>BionicArmModule</defName>
+		<label>bionic arm module</label>
+		<description>An advanced artificial arm module to expand your pawn prosthetic body part. It is better than a biological arm in almost every way. You can install it to arm module slot.</description>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<BionicArm>1</BionicArm>
+		</costList>
+		<statBases>
+			<MarketValue>2400</MarketValue>
+			<WorkToMake>32500</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>BionicHandModule</defName>
+		<label>bionic hand module</label>
+		<description>An advanced artificial hand module to expand your pawn prosthetic body part. It is better than a biological hand in almost every way. You can install it to hand module slot.</description>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<BionicHand>1</BionicHand>
+		</costList>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>BionicFingerModule</defName>
+		<label>bionic finger module</label>
+		<description>An advanced artificial finger module to expand your pawn prosthetic body part. It is better than a biological finger in almost every way. You can install it to finger module slot.</description>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<BionicFinger>1</BionicFinger>
+		</costList>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>MSE_RangedPlatformModule</defName>
+		<label>ranged platform module</label>
+		<description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and turn your pawn to specialized for ranged combat. You can install it to finger module slot.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<ComponentSpacer>5</ComponentSpacer>
+			<BionicClavicle>1</BionicClavicle>
+		</costList>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<WorkToMake>47500</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>MSE_MeleePlatformModule</defName>
+		<label>melee platform module</label>
+		<description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and turn your pawn to specialized for melee combat. You can install it to finger module slot.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<ComponentSpacer>5</ComponentSpacer>
+			<BionicClavicle>1</BionicClavicle>
+		</costList>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<WorkToMake>47500</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>MSE_AdamantiumBoneModule</defName>
+		<label>adamantium bone module</label>
+		<description>A bone module that crafted with low quality adamantium alloy. Able to sustain almost all attack. Requires skilled crafter to craft it.</description>
+		<costList>
+			<Silver>100</Silver>
+			<Uranium>60</Uranium>
+			<Gold>40</Gold>
+		</costList>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

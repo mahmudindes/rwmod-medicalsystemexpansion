@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="MSE_NaturalBodyPartBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<HediffDef Name="MSE_NaturalBodyPartNormal" ParentName="MSE_NaturalBodyPartBase" Abstract="True">
+		<initialSeverity>0.35</initialSeverity>
+		<chanceToCauseNoPain>0.15</chanceToCauseNoPain>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>48</baseTendDurationHours>
+				<severityPerDayTended>-0.12</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_GrowthMode">
+				<severityPerDayGrowing>0.04</severityPerDayGrowing>
+				<severityPerDayRemission>-0.02</severityPerDayRemission>
+				<severityPerDayGrowingRandomFactor>
+					<min>0.45</min>
+					<max>1.65</max>
+				</severityPerDayGrowingRandomFactor>
+				<severityPerDayRemissionRandomFactor>
+					<min>0.60</min>
+					<max>1.40</max>
+				</severityPerDayRemissionRandomFactor>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

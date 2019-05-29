@@ -2,7 +2,7 @@
 <LanguageData>
 
 	<ReadyForBodyPartModule>ready for module</ReadyForBodyPartModule>
-	<RemoveModule>remove part module</RemoveModule>
+	<RemovePartModule>remove part module</RemovePartModule>
 	<RemovePartSystem>remove part system</RemovePartSystem>
 
 </LanguageData>

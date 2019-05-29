@@ -94,6 +94,7 @@
 			<li>
 				<minSeverity>1</minSeverity>
 				<label>chronic rejection</label>
+				<lifeThreatening>true</lifeThreatening>
 				<partEfficiencyOffset>-1.0</partEfficiencyOffset>
 				<destroyPart>true</destroyPart>
 			</li>

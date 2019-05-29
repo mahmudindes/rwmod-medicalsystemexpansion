@@ -83,7 +83,7 @@ namespace OrenoMSE
 
             if (pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == part))
             {
-                return "RemoveModule".Translate();
+                return "RemovePartModule".Translate();
             }
 
             return this.recipe.label;

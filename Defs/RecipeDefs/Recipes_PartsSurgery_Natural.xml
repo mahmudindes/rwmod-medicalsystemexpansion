@@ -5,7 +5,6 @@
 		<defName>InstallNaturalKidney</defName>
 		<label>install kidney</label>
 		<description>Install a biological kidney.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing kidney.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -40,13 +39,14 @@
 		<appliedOnFixedBodyParts>
 			<li>Kidney</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Kidney</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
 		<defName>InstallNaturalLiver</defName>
 		<label>install liver</label>
 		<description>Install a biological liver.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing liver.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -81,13 +81,14 @@
 		<appliedOnFixedBodyParts>
 			<li>Liver</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Liver</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
 		<defName>InstallNaturalLung</defName>
 		<label>install lung</label>
 		<description>Install a lung.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing lung.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -122,13 +123,14 @@
 		<appliedOnFixedBodyParts>
 			<li>Lung</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Lung</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
 		<defName>InstallNaturalHeart</defName>
 		<label>install heart</label>
 		<description>Install a biological heart.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing heart.</jobString>
 		<workAmount>3700</workAmount>
 		<deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
@@ -164,6 +166,8 @@
 		<appliedOnFixedBodyParts>
 			<li>Heart</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Heart</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<!--================ Natural Organs ================-->
@@ -172,7 +176,6 @@
 		<defName>InstallNaturalStomach</defName>
 		<label>install stomach</label>
 		<description>Install a biological stomach.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing stomach.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -207,6 +210,7 @@
 		<appliedOnFixedBodyParts>
 			<li>Stomach</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Stomach</addsHediff>
 	</RecipeDef>
 
 	<!--================= Natural Parts ================-->

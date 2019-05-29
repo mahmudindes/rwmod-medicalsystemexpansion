@@ -10,6 +10,7 @@
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>900</MarketValue>
 			<WorkToMake>38000</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
@@ -24,6 +25,7 @@
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>1300</MarketValue>
 			<WorkToMake>26000</WorkToMake>
 			<Mass>5</Mass>
 		</statBases>
@@ -38,6 +40,7 @@
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>1300</MarketValue>
 			<WorkToMake>26000</WorkToMake>
 			<Mass>8</Mass>
 		</statBases>
@@ -52,6 +55,7 @@
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>1100</MarketValue>
 			<WorkToMake>38000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
@@ -66,6 +70,7 @@
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>1100</MarketValue>
 			<WorkToMake>38000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
@@ -80,6 +85,7 @@
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>1100</MarketValue>
 			<WorkToMake>38000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
@@ -94,6 +100,7 @@
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>900</MarketValue>
 			<WorkToMake>38000</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
@@ -104,8 +111,8 @@
 		<label>power claw</label>
 		<description>A combat-oriented hand replacement consisting of a mechanical hand with a vicious claw on each finger. It is vicious in combat, and its powerful mini-servos can crush a skull like a natural hand crushes an egg. The blades can be retracted, making it as useful as a biological hand for non-combat tasks.</description>
 		<costList>
-			<Plasteel>40</Plasteel>
-			<ComponentSpacer>9</ComponentSpacer>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<statBases>
 			<MarketValue>1200</MarketValue>
@@ -128,6 +135,7 @@
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>1100</MarketValue>
 			<WorkToMake>38000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
@@ -142,6 +150,7 @@
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>1100</MarketValue>
 			<WorkToMake>38000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
@@ -156,6 +165,7 @@
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>1100</MarketValue>
 			<WorkToMake>38000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
@@ -172,6 +182,7 @@
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>700</MarketValue>
 			<WorkToMake>16000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
@@ -186,6 +197,7 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>300</MarketValue>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
@@ -200,6 +212,7 @@
 			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>1500</MarketValue>
 			<WorkToMake>38000</WorkToMake>
 			<Mass>6</Mass>
 		</statBases>
@@ -214,6 +227,7 @@
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>700</MarketValue>
 			<WorkToMake>16000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
@@ -228,6 +242,7 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>300</MarketValue>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
@@ -242,6 +257,7 @@
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>700</MarketValue>
 			<WorkToMake>26000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
@@ -258,7 +274,8 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
-			<WorkToMake>3800</WorkToMake>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>4000</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -272,7 +289,8 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
-			<WorkToMake>3800</WorkToMake>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>4000</WorkToMake>
 			<Mass>0.5</Mass>
 		</statBases>
 	</ThingDef>
@@ -286,7 +304,8 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
-			<WorkToMake>3800</WorkToMake>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>4000</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -296,10 +315,11 @@
 		<label>bionic pelvis</label>
 		<description>An advanced artificial pelvis. It is better than a biological pelvis in almost every way.</description>
 		<costList>
-			<Plasteel>10</Plasteel>
+			<Plasteel>20</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>700</MarketValue>
 			<WorkToMake>12000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
@@ -314,6 +334,7 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>500</MarketValue>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
@@ -328,6 +349,7 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>500</MarketValue>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
@@ -342,6 +364,7 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>700</MarketValue>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
@@ -356,6 +379,7 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
+			<MarketValue>700</MarketValue>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
@@ -368,8 +392,8 @@
 		<label>power arm</label>
 		<description>A combat-oriented arm replacement consisting of a mechanical arm with a vicious claw on each hand finger. It is vicious in combat, and its silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
 		<costList>
-			<Plasteel>90</Plasteel>
-			<ComponentSpacer>12</ComponentSpacer>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
 		<statBases>
 			<MarketValue>2400</MarketValue>

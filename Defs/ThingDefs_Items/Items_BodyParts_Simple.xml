@@ -10,6 +10,7 @@
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<statBases>
+			<MarketValue>250</MarketValue>
 			<WorkToMake>11000</WorkToMake>
 			<Mass>8</Mass>
 		</statBases>
@@ -24,6 +25,7 @@
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<statBases>
+			<MarketValue>250</MarketValue>
 			<WorkToMake>11000</WorkToMake>
 			<Mass>5</Mass>
 		</statBases>
@@ -38,6 +40,7 @@
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<statBases>
+			<MarketValue>270</MarketValue>
 			<WorkToMake>11000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
@@ -52,6 +55,7 @@
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<statBases>
+			<MarketValue>200</MarketValue>
 			<WorkToMake>11000</WorkToMake>
 			<Mass>0.05</Mass>
 		</statBases>
@@ -68,7 +72,8 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>8250</WorkToMake>
+			<MarketValue>140</MarketValue>
+			<WorkToMake>8300</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
 	</ThingDef>
@@ -82,7 +87,8 @@
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>2750</WorkToMake>
+			<MarketValue>50</MarketValue>
+			<WorkToMake>2800</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -96,7 +102,8 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>8250</WorkToMake>
+			<MarketValue>140</MarketValue>
+			<WorkToMake>8300</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
@@ -110,7 +117,8 @@
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>2750</WorkToMake>
+			<MarketValue>50</MarketValue>
+			<WorkToMake>2800</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -124,6 +132,7 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
+			<MarketValue>120</MarketValue>
 			<WorkToMake>8800</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
@@ -139,7 +148,8 @@
 			<Steel>10</Steel>
 		</costList>
 		<statBases>
-			<WorkToMake>1375</WorkToMake>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>1400</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -152,7 +162,8 @@
 			<Steel>15</Steel>
 		</costList>
 		<statBases>
-			<WorkToMake>1375</WorkToMake>
+			<MarketValue>30</MarketValue>
+			<WorkToMake>1400</WorkToMake>
 			<Mass>0.5</Mass>
 		</statBases>
 	</ThingDef>
@@ -165,7 +176,8 @@
 			<Steel>10</Steel>
 		</costList>
 		<statBases>
-			<WorkToMake>1375</WorkToMake>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>1400</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -175,9 +187,10 @@
 		<label>prosthetic pelvis</label>
 		<description>A pelvis prosthesis. It is inferior to a real pelvis.</description>
 		<costList>
-			<Steel>15</Steel>
+			<Steel>25</Steel>
 		</costList>
 		<statBases>
+			<MarketValue>50</MarketValue>
 			<WorkToMake>5500</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
@@ -191,7 +204,8 @@
 			<Steel>20</Steel>
 		</costList>
 		<statBases>
-			<WorkToMake>2750</WorkToMake>
+			<MarketValue>40</MarketValue>
+			<WorkToMake>2800</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
 	</ThingDef>
@@ -204,7 +218,8 @@
 			<Steel>20</Steel>
 		</costList>
 		<statBases>
-			<WorkToMake>2750</WorkToMake>
+			<MarketValue>40</MarketValue>
+			<WorkToMake>2800</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
 	</ThingDef>
@@ -217,7 +232,8 @@
 			<Steel>25</Steel>
 		</costList>
 		<statBases>
-			<WorkToMake>2750</WorkToMake>
+			<MarketValue>50</MarketValue>
+			<WorkToMake>2800</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 	</ThingDef>
@@ -230,7 +246,8 @@
 			<Steel>25</Steel>
 		</costList>
 		<statBases>
-			<WorkToMake>2750</WorkToMake>
+			<MarketValue>50</MarketValue>
+			<WorkToMake>2800</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 	</ThingDef>

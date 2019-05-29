@@ -14,14 +14,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>PegLeg</li>
 					</thingDefs>
@@ -30,9 +22,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>PegLeg</li>
 			</thingDefs>
@@ -41,6 +30,7 @@
 			<li>Leg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PegLeg</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBasic">
@@ -56,14 +46,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>WoodenFoot</li>
 					</thingDefs>
@@ -72,9 +54,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>WoodenFoot</li>
 			</thingDefs>
@@ -83,6 +62,7 @@
 			<li>Foot</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>WoodenFoot</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBasic">
@@ -98,14 +78,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>Denture</li>
 					</thingDefs>
@@ -114,9 +86,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>Denture</li>
 			</thingDefs>
@@ -125,6 +94,7 @@
 			<li>Jaw</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>Denture</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<!--================= Basic Parts ==================-->
@@ -142,14 +112,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>WoodenToe</li>
 					</thingDefs>
@@ -158,9 +120,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>WoodenToe</li>
 			</thingDefs>
@@ -184,14 +143,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>WoodenArm</li>
 					</thingDefs>
@@ -200,9 +151,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>WoodenArm</li>
 			</thingDefs>
@@ -226,14 +174,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>HookHand</li>
 					</thingDefs>
@@ -242,9 +182,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>HookHand</li>
 			</thingDefs>
@@ -268,14 +205,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>WoodenFinger</li>
 					</thingDefs>
@@ -284,9 +213,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>WoodenFinger</li>
 			</thingDefs>
@@ -341,14 +267,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>WoodenEar</li>
 					</thingDefs>
@@ -357,9 +275,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>WoodenEar</li>
 			</thingDefs>
@@ -383,14 +298,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>WoodenNose</li>
 					</thingDefs>
@@ -399,9 +306,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>WoodenNose</li>
 			</thingDefs>

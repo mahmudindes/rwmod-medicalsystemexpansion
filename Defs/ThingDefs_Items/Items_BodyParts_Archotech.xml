@@ -4,9 +4,16 @@
 	<ThingDef ParentName="MSE_BodyPartArchotech">
 		<defName>ArchotechEye</defName>
 		<label>archotech eye</label>
-		<description>An artifical eye built by an archotech. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Externally, it looks like a natural human eye, except it can change color at will. Its internal workings are a mystery to all human minds.</description>
+		<description>An artifical eye built by an archotech. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Externally, it looks like a natural human eye, except it can change color at will.</description>
+		<costList>
+			<Uranium>30</Uranium>
+			<Gold>40</Gold>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
 		<statBases>
 			<MarketValue>2800</MarketValue>
+			<WorkToMake>114000</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -14,9 +21,16 @@
 	<ThingDef ParentName="MSE_BodyPartArchotech">
 		<defName>ArchotechArm</defName>
 		<label>archotech arm</label>
-		<description>An artifical arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<description>An artifical arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</description>
+		<costList>
+			<Uranium>50</Uranium>
+			<Gold>25</Gold>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
 		<statBases>
 			<MarketValue>2800</MarketValue>
+			<WorkToMake>78000</WorkToMake>
 			<Mass>4</Mass>
 		</statBases>
 	</ThingDef>
@@ -24,9 +38,16 @@
 	<ThingDef ParentName="MSE_BodyPartArchotech">
 		<defName>ArchotechLeg</defName>
 		<label>archotech leg</label>
-		<description>An artifical leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<description>An artifical leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</description>
+		<costList>
+			<Uranium>50</Uranium>
+			<Gold>25</Gold>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
 		<statBases>
 			<MarketValue>2800</MarketValue>
+			<WorkToMake>78000</WorkToMake>
 			<Mass>7</Mass>
 		</statBases>
 	</ThingDef>
@@ -37,8 +58,15 @@
 		<defName>ArchotechHeart</defName>
 		<label>archotech heart</label>
 		<description>An artifical heart built by an archotech.</description>
+		<costList>
+			<Uranium>150</Uranium>
+			<Gold>125</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>5600</MarketValue>
+			<MarketValue>5400</MarketValue>
+			<WorkToMake>114000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
@@ -47,8 +75,15 @@
 		<defName>ArchotechStomach</defName>
 		<label>archotech stomach</label>
 		<description>An artifical stomach built by an archotech.</description>
+		<costList>
+			<Uranium>100</Uranium>
+			<Gold>75</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>4200</MarketValue>
+			<MarketValue>4000</MarketValue>
+			<WorkToMake>114000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
 	</ThingDef>
@@ -57,8 +92,15 @@
 		<defName>ArchotechLung</defName>
 		<label>archotech lung</label>
 		<description>An artifical lung built by an archotech.</description>
+		<costList>
+			<Uranium>75</Uranium>
+			<Gold>75</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>4200</MarketValue>
+			<MarketValue>4000</MarketValue>
+			<WorkToMake>114000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
@@ -67,8 +109,15 @@
 		<defName>ArchotechKidney</defName>
 		<label>archotech kidney</label>
 		<description>An artifical kidney built by an archotech.</description>
+		<costList>
+			<Uranium>75</Uranium>
+			<Gold>75</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>2800</MarketValue>
+			<MarketValue>4000</MarketValue>
+			<WorkToMake>114000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
@@ -77,8 +126,15 @@
 		<defName>ArchotechLiver</defName>
 		<label>archotech liver</label>
 		<description>An artifical liver built by an archotech.</description>
+		<costList>
+			<Uranium>100</Uranium>
+			<Gold>50</Gold>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>4200</MarketValue>
+			<MarketValue>4000</MarketValue>
+			<WorkToMake>114000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
 	</ThingDef>
@@ -89,8 +145,15 @@
 		<defName>ArchotechEar</defName>
 		<label>archotech ear</label>
 		<description>An artifical ear built by an archotech.</description>
+		<costList>
+			<Uranium>50</Uranium>
+			<Gold>50</Gold>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
 		<statBases>
 			<MarketValue>2800</MarketValue>
+			<WorkToMake>114000</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
 	</ThingDef>
@@ -99,8 +162,15 @@
 		<defName>ArchotechFoot</defName>
 		<label>archotech foot</label>
 		<description>An artifical foot built by an archotech.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>10</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>1400</MarketValue>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>48000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
@@ -109,8 +179,15 @@
 		<defName>ArchotechToe</defName>
 		<label>archotech toe</label>
 		<description>An artifical toe built by an archotech.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>5</Gold>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>700</MarketValue>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>24000</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
 	</ThingDef>
@@ -119,8 +196,15 @@
 		<defName>ArchotechShoulder</defName>
 		<label>archotech shoulder</label>
 		<description>An artifical shoulder built by an archotech.</description>
+		<costList>
+			<Uranium>75</Uranium>
+			<Gold>50</Gold>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>4200</MarketValue>
+			<MarketValue>4000</MarketValue>
+			<WorkToMake>114000</WorkToMake>
 			<Mass>5</Mass>
 		</statBases>
 	</ThingDef>
@@ -129,8 +213,15 @@
 		<defName>ArchotechHand</defName>
 		<label>archotech hand</label>
 		<description>An artifical hand built by an archotech.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>10</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>1400</MarketValue>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>48000</WorkToMake>
 			<Mass>0.5</Mass>
 		</statBases>
 	</ThingDef>
@@ -139,8 +230,15 @@
 		<defName>ArchotechFinger</defName>
 		<label>archotech finger</label>
 		<description>An artifical finger built by an archotech.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>5</Gold>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>700</MarketValue>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>24000</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
 	</ThingDef>
@@ -149,8 +247,15 @@
 		<defName>ArchotechJaw</defName>
 		<label>archotech jaw</label>
 		<description>An artifical jaw built by an archotech.</description>
+		<costList>
+			<Uranium>75</Uranium>
+			<Gold>50</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
 		<statBases>
 			<MarketValue>2800</MarketValue>
+			<WorkToMake>78000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
@@ -161,8 +266,15 @@
 		<defName>ArchotechSpine</defName>
 		<label>archotech spine</label>
 		<description>An artifical spine built by an archotech.</description>
+		<costList>
+			<Uranium>150</Uranium>
+			<Gold>150</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>5600</MarketValue>
+			<MarketValue>5400</MarketValue>
+			<WorkToMake>114000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 	</ThingDef>
@@ -171,8 +283,15 @@
 		<defName>ArchotechClavicle</defName>
 		<label>archotech clavicle</label>
 		<description>An artifical clavicle built by an archotech.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>15</Gold>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>700</MarketValue>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>12000</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -181,8 +300,15 @@
 		<defName>ArchotechSternum</defName>
 		<label>archotech sternum</label>
 		<description>An artifical sternum built by an archotech.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>15</Gold>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>700</MarketValue>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>12000</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -191,8 +317,15 @@
 		<defName>ArchotechRib</defName>
 		<label>archotech rib</label>
 		<description>An artifical rib built by an archotech.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>15</Gold>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>350</MarketValue>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>12000</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -201,8 +334,15 @@
 		<defName>ArchotechPelvis</defName>
 		<label>archotech pelvis</label>
 		<description>An artifical pelvis built by an archotech.</description>
+		<costList>
+			<Uranium>50</Uranium>
+			<Gold>25</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>2800</MarketValue>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>36000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
@@ -211,8 +351,15 @@
 		<defName>ArchotechHumerus</defName>
 		<label>archotech humerus</label>
 		<description>An artifical humerus built by an archotech.</description>
+		<costList>
+			<Uranium>50</Uranium>
+			<Gold>25</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>1400</MarketValue>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>24000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
@@ -221,8 +368,15 @@
 		<defName>ArchotechRadius</defName>
 		<label>archotech radius</label>
 		<description>An artifical radius built by an archotech.</description>
+		<costList>
+			<Uranium>50</Uranium>
+			<Gold>25</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>1400</MarketValue>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>24000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
@@ -231,8 +385,15 @@
 		<defName>ArchotechFemur</defName>
 		<label>archotech femur</label>
 		<description>An artifical femur built by an archotech.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>30</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>1400</MarketValue>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>24000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
 	</ThingDef>
@@ -241,8 +402,15 @@
 		<defName>ArchotechTibia</defName>
 		<label>archotech tibia</label>
 		<description>An artifical tibia built by an archotech.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>30</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<statBases>
-			<MarketValue>1400</MarketValue>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>24000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
 	</ThingDef>

@@ -59,7 +59,9 @@
     <Compile Include="MSE_DefOf\MSE_HediffDefOf.cs" />
     <Compile Include="MSE_Hediff\Hediff_AddedPartModule.cs" />
     <Compile Include="MSE_Hediff\Hediff_AddedPartSystem.cs" />
+    <Compile Include="MSE_Hediff\Hediff_AddedPartSystemNoModule.cs" />
     <Compile Include="MSE_Hediff\Hediff_BodyPartModule.cs" />
+    <Compile Include="MSE_Recipe\Recipe_InstallNaturalBodyPart.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveBodyPart.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveBodyPartSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

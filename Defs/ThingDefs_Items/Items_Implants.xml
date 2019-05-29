@@ -3,7 +3,7 @@
 
 	<ThingDef Name="MSE_ImplantBionic" ParentName="ImplantBase" Abstract="True">
 		<graphicData>
-			<texPath>Things/Item/Health/HealthItemBionic</texPath>
+			<texPath>Things/Item/Health/HealthItemBionic2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -11,14 +11,15 @@
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
+			<soundWorking>MSE_Assembling</soundWorking>
 			<recipeUsers>
 				<li>FabricationBench</li>
+				<li>TableBionicProstheses</li>
 			</recipeUsers>
 			<researchPrerequisite>MSE_BionicImplants</researchPrerequisite>
 		</recipeMaker>
 		<techLevel>Spacer</techLevel>
-		<thingCategories Inherit="False">
+		<thingCategories>
 			<li>Implants</li>
 		</thingCategories>
 		<tradeTags>
@@ -28,7 +29,6 @@
 			<li>Advanced</li>
 		</techHediffsTags>
 	</ThingDef>
-
 	<ThingDef Name="MSE_BrainImplantBionic" ParentName="MSE_ImplantBionic" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>MSE_BrainImplants</researchPrerequisite>

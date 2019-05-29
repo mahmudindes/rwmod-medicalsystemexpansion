@@ -11,9 +11,9 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Name="MSE_BodyPartBasicBase" ParentName="BodyPartArtificialBase" Abstract="True">
+	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartArtificialBase" Abstract="True">
 		<graphicData>
-			<texPath>Things/Item/Health/HealthItemProsthetic</texPath>
+			<texPath>Things/Item/Health/HealthItemBasic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -21,11 +21,14 @@
 			<recipeUsers>
 				<li>CraftingSpot</li>
 			</recipeUsers>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
 			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 			<researchPrerequisite>MSE_BasicProsthetics</researchPrerequisite>
 		</recipeMaker>
 		<techLevel>Neolithic</techLevel>
-		<thingCategories Inherit="False">
+		<thingCategories>
 			<li>BasicProstheses</li>
 		</thingCategories>
 		<tradeTags>
@@ -38,7 +41,7 @@
 
 	<ThingDef Name="MSE_BodyPartSimple" ParentName="BodyPartProstheticBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
-		<thingCategories Inherit="False">
+		<thingCategories>
 			<li>SimpleProstheses</li>
 		</thingCategories>
 		<tradeTags>
@@ -60,8 +63,14 @@
 	</ThingDef>
 
 	<ThingDef Name="MSE_BodyPartBionic" ParentName="BodyPartBionicBase" Abstract="True">
+		<recipeMaker>
+			<soundWorking>MSE_Assembling</soundWorking>
+			<recipeUsers>
+				<li>TableBionicProstheses</li>
+			</recipeUsers>
+		</recipeMaker>
 		<techLevel>Spacer</techLevel>
-		<thingCategories Inherit="False">
+		<thingCategories>
 			<li>BionicProstheses</li>
 		</thingCategories>
 		<tradeTags>
@@ -86,13 +95,30 @@
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
 		<recipeMaker>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
 			<researchPrerequisite>MSE_SpecialBionics</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartArchotechBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>MSE_Assembling</soundWorking>
+			<recipeUsers>
+				<li>ArchotechProsthesesBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<researchPrerequisite>MSE_ArchotechCrafting</researchPrerequisite>
+		</recipeMaker>
 		<techLevel>Archotech</techLevel>
-		<thingCategories Inherit="False">
+		<thingCategories>
 			<li>ArchotechProstheses</li>
 		</thingCategories>
 		<thingSetMakerTags>

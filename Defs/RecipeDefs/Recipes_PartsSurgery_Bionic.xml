@@ -42,6 +42,7 @@
 			<li>Eye</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicEye</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionic">
@@ -84,6 +85,7 @@
 			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicArm</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionic">
@@ -126,6 +128,7 @@
 			<li>Leg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicLeg</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionicBone">
@@ -169,6 +172,7 @@
 			<li>Spine</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicSpine</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionicOrgan">
@@ -212,6 +216,7 @@
 			<li>Heart</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicHeart</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionicOrgan">
@@ -254,6 +259,7 @@
 			<li>Stomach</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicStomach</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionic">
@@ -296,6 +302,7 @@
 			<li>Ear</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicEar</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionicSpecial">
@@ -338,6 +345,7 @@
 			<li>Hand</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PowerClaw</addsHediff>
+		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<!--================ Bionic Organs =================-->

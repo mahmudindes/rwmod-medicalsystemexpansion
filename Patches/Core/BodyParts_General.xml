@@ -5,20 +5,6 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Ribcage"][hitPoints="30"]</xpath>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/BodyPartDef[defName="Ribcage"]/hitPoints</xpath>
-				<value>
-					<hitPoints>6</hitPoints>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
 				<xpath>Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
 			</li>
 			<li Class="PatchOperationRemove">

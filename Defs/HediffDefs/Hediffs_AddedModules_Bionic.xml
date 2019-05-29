@@ -13,8 +13,8 @@
 						<capacities>
 							<li>Blunt</li>
 						</capacities>
-						<power>12.3</power>
-						<cooldownTime>2</cooldownTime>
+						<power>6.2</power>
+						<cooldownTime>2.4</cooldownTime>
 					</li>
 				</tools>
 			</li>
@@ -29,7 +29,7 @@
 				</capMods>
 			</li>
 		</stages>
-		<spawnThingOnRemoved>BionicArm</spawnThingOnRemoved>
+		<spawnThingOnRemoved>BionicArmModule</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 		</addedPartProps>
@@ -63,7 +63,7 @@
 				</capMods>
 			</li>
 		</stages>
-		<spawnThingOnRemoved>BionicHand</spawnThingOnRemoved>
+		<spawnThingOnRemoved>BionicHandModule</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 		</addedPartProps>
@@ -82,7 +82,7 @@
 							<li>Stab</li>
 						</capacities>
 						<power>1.1</power>
-						<cooldownTime>4</cooldownTime>
+						<cooldownTime>3.2</cooldownTime>
 					</li>
 				</tools>
 			</li>
@@ -97,7 +97,60 @@
 				</capMods>
 			</li>
 		</stages>
-		<spawnThingOnRemoved>BionicFinger</spawnThingOnRemoved>
+		<spawnThingOnRemoved>BionicFingerModule</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedModuleBionicSpecial">
+		<defName>MSE_RangedPlatformModule</defName>
+		<label>ranged platform module</label>
+		<labelNoun>a ranged platform module</labelNoun>
+		<stages>
+			<li>
+				<statOffsets>
+					<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.25</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_RangedPlatformModule</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedModuleBionicSpecial">
+		<defName>MSE_MeleePlatformModule</defName>
+		<label>melee platform module</label>
+		<labelNoun>a melee platform module</labelNoun>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
+					<MeleeHitChance>4</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_MeleePlatformModule</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedModuleBionicSpecial">
+		<defName>MSE_AdamantiumBoneModule</defName>
+		<label>adamantium bone module</label>
+		<labelNoun>an adamantium bone module</labelNoun>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdamantiumBoneModule</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 		</addedPartProps>

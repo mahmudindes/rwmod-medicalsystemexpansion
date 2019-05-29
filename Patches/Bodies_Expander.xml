@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/BodyDef/corePart/parts/li[def="Ribcage"]/customLabel</xpath>
+				<success>Invert</success>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/BodyDef/corePart/parts/li[def="Ribcage"]</xpath>
+				<value>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>first rib</customLabel>
+						<coverage>0.002</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>second rib</customLabel>
+						<coverage>0.003</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>third rib</customLabel>
+						<coverage>0.004</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>fourth rib</customLabel>
+						<coverage>0.005</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>fifth rib</customLabel>
+						<coverage>0.006</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>sixth rib</customLabel>
+						<coverage>0.006</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>seventh rib</customLabel>
+						<coverage>0.006</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>eighth rib</customLabel>
+						<coverage>0.004</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>ninth rib</customLabel>
+						<coverage>0.003</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>tenth rib</customLabel>
+						<coverage>0.003</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>eleventh rib</customLabel>
+						<coverage>0.002</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ribcage</def>
+						<customLabel>twelfth rib</customLabel>
+						<coverage>0.001</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/BodyPartDef[defName="Ribcage"]/hitPoints</xpath>
+				<value>
+					<hitPoints>6</hitPoints>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

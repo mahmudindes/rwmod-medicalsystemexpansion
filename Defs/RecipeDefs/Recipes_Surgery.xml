@@ -11,6 +11,7 @@
 
 	<!-- Natural parts -->
 	<RecipeDef Name="MSE_SurgeryNatural" ParentName="MSE_Surgery" Abstract="True">
+		<workerClass>OrenoMSE.Recipe_InstallNaturalPartSystem</workerClass>
 		<surgerySuccessChanceFactor>1.10</surgerySuccessChanceFactor>
 		<researchPrerequisite>MSE_OrganTransplantation</researchPrerequisite>
 	</RecipeDef>

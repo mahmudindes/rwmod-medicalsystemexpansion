@@ -48,6 +48,41 @@
 		<spawnThingOnRemoved>EndoskeletonStimulator</spawnThingOnRemoved>
 	</HediffDef>
 
+	<HediffDef ParentName="MSE_ImplantHediff">
+		<defName>ArmMuscleStimulator</defName>
+		<label>arm muscle stimulator</label>
+		<spawnThingOnRemoved>MuscleStimulator</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<MeleeDPS>1.15</MeleeDPS>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediff">
+		<defName>LegMuscleStimulator</defName>
+		<label>leg muscle stimulator</label>
+		<spawnThingOnRemoved>MuscleStimulator</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
 	<!--================ Brain Implants ================-->
 
 	<HediffDef ParentName="MSE_ImplantBrainHediff">
@@ -116,6 +151,20 @@
 				<statOffsets>
 					<NegotiationAbility>0.15</NegotiationAbility>
 					<SocialImpact>0.15</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantBrainHediff">
+		<defName>TamerAI</defName>
+		<label>tamer AI</label>
+		<spawnThingOnRemoved>TamerAI</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<TameAnimalChance>0.15</TameAnimalChance>
+					<TrainAnimalChance>0.15</TrainAnimalChance>
 				</statOffsets>
 			</li>
 		</stages>

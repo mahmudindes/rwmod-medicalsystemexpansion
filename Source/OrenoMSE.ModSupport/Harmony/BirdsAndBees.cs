@@ -3,7 +3,7 @@ using Harmony;
 using RimWorld;
 using Verse;
 
-namespace MedicalSystemExpansion
+namespace OrenoMSE.ModSupport
 {
     public class BirdsAndBees
     {

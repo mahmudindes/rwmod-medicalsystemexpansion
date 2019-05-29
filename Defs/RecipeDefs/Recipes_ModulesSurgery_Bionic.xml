@@ -6,43 +6,32 @@
 		<label>install bionic arm module</label>
 		<description>Install a bionic arm module.</description>
 		<jobString>Installing bionic arm module.</jobString>
-		<workAmount>3125</workAmount>
+		<workAmount>3200</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
 		</skillRequirements>
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>3</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>ComponentSpacer</li>
 					</thingDefs>
 				</filter>
-				<count>3</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BionicArm</li>
+						<li>BionicArmModule</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>ComponentSpacer</li>
-				<li>BionicArm</li>
+				<li>BionicArmModule</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -56,43 +45,32 @@
 		<label>install bionic hand module</label>
 		<description>Install a bionic hand module.</description>
 		<jobString>Installing bionic hand module.</jobString>
-		<workAmount>1875</workAmount>
+		<workAmount>2000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
 		</skillRequirements>
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>3</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>ComponentSpacer</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BionicHand</li>
+						<li>BionicHandModule</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>ComponentSpacer</li>
-				<li>BionicHand</li>
+				<li>BionicHandModule</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -106,16 +84,8 @@
 		<label>install bionic finger module</label>
 		<description>Install a bionic finger module.</description>
 		<jobString>Installing bionic finger module.</jobString>
-		<workAmount>1250</workAmount>
+		<workAmount>1300</workAmount>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>3</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -127,25 +97,134 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BionicFinger</li>
+						<li>BionicFingerModule</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>ComponentSpacer</li>
-				<li>BionicFinger</li>
+				<li>BionicFingerModule</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Finger</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicFingerModule</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicModule">
+		<defName>InstallRangedPlatformModule</defName>
+		<label>install ranged platform module</label>
+		<description>Install a ranged platform module.</description>
+		<jobString>Installing ranged platform module.</jobString>
+		<workAmount>4700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_RangedPlatformModule</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>MSE_RangedPlatformModule</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_RangedPlatformModule</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicModule">
+		<defName>InstallMeleePlatformModule</defName>
+		<label>install melee platform module</label>
+		<description>Install a melee platform module.</description>
+		<jobString>Installing melee platform module.</jobString>
+		<workAmount>4700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_MeleePlatformModule</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>MSE_MeleePlatformModule</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_MeleePlatformModule</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicModule">
+		<defName>InstallAdamantiumBoneModule</defName>
+		<label>install adamantium bone module</label>
+		<description>Install an adamantium bone module.</description>
+		<jobString>Installing adamantium bone module.</jobString>
+		<workAmount>4700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdamantiumBoneModule</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>MSE_AdamantiumBoneModule</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+			<li>Humerus</li>
+			<li>Radius</li>
+			<li>Femur</li>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdamantiumBoneModule</addsHediff>
 	</RecipeDef>
 
 </Defs>

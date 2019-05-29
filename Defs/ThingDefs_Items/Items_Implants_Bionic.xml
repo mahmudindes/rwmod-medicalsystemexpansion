@@ -6,7 +6,7 @@
 		<label>joywire</label>
 		<description>A brain implant that stimulates the brain's pleasure centers. While it dramatically improves a user's mood, the blanket of happiness makes it hard to concentrate on anything real. Joywires are illegal on many worlds, and are known for destroying whole cultures.</description>
 		<costList>
-			<Plasteel>20</Plasteel>
+			<Plasteel>5</Plasteel>
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<statBases>
@@ -24,7 +24,7 @@
 		<label>painstopper</label>
 		<description>A brain implant which inhibits nociception, or pain sensation. While it does allow the user to accomplish more, it turns out pain has a purpose. When you don't feel it, you can get hurt really bad really easily.</description>
 		<costList>
-			<Plasteel>20</Plasteel>
+			<Plasteel>5</Plasteel>
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<statBases>
@@ -44,13 +44,31 @@
 		<label>endoskeleton stimulator</label>
 		<description>A torso implant that stimulates the overall muscles so they can operate at maximum performance.</description>
 		<costList>
-			<Plasteel>30</Plasteel>
+			<Plasteel>10</Plasteel>
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<statBases>
 			<MarketValue>1000</MarketValue>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>0.2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic">
+		<defName>MuscleStimulator</defName>
+		<label>muscle stimulator</label>
+		<description>A muscle implant that stimulates the overall muscles so they can operate at maximum performance.</description>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>0.1</Mass>
 		</statBases>
 		<thingSetMakerTags>
 			<li>RewardSpecial</li>
@@ -64,7 +82,7 @@
 		<label>builder AI</label>
 		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for building. Requires brain implants research before installing.</description>
 		<costList>
-			<Plasteel>35</Plasteel>
+			<Plasteel>10</Plasteel>
 			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
 		<statBases>
@@ -82,7 +100,7 @@
 		<label>farmer AI</label>
 		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for farming. Requires brain implants research before installing.</description>
 		<costList>
-			<Plasteel>35</Plasteel>
+			<Plasteel>10</Plasteel>
 			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
 		<statBases>
@@ -100,7 +118,7 @@
 		<label>doctor AI</label>
 		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for doctoring. Requires brain implants research before installing.</description>
 		<costList>
-			<Plasteel>35</Plasteel>
+			<Plasteel>10</Plasteel>
 			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
 		<statBases>
@@ -118,7 +136,7 @@
 		<label>miner AI</label>
 		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for mining. Requires brain implants research before installing.</description>
 		<costList>
-			<Plasteel>35</Plasteel>
+			<Plasteel>10</Plasteel>
 			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
 		<statBases>
@@ -136,7 +154,25 @@
 		<label>diplomat AI</label>
 		<description>A brain implant that contain AI. Able to communicate with the user's brain and act as a guide for diplomacy. Requires brain implants research before installing.</description>
 		<costList>
-			<Plasteel>35</Plasteel>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BrainImplantBionic">
+		<defName>TamerAI</defName>
+		<label>tamer AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user's brain and act as a guide for taming. Requires brain implants research before installing.</description>
+		<costList>
+			<Plasteel>10</Plasteel>
 			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
 		<statBases>

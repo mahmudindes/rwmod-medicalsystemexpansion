@@ -80,7 +80,7 @@
 		<label>toe</label>
 		<description>A biological human toe. Part of foot that helps you move around.</description>
 		<statBases>
-			<MarketValue>50</MarketValue>
+			<MarketValue>10</MarketValue>
 			<Mass>0.1</Mass>
 		</statBases>
 	</ThingDef>
@@ -110,7 +110,7 @@
 		<label>finger</label>
 		<description>A biological human finger. Part of hand that helps you work and carry stuff.</description>
 		<statBases>
-			<MarketValue>50</MarketValue>
+			<MarketValue>10</MarketValue>
 			<Mass>0.1</Mass>
 		</statBases>
 	</ThingDef>
