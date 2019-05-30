@@ -1,57 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="MSE_BodyPartArchotech">
-		<defName>ArchotechEye</defName>
-		<label>archotech eye</label>
-		<description>An artifical eye built by an archotech. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Externally, it looks like a natural human eye, except it can change color at will.</description>
-		<costList>
-			<Uranium>30</Uranium>
-			<Gold>40</Gold>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>8</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>2800</MarketValue>
-			<WorkToMake>114000</WorkToMake>
-			<Mass>0.3</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartArchotech">
-		<defName>ArchotechArm</defName>
-		<label>archotech arm</label>
-		<description>An artifical arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</description>
-		<costList>
-			<Uranium>50</Uranium>
-			<Gold>25</Gold>
-			<Plasteel>35</Plasteel>
-			<ComponentSpacer>8</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>2800</MarketValue>
-			<WorkToMake>78000</WorkToMake>
-			<Mass>4</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartArchotech">
-		<defName>ArchotechLeg</defName>
-		<label>archotech leg</label>
-		<description>An artifical leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</description>
-		<costList>
-			<Uranium>50</Uranium>
-			<Gold>25</Gold>
-			<Plasteel>35</Plasteel>
-			<ComponentSpacer>8</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>2800</MarketValue>
-			<WorkToMake>78000</WorkToMake>
-			<Mass>7</Mass>
-		</statBases>
-	</ThingDef>
-
 	<!--============== Archotech Organs ================-->
 
 	<ThingDef ParentName="MSE_BodyPartArchotech">
