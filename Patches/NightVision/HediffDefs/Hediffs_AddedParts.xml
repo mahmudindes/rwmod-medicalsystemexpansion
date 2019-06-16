@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>NightVision</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionic" and defName="BionicEye"][not(child::comps)]</xpath>
+					<value>
+						<comps />
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionic"][defName="BionicEye"]/comps</xpath>
+					<value>
+						<li Class="NightVision.HediffCompProperties_NightVision">
+							<GrantsNightVision>false</GrantsNightVision>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotech" and defName="ArchotechEye"][not(child::comps)]</xpath>
+					<value>
+						<comps />
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotech"][defName="ArchotechEye"]/comps</xpath>
+					<value>
+						<li Class="NightVision.HediffCompProperties_NightVision">
+							<GrantsNightVision>false</GrantsNightVision>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

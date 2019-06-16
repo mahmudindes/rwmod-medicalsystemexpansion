@@ -26,8 +26,8 @@
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>MSE_ProsthesisModules</defName>
-		<label>prosthesis modules</label>
+		<defName>MSE_ProstheticModules</defName>
+		<label>prosthetic modules</label>
 		<parent>BodyPartsArtificial</parent>
 	</ThingCategoryDef>
 

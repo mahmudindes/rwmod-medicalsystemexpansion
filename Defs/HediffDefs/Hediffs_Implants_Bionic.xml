@@ -1,22 +1,92 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<HediffDef ParentName="MSE_ImplantBrainHediff">
+	<HediffDef ParentName="MSE_ImplantHediff_Brain">
 		<defName>Joywire</defName>
 		<label>joywire</label>
 		<labelNoun>a joywire</labelNoun>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_JoywireComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
-				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+				<partEfficiencyOffset>-0.20</partEfficiencyOffset>
 			</li>
 		</stages>
 		<spawnThingOnRemoved>Joywire</spawnThingOnRemoved>
 	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
+		<defName>MSE_JoywireComplication</defName>
+		<label>joywire complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.10</partEfficiencyOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>deadly</label>
+				<minSeverity>0.85</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 
-	<HediffDef ParentName="MSE_ImplantBrainHediff">
+	<HediffDef ParentName="MSE_ImplantHediff_Brain">
 		<defName>Painstopper</defName>
 		<label>painstopper</label>
 		<labelNoun>a painstopper</labelNoun>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_PainstopperComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<painFactor>0</painFactor>
@@ -24,13 +94,74 @@
 		</stages>
 		<spawnThingOnRemoved>Painstopper</spawnThingOnRemoved>
 	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
+		<defName>MSE_PainstopperComplication</defName>
+		<label>painstopper complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>deadly</label>
+				<minSeverity>0.85</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 
 	<!--=============== Muscle Implants ================-->
 
 	<HediffDef ParentName="MSE_ImplantHediff">
-		<defName>EndoskeletonStimulator</defName>
+		<defName>MSE_EndoskeletonStimulator</defName>
 		<label>endoskeleton stimulator</label>
 		<labelNoun>an endoskeleton stimulator</labelNoun>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_EndoskeletonStimulatorComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<capMods>
@@ -45,13 +176,51 @@
 				</capMods>
 			</li>
 		</stages>
-		<spawnThingOnRemoved>EndoskeletonStimulator</spawnThingOnRemoved>
+		<spawnThingOnRemoved>MSE_EndoskeletonStimulator</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff">
+		<defName>MSE_EndoskeletonStimulatorComplication</defName>
+		<label>endoskeleton stimulator complication</label>
+		<lethalSeverity>1.00</lethalSeverity>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>chronic</label>
+				<minSeverity>0.85</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantHediff">
-		<defName>ArmMuscleStimulator</defName>
+		<defName>MSE_ArmMuscleStimulator</defName>
 		<label>arm muscle stimulator</label>
-		<spawnThingOnRemoved>MuscleStimulator</spawnThingOnRemoved>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_ArmMuscleStimulatorComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<capMods>
@@ -65,30 +234,196 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<spawnThingOnRemoved>MSE_MuscleStimulator</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff">
+		<defName>MSE_ArmMuscleStimulatorComplication</defName>
+		<label>arm muscle stimulator complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>chronic</label>
+				<minSeverity>0.85</minSeverity>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>chronic</label>
+				<minSeverity>1.00</minSeverity>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantHediff">
-		<defName>LegMuscleStimulator</defName>
+		<defName>MSE_LegMuscleStimulator</defName>
 		<label>leg muscle stimulator</label>
-		<spawnThingOnRemoved>MuscleStimulator</spawnThingOnRemoved>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_LegMuscleStimulatorComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>0.20</offset>
+						<offset>0.15</offset>
 					</li>
 				</capMods>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_MuscleStimulator</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff">
+		<defName>MSE_LegMuscleStimulatorComplication</defName>
+		<label>leg muscle stimulator complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>chronic</label>
+				<minSeverity>0.85</minSeverity>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>chronic</label>
+				<minSeverity>1.00</minSeverity>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--================ Organ Implants ================-->
+
+	<HediffDef ParentName="MSE_ImplantHediff_Organ">
+		<defName>MSE_AppetiteSuppressant</defName>
+		<label>appetite suppressant</label>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AppetiteSuppressantComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<hungerRateFactor>0.85</hungerRateFactor>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AppetiteSuppressant</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff_Organ">
+		<defName>MSE_AppetiteSuppressantComplication</defName>
+		<label>appetite suppressant complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>chronic</label>
+				<minSeverity>0.85</minSeverity>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>chronic</label>
+				<minSeverity>1.00</minSeverity>
+				<destroyPart>true</destroyPart>
 			</li>
 		</stages>
 	</HediffDef>
 
 	<!--================ Brain Implants ================-->
 
-	<HediffDef ParentName="MSE_ImplantBrainHediff">
-		<defName>BuilderAI</defName>
+	<HediffDef ParentName="MSE_ImplantHediff_Brain">
+		<defName>MSE_BuilderAI</defName>
 		<label>builder AI</label>
-		<spawnThingOnRemoved>BuilderAI</spawnThingOnRemoved>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_BuilderAIComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<statOffsets>
@@ -97,12 +432,77 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<spawnThingOnRemoved>MSE_BuilderAI</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
+		<defName>MSE_BuilderAIComplication</defName>
+		<label>builder AI complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>deadly</label>
+				<minSeverity>0.85</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
 	</HediffDef>
 
-	<HediffDef ParentName="MSE_ImplantBrainHediff">
-		<defName>FarmerAI</defName>
+	<HediffDef ParentName="MSE_ImplantHediff_Brain">
+		<defName>MSE_FarmerAI</defName>
 		<label>farmer AI</label>
-		<spawnThingOnRemoved>FarmerAI</spawnThingOnRemoved>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_FarmerAIComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<statOffsets>
@@ -111,27 +511,158 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<spawnThingOnRemoved>MSE_FarmerAI</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
+		<defName>MSE_FarmerAIComplication</defName>
+		<label>farmer AI complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>deadly</label>
+				<minSeverity>0.85</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
 	</HediffDef>
 
-	<HediffDef ParentName="MSE_ImplantBrainHediff">
-		<defName>DoctorAI</defName>
+	<HediffDef ParentName="MSE_ImplantHediff_Brain">
+		<defName>MSE_DoctorAI</defName>
 		<label>doctor AI</label>
-		<spawnThingOnRemoved>DoctorAI</spawnThingOnRemoved>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_DoctorAIComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<statOffsets>
 					<MedicalOperationSpeed>0.15</MedicalOperationSpeed>
 					<MedicalSurgerySuccessChance>0.15</MedicalSurgerySuccessChance>
 					<MedicalTendSpeed>0.15</MedicalTendSpeed>
+					<MedicalTendQuality>0.15</MedicalTendQuality>
 				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_DoctorAI</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
+		<defName>MSE_DoctorAIComplication</defName>
+		<label>doctor AI complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>deadly</label>
+				<minSeverity>0.85</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
 
-	<HediffDef ParentName="MSE_ImplantBrainHediff">
-		<defName>MinerAI</defName>
+	<HediffDef ParentName="MSE_ImplantHediff_Brain">
+		<defName>MSE_MinerAI</defName>
 		<label>miner AI</label>
-		<spawnThingOnRemoved>MinerAI</spawnThingOnRemoved>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_MinerAIComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<statOffsets>
@@ -140,12 +671,77 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<spawnThingOnRemoved>MSE_MinerAI</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
+		<defName>MSE_MinerAIComplication</defName>
+		<label>miner AI complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>deadly</label>
+				<minSeverity>0.85</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
 	</HediffDef>
 
-	<HediffDef ParentName="MSE_ImplantBrainHediff">
-		<defName>DiplomatAI</defName>
+	<HediffDef ParentName="MSE_ImplantHediff_Brain">
+		<defName>MSE_DiplomatAI</defName>
 		<label>diplomat AI</label>
-		<spawnThingOnRemoved>DiplomatAI</spawnThingOnRemoved>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_DiplomatAIComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<statOffsets>
@@ -154,18 +750,142 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<spawnThingOnRemoved>MSE_DiplomatAI</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
+		<defName>MSE_DiplomatAIComplication</defName>
+		<label>diplomat AI complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>deadly</label>
+				<minSeverity>0.85</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
 	</HediffDef>
 
-	<HediffDef ParentName="MSE_ImplantBrainHediff">
-		<defName>TamerAI</defName>
+	<HediffDef ParentName="MSE_ImplantHediff_Brain">
+		<defName>MSE_TamerAI</defName>
 		<label>tamer AI</label>
-		<spawnThingOnRemoved>TamerAI</spawnThingOnRemoved>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_TamerAIComplication</li>
+				</hediffsToAdd>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<statOffsets>
 					<TameAnimalChance>0.15</TameAnimalChance>
 					<TrainAnimalChance>0.15</TrainAnimalChance>
 				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_TamerAI</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
+		<defName>MSE_TamerAIComplication</defName>
+		<label>tamer AI complication</label>
+		<stages>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.30</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<painOffset>0.25</painOffset>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>deadly</label>
+				<minSeverity>0.85</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.45</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.75</offset>
+					</li>
+				</capMods>
 			</li>
 		</stages>
 	</HediffDef>

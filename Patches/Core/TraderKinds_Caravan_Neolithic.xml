@@ -2,39 +2,21 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TraderKindDef[defName="Caravan_Neolithic_WarMerchant"]/stockGenerators</xpath>
+		<xpath>/Defs/TraderKindDef[defName="Caravan_Neolithic_WarMerchant"]/stockGenerators</xpath>
 		<order>Append</order>
 		<value>
 			<li Class="StockGenerator_Tag">
 				<tradeTag>MSE_BasicProstheses</tradeTag>
 				<thingDefCountRange>
-					<min>2</min>
-					<max>4</max>
+					<min>1</min>
+					<max>2</max>
 				</thingDefCountRange>
 				<countRange>
-					<min>1</min>
-					<max>1</max>
+					<min>-1</min>
+					<max>2</max>
 				</countRange>
 			</li>
 		</value>
 	</Operation>
-
-	<!-- <Operation Class="PatchOperationAdd">
-		<xpath>Defs/TraderKindDef[defName="Caravan_Neolithic_ShamanMerchant"]/stockGenerators</xpath>
-		<order>Append</order>
-		<value>
-			<li Class="StockGenerator_Tag">
-				<tradeTag>MSE_BasicProstheses</tradeTag>
-				<thingDefCountRange>
-					<min>2</min>
-					<max>4</max>
-				</thingDefCountRange>
-				<countRange>
-					<min>1</min>
-					<max>1</max>
-				</countRange>
-			</li>
-		</value>
-	</Operation> -->
 
 </Patch>

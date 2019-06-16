@@ -5,7 +5,6 @@
 		<defName>InstallSimpleProstheticLeg</defName>
 		<label>install prosthetic leg</label>
 		<description>Install a prosthetic leg.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic leg.</jobString>
 		<workAmount>2000</workAmount>
 		<skillRequirements>
@@ -48,7 +47,6 @@
 		<defName>InstallSimpleProstheticArm</defName>
 		<label>install prosthetic arm</label>
 		<description>Install a prosthetic arm.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic arm.</jobString>
 		<workAmount>2000</workAmount>
 		<skillRequirements>
@@ -87,11 +85,10 @@
 		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgerySimpleOrgan">
+	<RecipeDef ParentName="MSE_SurgerySimple_Organ">
 		<defName>InstallSimpleProstheticHeart</defName>
 		<label>install prosthetic heart</label>
 		<description>Install a prosthetic heart.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic heart.</jobString>
 		<workAmount>2400</workAmount>
 		<skillRequirements>
@@ -134,7 +131,6 @@
 		<defName>InstallCochlearImplant</defName>
 		<label>install cochlear implant</label>
 		<description>Install a cochlear implant.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing cochlear implant.</jobString>
 		<workAmount>1500</workAmount>
 		<skillRequirements>
@@ -173,13 +169,12 @@
 		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
-	<!--=========== Simple Prosthetic Parts ============-->
+	<!--=========== Simple Prosthetic Limbs ============-->
 
 	<RecipeDef ParentName="MSE_SurgerySimple">
 		<defName>InstallSimpleProstheticFoot</defName>
 		<label>install prosthetic foot</label>
 		<description>Install a prosthetic foot.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic foot.</jobString>
 		<workAmount>1500</workAmount>
 		<skillRequirements>
@@ -221,7 +216,6 @@
 		<defName>InstallSimpleProstheticToe</defName>
 		<label>install prosthetic toe</label>
 		<description>Install a prosthetic toe.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic toe.</jobString>
 		<workAmount>900</workAmount>
 		<skillRequirements>
@@ -263,7 +257,6 @@
 		<defName>InstallSimpleProstheticHand</defName>
 		<label>install prosthetic hand</label>
 		<description>Install a prosthetic hand.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic hand.</jobString>
 		<workAmount>1500</workAmount>
 		<skillRequirements>
@@ -305,7 +298,6 @@
 		<defName>InstallSimpleProstheticFinger</defName>
 		<label>install prosthetic finger</label>
 		<description>Install a prosthetic finger.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic finger.</jobString>
 		<workAmount>900</workAmount>
 		<skillRequirements>
@@ -347,7 +339,6 @@
 		<defName>InstallSimpleProstheticJaw</defName>
 		<label>install prosthetic jaw</label>
 		<description>Install a prosthetic jaw.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic jaw.</jobString>
 		<workAmount>2000</workAmount>
 		<skillRequirements>
@@ -387,11 +378,10 @@
 
 	<!--=========== Simple Prosthetic Bones ============-->
 
-	<RecipeDef ParentName="MSE_SurgerySimpleBone">
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
 		<defName>InstallSimpleProstheticClavicle</defName>
 		<label>install prosthetic clavicle</label>
 		<description>Install a prosthetic clavicle.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic clavicle.</jobString>
 		<workAmount>1500</workAmount>
 		<skillRequirements>
@@ -429,13 +419,13 @@
 		<addsHediff>SimpleProstheticClavicle</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgerySimpleBone">
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
 		<defName>InstallSimpleProstheticSternum</defName>
 		<label>install prosthetic sternum</label>
 		<description>Install a prosthetic sternum.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic sternum.</jobString>
-		<workAmount>2000</workAmount>
+		<workAmount>1500</workAmount>
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -471,13 +461,13 @@
 		<addsHediff>SimpleProstheticSternum</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgerySimpleBone">
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
 		<defName>InstallSimpleProstheticRib</defName>
 		<label>install prosthetic rib</label>
 		<description>Install a prosthetic rib.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic rib.</jobString>
-		<workAmount>2000</workAmount>
+		<workAmount>1500</workAmount>
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -513,13 +503,13 @@
 		<addsHediff>SimpleProstheticRib</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgerySimpleBone">
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
 		<defName>InstallSimpleProstheticPelvis</defName>
 		<label>install prosthetic pelvis</label>
 		<description>Install a prosthetic pelvis.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic pelvis.</jobString>
-		<workAmount>2000</workAmount>
+		<workAmount>1500</workAmount>
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -555,13 +545,12 @@
 		<addsHediff>SimpleProstheticPelvis</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgerySimpleBone">
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
 		<defName>InstallSimpleProstheticHumerus</defName>
 		<label>install prosthetic humerus</label>
 		<description>Install a prosthetic humerus.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic humerus.</jobString>
-		<workAmount>1500</workAmount>
+		<workAmount>1000</workAmount>
 		<skillRequirements>
 			<Medicine>5</Medicine>
 		</skillRequirements>
@@ -597,13 +586,12 @@
 		<addsHediff>SimpleProstheticHumerus</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgerySimpleBone">
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
 		<defName>InstallSimpleProstheticRadius</defName>
 		<label>install prosthetic radius</label>
 		<description>Install a prosthetic radius.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic radius.</jobString>
-		<workAmount>1500</workAmount>
+		<workAmount>1000</workAmount>
 		<skillRequirements>
 			<Medicine>5</Medicine>
 		</skillRequirements>
@@ -639,13 +627,12 @@
 		<addsHediff>SimpleProstheticRadius</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgerySimpleBone">
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
 		<defName>InstallSimpleProstheticFemur</defName>
 		<label>install prosthetic femur</label>
 		<description>Install a prosthetic femur.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic femur.</jobString>
-		<workAmount>1500</workAmount>
+		<workAmount>1000</workAmount>
 		<skillRequirements>
 			<Medicine>5</Medicine>
 		</skillRequirements>
@@ -681,13 +668,12 @@
 		<addsHediff>SimpleProstheticFemur</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgerySimpleBone">
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
 		<defName>InstallSimpleProstheticTibia</defName>
 		<label>install prosthetic tibia</label>
 		<description>Install a prosthetic tibia.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing prosthetic tibia.</jobString>
-		<workAmount>1500</workAmount>
+		<workAmount>1000</workAmount>
 		<skillRequirements>
 			<Medicine>5</Medicine>
 		</skillRequirements>

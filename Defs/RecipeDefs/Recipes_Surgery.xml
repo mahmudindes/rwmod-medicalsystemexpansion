@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef Name="MSE_Surgery" ParentName="SurgeryFlesh" Abstract="True">
+	<RecipeDef Name="MSE_Surgery" Abstract="True">
+		<!-- Vanilla Code -->
+		<!-- Because EPOE messed up vanilla SurgeryFlesh -->
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Surgery</soundWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<workSkillLearnFactor>16</workSkillLearnFactor>
+		<!-- Vanilla Code END -->
+
 		<recipeUsers>
 			<li>Human</li>
 		</recipeUsers>
@@ -9,76 +18,113 @@
 
 	<!--================ Parts Surgery =================-->
 
-	<!-- Natural parts -->
+	<!-- Natural body parts -->
 	<RecipeDef Name="MSE_SurgeryNatural" ParentName="MSE_Surgery" Abstract="True">
 		<workerClass>OrenoMSE.Recipe_InstallNaturalPartSystem</workerClass>
 		<surgerySuccessChanceFactor>1.10</surgerySuccessChanceFactor>
 		<researchPrerequisite>MSE_OrganTransplantation</researchPrerequisite>
 	</RecipeDef>
-	<RecipeDef Name="MSE_SurgeryNaturalOrgan" ParentName="MSE_SurgeryNatural" Abstract="True">
+
+	<RecipeDef Name="MSE_SurgeryNatural_Organ" ParentName="MSE_SurgeryNatural" Abstract="True">
 		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
 	</RecipeDef>
 
 	<!-- Basic prostheses -->
 	<RecipeDef Name="MSE_SurgeryBasic" ParentName="MSE_Surgery" Abstract="True">
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
 	</RecipeDef>
 
 	<!-- Simple prostheses -->
 	<RecipeDef Name="MSE_SurgerySimple" ParentName="MSE_Surgery" Abstract="True">
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
 		<researchPrerequisite>Prosthetics</researchPrerequisite>
 	</RecipeDef>
-	<RecipeDef Name="MSE_SurgerySimpleBone" ParentName="MSE_SurgerySimple" Abstract="True">
+
+	<RecipeDef Name="MSE_SurgerySimple_Bone" ParentName="MSE_SurgerySimple" Abstract="True">
 		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
-		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
 		<researchPrerequisite>MSE_BoneReplacement</researchPrerequisite>
 	</RecipeDef>
-	<RecipeDef Name="MSE_SurgerySimpleOrgan" ParentName="MSE_SurgerySimple" Abstract="True">
+
+	<RecipeDef Name="MSE_SurgerySimple_Organ" ParentName="MSE_SurgerySimple" Abstract="True">
 		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
-		<deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
+		<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
 		<researchPrerequisite>MSE_ProstheticOrgans</researchPrerequisite>
 	</RecipeDef>
 
 	<!-- Bionic prostheses -->
 	<RecipeDef Name="MSE_SurgeryBionic" ParentName="MSE_Surgery" Abstract="True">
-		<surgerySuccessChanceFactor>1.15</surgerySuccessChanceFactor>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<surgerySuccessChanceFactor>1.05</surgerySuccessChanceFactor>
 		<researchPrerequisite>Bionics</researchPrerequisite>
 	</RecipeDef>
-	<RecipeDef Name="MSE_SurgeryBionicBone" ParentName="MSE_SurgeryBionic" Abstract="True">
-		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+
+	<RecipeDef Name="MSE_SurgeryBionic_Bone" ParentName="MSE_SurgeryBionic" Abstract="True">
 		<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
 	</RecipeDef>
-	<RecipeDef Name="MSE_SurgeryBionicOrgan" ParentName="MSE_SurgeryBionic" Abstract="True">
+
+	<RecipeDef Name="MSE_SurgeryBionic_Organ" ParentName="MSE_SurgeryBionic" Abstract="True">
 		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
 		<researchPrerequisite>MSE_BionicOrgans</researchPrerequisite>
 	</RecipeDef>
-	<RecipeDef Name="MSE_SurgeryBionicSpecial" ParentName="MSE_SurgeryBionic" Abstract="True">
+
+	<RecipeDef Name="MSE_SurgeryBionicSpecial" ParentName="MSE_Surgery" Abstract="True">
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<surgerySuccessChanceFactor>1.05</surgerySuccessChanceFactor>
 		<researchPrerequisite>MSE_SpecialBionics</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryBionicSpecial_Organ" ParentName="MSE_SurgeryBionicSpecial" Abstract="True">
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
 	</RecipeDef>
 
 	<!-- Archotech prostheses -->
 	<RecipeDef Name="MSE_SurgeryArchotech" ParentName="MSE_Surgery" Abstract="True">
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<surgerySuccessChanceFactor>1.10</surgerySuccessChanceFactor>
+		<researchPrerequisite>MSE_ArchotechSurgery</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- Cybertech prostheses -->
+	<RecipeDef Name="MSE_SurgeryCybertech" ParentName="MSE_Surgery" Abstract="True">
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<surgerySuccessChanceFactor>1.15</surgerySuccessChanceFactor>
+		<!-- <researchPrerequisite>MSE_CybertechSurgery</researchPrerequisite> -->
 		<researchPrerequisite>MSE_ArchotechSurgery</researchPrerequisite>
 	</RecipeDef>
 
 	<!--============== Implants Surgery ================-->
 
-	<RecipeDef Name="MSE_SurgeryBionicImplant" ParentName="MSE_Surgery" Abstract="True">
-		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
-		<researchPrerequisite>MSE_BionicImplants</researchPrerequisite>
+	<RecipeDef Name="MSE_SurgeryImplant" ParentName="MSE_Surgery" Abstract="True">
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+		<researchPrerequisite>MSE_Implants</researchPrerequisite>
 	</RecipeDef>
-	<RecipeDef Name="MSE_SurgeryBionicBrainImplant" ParentName="MSE_SurgeryBionicImplant" Abstract="True">
+
+	<RecipeDef Name="MSE_SurgeryImplant_Organ" ParentName="MSE_SurgeryImplant" Abstract="True">
+		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryImplant_Brain" ParentName="MSE_SurgeryImplant" Abstract="True">
 		<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
 		<researchPrerequisite>MSE_BrainImplants</researchPrerequisite>
 	</RecipeDef>
 
 	<!--============ Part Modules Surgery ==============-->
 
-	<RecipeDef Name="MSE_SurgeryBionicModule" ParentName="MSE_Surgery" Abstract="True">
+	<RecipeDef Name="MSE_SurgeryModule" ParentName="MSE_Surgery" Abstract="True">
 		<workerClass>OrenoMSE.Recipe_InstallBodyPartModule</workerClass>
-		<surgerySuccessChanceFactor>1.25</surgerySuccessChanceFactor>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryModuleBionic" ParentName="MSE_SurgeryModule" Abstract="True">
+		<surgerySuccessChanceFactor>1.15</surgerySuccessChanceFactor>
 		<researchPrerequisite>MSE_ModulesSurgery</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryModuleArchotech" ParentName="MSE_SurgeryModule" Abstract="True">
+		<surgerySuccessChanceFactor>1.30</surgerySuccessChanceFactor>
+		<researchPrerequisite>MSE_ArchotechModules</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

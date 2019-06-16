@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
 		<defName>InstallNaturalKidney</defName>
 		<label>install kidney</label>
 		<description>Install a biological kidney.</description>
@@ -43,7 +43,7 @@
 		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
 		<defName>InstallNaturalLiver</defName>
 		<label>install liver</label>
 		<description>Install a biological liver.</description>
@@ -85,7 +85,7 @@
 		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
 		<defName>InstallNaturalLung</defName>
 		<label>install lung</label>
 		<description>Install a lung.</description>
@@ -127,7 +127,7 @@
 		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
 		<defName>InstallNaturalHeart</defName>
 		<label>install heart</label>
 		<description>Install a biological heart.</description>
@@ -172,7 +172,7 @@
 
 	<!--================ Natural Organs ================-->
 
-	<RecipeDef ParentName="MSE_SurgeryNaturalOrgan">
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
 		<defName>InstallNaturalStomach</defName>
 		<label>install stomach</label>
 		<description>Install a biological stomach.</description>
@@ -219,7 +219,6 @@
 		<defName>InstallNaturalLeg</defName>
 		<label>install leg</label>
 		<description>Install a biological leg.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing leg.</jobString>
 		<workAmount>4900</workAmount>
 		<skillRequirements>
@@ -254,13 +253,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Leg</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Leg</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalFoot</defName>
 		<label>install foot</label>
 		<description>Install a biological foot.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing foot.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -295,13 +294,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Foot</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Foot</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalToe</defName>
 		<label>install toe</label>
 		<description>Install a biological toe.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing toe.</jobString>
 		<workAmount>1300</workAmount>
 		<skillRequirements>
@@ -314,7 +313,7 @@
 						<li>Medicine</li>
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
@@ -336,13 +335,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Toe</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Toe</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalArm</defName>
 		<label>install arm</label>
 		<description>Install a biological arm.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing arm.</jobString>
 		<workAmount>4900</workAmount>
 		<skillRequirements>
@@ -377,13 +376,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Arm</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Arm</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalHand</defName>
 		<label>install hand</label>
 		<description>Install a biological hand.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing hand.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -418,13 +417,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Hand</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Hand</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalFinger</defName>
 		<label>install finger</label>
 		<description>Install a biological finger.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing finger.</jobString>
 		<workAmount>1300</workAmount>
 		<skillRequirements>
@@ -437,7 +436,7 @@
 						<li>Medicine</li>
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
@@ -459,13 +458,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Finger</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Finger</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalEye</defName>
 		<label>install eye</label>
 		<description>Install a biological eye.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing eye.</jobString>
 		<workAmount>4900</workAmount>
 		<skillRequirements>
@@ -500,13 +499,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Eye</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Eye</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalEar</defName>
 		<label>install ear</label>
 		<description>Install a biological ear.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing ear.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -541,13 +540,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Ear</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Ear</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalNose</defName>
 		<label>install nose</label>
 		<description>Install a biological nose.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing nose.</jobString>
 		<workAmount>1300</workAmount>
 		<skillRequirements>
@@ -560,7 +559,7 @@
 						<li>Medicine</li>
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
@@ -582,13 +581,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Nose</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Nose</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalJaw</defName>
 		<label>install jaw</label>
 		<description>Install a biological jaw.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<jobString>Installing jaw.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -623,6 +622,7 @@
 		<appliedOnFixedBodyParts>
 			<li>Jaw</li>
 		</appliedOnFixedBodyParts>
+		<addsHediff>Jaw</addsHediff>
 	</RecipeDef>
 
 </Defs>

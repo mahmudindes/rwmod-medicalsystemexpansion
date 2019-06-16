@@ -5,7 +5,6 @@
 		<defName>InstallArchotechArm</defName>
 		<label>install archotech arm</label>
 		<description>Install an archotech arm.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech arm.</jobString>
 		<workAmount>3000</workAmount>
 		<skillRequirements>
@@ -48,7 +47,6 @@
 		<defName>InstallArchotechLeg</defName>
 		<label>install archotech leg</label>
 		<description>Install an archotech leg.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech leg.</jobString>
 		<workAmount>3000</workAmount>
 		<skillRequirements>
@@ -91,7 +89,6 @@
 		<defName>InstallArchotechEye</defName>
 		<label>install archotech eye</label>
 		<description>Install an archotech eye.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech eye.</jobString>
 		<workAmount>4000</workAmount>
 		<skillRequirements>
@@ -136,7 +133,6 @@
 		<defName>InstallArchotechHeart</defName>
 		<label>install archotech heart</label>
 		<description>Install an archotech heart.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech heart.</jobString>
 		<workAmount>4000</workAmount>
 		<skillRequirements>
@@ -178,7 +174,6 @@
 		<defName>InstallArchotechStomach</defName>
 		<label>install archotech stomach</label>
 		<description>Install an archotech stomach.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech stomach.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -220,7 +215,6 @@
 		<defName>InstallArchotechLung</defName>
 		<label>install archotech lung</label>
 		<description>Install an archotech lung.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech lung.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -262,7 +256,6 @@
 		<defName>InstallArchotechKidney</defName>
 		<label>install archotech kidney</label>
 		<description>Install an archotech kidney.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech kidney.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -304,7 +297,6 @@
 		<defName>InstallArchotechLiver</defName>
 		<label>install archotech liver</label>
 		<description>Install an archotech liver.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech liver.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -342,13 +334,12 @@
 		<addsHediff>ArchotechLiver</addsHediff>
 	</RecipeDef>
 
-	<!--=============== Archotech Parts ================-->
+	<!--=============== Archotech Limbs ================-->
 
 	<RecipeDef ParentName="MSE_SurgeryArchotech">
 		<defName>InstallArchotechEar</defName>
 		<label>install archotech ear</label>
 		<description>Install an archotech ear.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech ear.</jobString>
 		<workAmount>4000</workAmount>
 		<skillRequirements>
@@ -390,7 +381,6 @@
 		<defName>InstallArchotechFoot</defName>
 		<label>install archotech foot</label>
 		<description>Install an archotech foot.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech foot.</jobString>
 		<workAmount>2000</workAmount>
 		<skillRequirements>
@@ -432,7 +422,6 @@
 		<defName>InstallArchotechToe</defName>
 		<label>install archotech toe</label>
 		<description>Install an archotech toe.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech toe.</jobString>
 		<workAmount>1500</workAmount>
 		<skillRequirements>
@@ -445,7 +434,7 @@
 						<li>Medicine</li>
 					</categories>
 				</filter>
-				<count>3</count>
+				<count>2</count>
 			</li>
 			<li>
 				<filter>
@@ -474,9 +463,8 @@
 		<defName>InstallArchotechShoulder</defName>
 		<label>install archotech shoulder</label>
 		<description>Install an archotech shoulder.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech shoulder.</jobString>
-		<workAmount>3500</workAmount>
+		<workAmount>4000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
 		</skillRequirements>
@@ -487,7 +475,7 @@
 						<li>Medicine</li>
 					</categories>
 				</filter>
-				<count>3</count>
+				<count>4</count>
 			</li>
 			<li>
 				<filter>
@@ -516,7 +504,6 @@
 		<defName>InstallArchotechHand</defName>
 		<label>install archotech hand</label>
 		<description>Install an archotech hand.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech hand.</jobString>
 		<workAmount>2000</workAmount>
 		<skillRequirements>
@@ -558,7 +545,6 @@
 		<defName>InstallArchotechFinger</defName>
 		<label>install archotech finger</label>
 		<description>Install an archotech finger.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech finger.</jobString>
 		<workAmount>1500</workAmount>
 		<skillRequirements>
@@ -571,7 +557,7 @@
 						<li>Medicine</li>
 					</categories>
 				</filter>
-				<count>3</count>
+				<count>2</count>
 			</li>
 			<li>
 				<filter>
@@ -600,7 +586,6 @@
 		<defName>InstallArchotechJaw</defName>
 		<label>install archotech jaw</label>
 		<description>Install an archotech jaw.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech jaw.</jobString>
 		<workAmount>3000</workAmount>
 		<skillRequirements>
@@ -644,7 +629,6 @@
 		<defName>InstallArchotechSpine</defName>
 		<label>install archotech spine</label>
 		<description>Install an archotech spine.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech spine.</jobString>
 		<workAmount>4000</workAmount>
 		<skillRequirements>
@@ -686,7 +670,6 @@
 		<defName>InstallArchotechClavicle</defName>
 		<label>install archotech clavicle</label>
 		<description>Install an archotech clavicle.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech clavicle.</jobString>
 		<workAmount>2000</workAmount>
 		<skillRequirements>
@@ -728,7 +711,6 @@
 		<defName>InstallArchotechSternum</defName>
 		<label>install archotech sternum</label>
 		<description>Install an archotech sternum.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech sternum.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -770,7 +752,6 @@
 		<defName>InstallArchotechRib</defName>
 		<label>install archotech rib</label>
 		<description>Install an archotech rib.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech rib.</jobString>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
@@ -812,9 +793,8 @@
 		<defName>InstallArchotechPelvis</defName>
 		<label>install archotech pelvis</label>
 		<description>Install an archotech pelvis.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech pelvis.</jobString>
-		<workAmount>3000</workAmount>
+		<workAmount>2500</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
 		</skillRequirements>
@@ -854,9 +834,8 @@
 		<defName>InstallArchotechHumerus</defName>
 		<label>install archotech humerus</label>
 		<description>Install an archotech humerus.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech humerus.</jobString>
-		<workAmount>2000</workAmount>
+		<workAmount>1500</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -896,9 +875,8 @@
 		<defName>InstallArchotechRadius</defName>
 		<label>install archotech radius</label>
 		<description>Install an archotech radius.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech radius.</jobString>
-		<workAmount>2000</workAmount>
+		<workAmount>1500</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -938,9 +916,8 @@
 		<defName>InstallArchotechFemur</defName>
 		<label>install archotech femur</label>
 		<description>Install an archotech femur.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech femur.</jobString>
-		<workAmount>2000</workAmount>
+		<workAmount>1500</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -980,9 +957,8 @@
 		<defName>InstallArchotechTibia</defName>
 		<label>install archotech tibia</label>
 		<description>Install an archotech tibia.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing archotech tibia.</jobString>
-		<workAmount>2000</workAmount>
+		<workAmount>1500</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -1016,6 +992,418 @@
 			<li>Tibia</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechTibia</addsHediff>
+	</RecipeDef>
+
+	<!--============== Special Archotech ===============-->
+
+	<RecipeDef ParentName="MSE_SurgeryArchotech">
+		<defName>InstallAdvancedAntitoxinKidney</defName>
+		<label>install advanced antitoxin kidney</label>
+		<description>Install an advanced antitoxin kidney.</description>
+		<jobString>Installing advanced antitoxin kidney.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedAntitoxinKidney</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedAntitoxinKidney</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Kidney</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedAntitoxinKidney</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryArchotech">
+		<defName>InstallAdvancedMedicalLiver</defName>
+		<label>install advanced medical liver</label>
+		<description>Install an advanced medical liver.</description>
+		<jobString>Installing advanced medical liver.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedMedicalLiver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedMedicalLiver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedMedicalLiver</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryArchotech">
+		<defName>InstallAdvancedEnergizedLiver</defName>
+		<label>install advanced energized liver</label>
+		<description>Install an advanced energized liver.</description>
+		<jobString>Installing advanced energized liver.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedEnergizedLiver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedEnergizedLiver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedEnergizedLiver</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryArchotech">
+		<defName>InstallAdvancedPowerArm</defName>
+		<label>install advanced power arm</label>
+		<description>Install an advanced power arm.</description>
+		<jobString>Installing advanced power arm.</jobString>
+		<workAmount>4000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedPowerArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedPowerArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedPowerArm</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryArchotech">
+		<defName>MSE_InstallAdvancedPowerBlade</defName>
+		<label>install power blade</label>
+		<description>Install an advanced power blade.</description>
+		<jobString>Installing advanced power blade.</jobString>
+		<workAmount>6000</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedPowerBlade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedPowerBlade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedPowerBlade</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryBionicSpecial">
+		<defName>InstallAdvancedPowerClaw</defName>
+		<label>install advanced power claw</label>
+		<description>Install an advanced power claw.</description>
+		<jobString>Installing advanced power claw.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedPowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedPowerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedPowerClaw</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryArchotech">
+		<defName>InstallAdvancedBreathingSupportRib</defName>
+		<label>install advanced breathing support rib</label>
+		<description>Install an advanced breathing support rib.</description>
+		<jobString>Installing advanced breathing support rib.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedBreathingSupportRib</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedBreathingSupportRib</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ribcage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedBreathingSupportRib</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryArchotech">
+		<defName>InstallAdvancedRelaxationRib</defName>
+		<label>install advanced relaxation rib</label>
+		<description>Install an advanced relaxation rib.</description>
+		<jobString>Installing advanced relaxation rib.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedRelaxationRib</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedRelaxationRib</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ribcage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedRelaxationRib</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryArchotech">
+		<defName>InstallAdvancedColdRegulatorRib</defName>
+		<label>install advanced cold regulator rib</label>
+		<description>Install an advanced cold regulator rib.</description>
+		<jobString>Installing advanced cold regulator rib.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedColdRegulatorRib</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedColdRegulatorRib</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ribcage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedColdRegulatorRib</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryArchotech">
+		<defName>InstallAdvancedHeatRegulatorRib</defName>
+		<label>install advanced heat regulator rib</label>
+		<description>Install an advanced heat regulator rib.</description>
+		<jobString>Installing advanced heat regulator rib.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedHeatRegulatorRib</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedHeatRegulatorRib</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ribcage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedHeatRegulatorRib</addsHediff>
 	</RecipeDef>
 
 </Defs>

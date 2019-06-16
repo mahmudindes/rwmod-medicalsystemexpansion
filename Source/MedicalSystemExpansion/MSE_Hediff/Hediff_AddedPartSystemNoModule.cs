@@ -24,7 +24,15 @@ namespace OrenoMSE
                     hediff_MissingPart.Part = base.Part.parts[i];
                     this.pawn.health.hediffSet.AddDirect(hediff_MissingPart, null, null);
                 }
+                else
+                {
+                    Hediff_BodyPartNullModule hediff_BodyPartNullModule = (Hediff_BodyPartNullModule)HediffMaker.MakeHediff(MSE_HediffDefOf.MSE_BodyPartModule, this.pawn, null);
+                    hediff_BodyPartNullModule.Part = base.Part.parts[i];
+                    this.pawn.health.hediffSet.AddDirect(hediff_BodyPartNullModule, null, null);
+                }
             }
+
+            MSE_VanillaExtender.ApplyAdditionalHediffs(this.pawn, base.Part);
         }
 
         public override void ExposeData()

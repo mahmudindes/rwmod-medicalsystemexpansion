@@ -26,7 +26,7 @@
 							<li>Blunt</li>
 						</capacities>
 						<power>8.2</power>
-						<cooldownTime>2</cooldownTime>
+						<cooldownTime>2.0</cooldownTime>
 					</li>
 				</tools>
 			</li>
@@ -39,7 +39,7 @@
 		</addedPartProps>
 	</HediffDef>
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+	<HediffDef ParentName="MSE_AddedBodyPartSimple_Organ">
 		<defName>SimpleProstheticHeart</defName>
 		<label>prosthetic heart</label>
 		<labelNoun>a prosthetic heart</labelNoun>
@@ -51,10 +51,30 @@
 		</addedPartProps>
 	</HediffDef>
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimpleImplant">
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
 		<defName>CochlearImplant</defName>
 		<label>cochlear implant</label>
 		<labelNoun>a cochlear implant</labelNoun>
+		<stages Inherit="False">
+			<li>
+				<minSeverity>0.00</minSeverity>
+			</li>
+			<li>
+				<label>getting used to</label>
+				<minSeverity>0.001</minSeverity>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<label>not accustomed</label>
+				<minSeverity>0.35</minSeverity>
+				<painOffset>0.15</painOffset>
+			</li>
+			<li>
+				<label>newly installed</label>
+				<minSeverity>0.85</minSeverity>
+				<painOffset>0.30</painOffset>
+			</li>
+		</stages>
 		<spawnThingOnRemoved>CochlearImplant</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>0.65</partEfficiency>
@@ -100,8 +120,8 @@
 						<capacities>
 							<li>Scratch</li>
 						</capacities>
-						<power>9</power>
-						<cooldownTime>1.6</cooldownTime>
+						<power>9.0</power>
+						<cooldownTime>2.0</cooldownTime>
 					</li>
 				</tools>
 			</li>

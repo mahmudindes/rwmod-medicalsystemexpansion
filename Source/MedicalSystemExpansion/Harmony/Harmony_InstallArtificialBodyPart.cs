@@ -6,7 +6,7 @@ using Verse;
 
 namespace OrenoMSE
 {
-    public class InstallArtificialBodyPart
+    public class Harmony_InstallArtificialBodyPart
     {
         [HarmonyPatch(typeof(Recipe_InstallArtificialBodyPart))]
         [HarmonyPatch("GetPartsToApplyOn")]
@@ -25,9 +25,11 @@ namespace OrenoMSE
                         if (record.def == part)
                         {
                             var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystem) && d.Part == record);
-                            var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == record);
+                            var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystemNoModule) && d.Part == record);
                             var check3 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartModule) && d.Part == record);
-                            if (check1 || check2 || check3)
+                            var check4 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartNullModule) && d.Part == record);
+                            var check5 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == record);
+                            if (check1 || check2 || check3 || check4 || check5)
                             {
                                 bpList.Remove(record);
                             }

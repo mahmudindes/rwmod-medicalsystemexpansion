@@ -2,17 +2,17 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+		<xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
 		<order>Append</order>
 		<value>
 			<li Class="StockGenerator_Tag">
 				<tradeTag>MSE_BionicProstheses</tradeTag>
 				<thingDefCountRange>
-					<min>0</min>
+					<min>1</min>
 					<max>2</max>
 				</thingDefCountRange>
 				<countRange>
-					<min>1</min>
+					<min>0</min>
 					<max>1</max>
 				</countRange>
 			</li>

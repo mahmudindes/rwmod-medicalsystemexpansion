@@ -51,12 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Harmony\BirdsAndBees.cs" />
+    <Compile Include="Harmony\Harmony_BirdsAndBees.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExpandedMedicalSystem\OrenoMSE.csproj">
+    <ProjectReference Include="..\MedicalSystemExpansion\OrenoMSE.csproj">
       <Project>{388a1bee-0754-4e91-96f8-37723cc0cec4}</Project>
       <Name>OrenoMSE</Name>
       <Private>False</Private>

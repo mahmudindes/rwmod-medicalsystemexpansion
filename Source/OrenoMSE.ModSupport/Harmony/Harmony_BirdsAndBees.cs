@@ -3,9 +3,9 @@ using Harmony;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE.ModSupport
+namespace OrenoMSE
 {
-    public class BirdsAndBees
+    public class Harmony_BirdsAndBees
     {
         [HarmonyPatch(typeof(DefGenerator))]
         [HarmonyPatch("GenerateImpliedDefs_PreResolve")]

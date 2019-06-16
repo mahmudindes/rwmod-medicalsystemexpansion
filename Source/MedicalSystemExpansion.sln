@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrenoMSE", "ExpandedMedicalSystem\OrenoMSE.csproj", "{388A1BEE-0754-4E91-96F8-37723CC0CEC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrenoMSE", "MedicalSystemExpansion\OrenoMSE.csproj", "{388A1BEE-0754-4E91-96F8-37723CC0CEC4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrenoMSE.ModSupport", "OrenoMSE.ModSupport\OrenoMSE.ModSupport.csproj", "{1DE8F027-A962-47FC-A88C-50C73EC8CE20}"
 EndProject

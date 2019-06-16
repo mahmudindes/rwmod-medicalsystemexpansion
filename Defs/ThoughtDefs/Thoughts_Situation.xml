@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>RelaxationRib</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RelaxationRib</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>BodyPurist</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Relaxation rib</label>
+				<description>It feel relaxed.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>AdvancedRelaxationRib</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AdvancedRelaxationRib</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>BodyPurist</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Relaxation rib</label>
+				<description>It feel relaxed.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

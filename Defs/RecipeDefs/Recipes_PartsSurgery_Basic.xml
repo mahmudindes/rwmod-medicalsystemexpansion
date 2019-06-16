@@ -5,7 +5,6 @@
 		<defName>InstallPegLeg</defName>
 		<label>install peg leg</label>
 		<description>Install a peg leg.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing peg leg.</jobString>
 		<workAmount>1300</workAmount>
 		<skillRequirements>
@@ -37,7 +36,6 @@
 		<defName>InstallWoodenFoot</defName>
 		<label>install wooden foot</label>
 		<description>Install a wooden foot.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing wooden foot.</jobString>
 		<workAmount>1000</workAmount>
 		<skillRequirements>
@@ -69,7 +67,6 @@
 		<defName>InstallDenture</defName>
 		<label>install denture</label>
 		<description>Install a denture.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing denture.</jobString>
 		<workAmount>1500</workAmount>
 		<skillRequirements>
@@ -103,7 +100,6 @@
 		<defName>InstallWoodenToe</defName>
 		<label>install wooden toe</label>
 		<description>Install a wooden toe.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing wooden toe.</jobString>
 		<workAmount>600</workAmount>
 		<skillRequirements>
@@ -134,7 +130,6 @@
 		<defName>InstallWoodenArm</defName>
 		<label>install wooden arm</label>
 		<description>Install a wooden arm.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing wooden arm.</jobString>
 		<workAmount>1300</workAmount>
 		<skillRequirements>
@@ -165,7 +160,6 @@
 		<defName>InstallHookHand</defName>
 		<label>install hook hand</label>
 		<description>Install a hook hand.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing hook hand.</jobString>
 		<workAmount>1000</workAmount>
 		<skillRequirements>
@@ -196,7 +190,6 @@
 		<defName>InstallWoodenFinger</defName>
 		<label>install wooden finger</label>
 		<description>Install a wooden finger.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing wooden finger.</jobString>
 		<workAmount>600</workAmount>
 		<skillRequirements>
@@ -227,7 +220,6 @@
 		<defName>InstallEyepatch</defName>
 		<label>install eyepatch</label>
 		<description>Install a eyepatch.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing eyepatch.</jobString>
 		<workAmount>100</workAmount>
 		<skillRequirements>
@@ -258,7 +250,6 @@
 		<defName>InstallWoodenEar</defName>
 		<label>install wooden ear</label>
 		<description>Install a wooden ear.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing wooden ear.</jobString>
 		<workAmount>600</workAmount>
 		<skillRequirements>
@@ -289,7 +280,6 @@
 		<defName>InstallWoodenNose</defName>
 		<label>install wooden nose</label>
 		<description>Install a wooden nose.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing wooden nose.</jobString>
 		<workAmount>600</workAmount>
 		<skillRequirements>

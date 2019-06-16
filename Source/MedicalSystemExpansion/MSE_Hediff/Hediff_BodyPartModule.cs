@@ -20,14 +20,6 @@ namespace OrenoMSE
             }
         }
 
-        public override bool Visible
-        {
-            get
-            {
-                return false;
-            }
-        }
-
         public override void ExposeData()
         {
             base.ExposeData();

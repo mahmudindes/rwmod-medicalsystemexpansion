@@ -16,7 +16,9 @@ namespace OrenoMSE
                 while (enumerator.MoveNext())
                 {
                     BodyPartRecord part = enumerator.Current;
-                    if (pawn.health.hediffSet.HasDirectlyAddedPartFor(part) && pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_AddedPartSystem) && d.Part == part))
+                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_AddedPartSystem) && d.Part == part);
+                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_AddedPartSystemNoModule) && d.Part == part);
+                    if (pawn.health.hediffSet.HasDirectlyAddedPartFor(part) && (check1 || check2))
                     {
                         if (!pawn.health.hediffSet.AncestorHasDirectlyAddedParts(part))
                         {

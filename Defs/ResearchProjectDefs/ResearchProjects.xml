@@ -6,7 +6,7 @@
 	<ResearchProjectDef>
 		<defName>MSE_BasicProsthetics</defName>
 		<label>basic prosthetics</label>
-		<description>Craft and install basic prosthetic body parts.</description>
+		<description>Craft basic prosthetic body parts.</description>
 		<baseCost>300</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<tags>
@@ -23,7 +23,7 @@
 		<defName>MSE_OrganTransplantation</defName>
 		<label>organ transplantation</label>
 		<description>Allows removed organ from one body to be placed in the body of a recipient, to replace a damaged or missing organ.</description>
-		<baseCost>1600</baseCost>
+		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>MSE_BasicProsthetics</li>
@@ -37,7 +37,7 @@
 		<defName>Prosthetics</defName>
 		<label>prosthetics</label>
 		<description>Build inexpensive prosthetic body parts at a machining table. Requires a skilled doctor to attach.</description>
-		<baseCost>1000</baseCost>
+		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>MSE_BasicProsthetics</li>
@@ -51,8 +51,8 @@
 	<ResearchProjectDef>
 		<defName>MSE_BoneReplacement</defName>
 		<label>bone replacement</label>
-		<description>Craft prosthetic bone and replace broken bone. Requires a skilled doctor to attach.</description>
-		<baseCost>600</baseCost>
+		<description>Craft prosthetic bone and replace broken bone with it. Requires a skilled doctor to replace.</description>
+		<baseCost>400</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>Prosthetics</li>
@@ -66,8 +66,8 @@
 	<ResearchProjectDef>
 		<defName>MSE_ProstheticOrgans</defName>
 		<label>prosthetic organs</label>
-		<description>Craft prosthetic organ and replace unhealthy or missing organ. Requires a skilled doctor to attach.</description>
-		<baseCost>600</baseCost>
+		<description>Craft prosthetic organ and replace unhealthy or missing organ with it. Requires a skilled doctor to replace.</description>
+		<baseCost>400</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>MSE_BoneReplacement</li>
@@ -83,7 +83,7 @@
 	<ResearchProjectDef>
 		<defName>Bionics</defName>
 		<label>bionics</label>
-		<description>Build high-tech bionic body parts at a fabrication bench. Requires a skilled doctor to attach.</description>
+		<description>Build high-tech bionic body parts at a bionic machining table. Requires a skilled doctor to attach.</description>
 		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -102,7 +102,7 @@
 	<ResearchProjectDef>
 		<defName>MSE_BionicBones</defName>
 		<label>bionic bones</label>
-		<description>Build high-tech bionic bones at a fabrication bench. Requires a skilled doctor to attach.</description>
+		<description>Build high-tech bionic bones at a bionic machining table. Requires a skilled doctor to attach.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -122,7 +122,7 @@
 	<ResearchProjectDef>
 		<defName>MSE_BionicOrgans</defName>
 		<label>bionic organs</label>
-		<description>Build high-tech bionic organ at a fabrication bench. Requires a skilled doctor to attach.</description>
+		<description>Build high-tech bionic organs at a bionic machining table. Requires a skilled doctor to attach.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -142,7 +142,7 @@
 	<ResearchProjectDef>
 		<defName>MSE_SpecialBionics</defName>
 		<label>special bionics</label>
-		<description>Build ultra high-tech bionic body parts, bones, and organ at a fabrication bench. Requires a skilled doctor to attach.</description>
+		<description>Build ultra high-tech bionic body parts, bones, and organs at a bionic machining table. Requires a skilled doctor to attach.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -163,7 +163,7 @@
 	<ResearchProjectDef>
 		<defName>MSE_ArchotechSurgery</defName>
 		<label>archotech surgery</label>
-		<description>Allows you to perform surgery to attach archotech body part. Requires a very skilled doctor to attach.</description>
+		<description>Allows you to perform surgery to attach archotech body parts. Requires a very skilled doctor to attach.</description>
 		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -199,9 +199,9 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>MSE_BionicImplants</defName>
-		<label>bionic implants</label>
-		<description>Build high-tech bionic implants at a fabrication bench. Requires a skilled doctor to attach.</description>
+		<defName>MSE_Implants</defName>
+		<label>implants</label>
+		<description>Build high-tech bionic implants at a bionic machining table. Requires a very skilled doctor to attach.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -220,11 +220,11 @@
 	<ResearchProjectDef>
 		<defName>MSE_BrainImplants</defName>
 		<label>brain implants</label>
-		<description>Build high-tech bionic brain implants at a fabrication bench. Requires a skilled doctor to attach.</description>
-		<baseCost>1000</baseCost>
+		<description>Build high-tech bionic brain implants at a bionic machining table. Requires a very skilled doctor to attach.</description>
+		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>MSE_BionicImplants</li>
+			<li>MSE_Implants</li>
 			<li>Fabrication</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -241,8 +241,8 @@
 	<ResearchProjectDef>
 		<defName>MSE_ModulesCrafting</defName>
 		<label>modules crafting</label>
-		<description>Allows you to craft module. Requires a very skilled crafter to make.</description>
-		<baseCost>1000</baseCost>
+		<description>Allows you to craft modules. Requires a very skilled crafter to make.</description>
+		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>MSE_ModulesSurgery</li>
@@ -260,8 +260,8 @@
 	<ResearchProjectDef>
 		<defName>MSE_ArchotechCrafting</defName>
 		<label>archotech crafting</label>
-		<description>Allows you to craft archotech body part. Requires a very skilled crafter to make.</description>
-		<baseCost>2000</baseCost>
+		<description>Allows you to uncover the secret of an archotech technology so you can able to craft archotech body part. Requires a very skilled crafter to make.</description>
+		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>MSE_ArchotechSurgery</li>
@@ -275,5 +275,46 @@
 		<researchViewX>5</researchViewX>
 		<researchViewY>1.0</researchViewY>
 	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MSE_ArchotechModules</defName>
+		<label>archotech modules</label>
+		<description>Allows you to craft and install archotech module. Requires a very skilled crafter to make.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MSE_ModulesCrafting</li>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSE</tab>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2.0</researchViewY>
+	</ResearchProjectDef>
+
+	<!--=============================== Tier 5 ===================================-->
+
+	<!-- <ResearchProjectDef>
+		<defName>MSE_CybertechSurgery</defName>
+		<label>cybertech surgery</label>
+		<description>Allows you to perform surgery to attach cybertech body parts. Requires a very very skilled doctor to attach.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MSE_ArchotechCrafting</li>
+			<li>MSE_ArchotechModules</li>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSE</tab>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef> -->
 
 </Defs>

@@ -9,7 +9,6 @@
 		<li>SomeOtherMod</li>
 	</loadBefore> -->
 	<loadAfter>
-		<li>MSESaveCompatibilityPatch</li>
 		<li>ArchotechExpanded</li>
 		<li>ExpandedProstheticsandOrganEngineering</li>
 		<li>Rah'sBionicsandSurgeryExpansion</li>

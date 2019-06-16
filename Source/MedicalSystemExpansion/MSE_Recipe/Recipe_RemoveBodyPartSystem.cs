@@ -17,8 +17,9 @@ namespace OrenoMSE
                 {
                     BodyPartRecord part = enumerator.Current;
                     var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystem) && d.Part == part);
-                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == part);
-                    if (check1 || check2)
+                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystemNoModule) && d.Part == part);
+                    var check3 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == part);
+                    if (check1 || check2 || check3)
                     {
                         yield return part;
                     }
@@ -76,7 +77,9 @@ namespace OrenoMSE
 
         public override string GetLabelWhenUsedOn(Pawn pawn, BodyPartRecord part)
         {
-            if (pawn.RaceProps.IsMechanoid || pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystem) && d.Part == part))
+            var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystem) && d.Part == part);
+            var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystemNoModule) && d.Part == part);
+            if (check1 || check2)
             {               
                 return "RemovePartSystem".Translate();
             }

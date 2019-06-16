@@ -5,10 +5,11 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
 			</li>
+
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
 			</li>
 		</operations>
 	</Operation>
@@ -20,6 +21,7 @@
 				<xpath>/Defs/BodyPartDef[defName="Eye"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
+
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BodyPartDef[defName="Eye"]</xpath>
 				<order>Append</order>
@@ -29,6 +31,7 @@
 			</li>
 		</operations>
 	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -36,6 +39,7 @@
 				<xpath>/Defs/BodyPartDef[defName="Ear"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
+
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BodyPartDef[defName="Ear"]</xpath>
 				<order>Append</order>
@@ -45,6 +49,7 @@
 			</li>
 		</operations>
 	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -52,6 +57,7 @@
 				<xpath>/Defs/BodyPartDef[defName="Nose"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
+
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BodyPartDef[defName="Nose"]</xpath>
 				<order>Append</order>
@@ -61,6 +67,7 @@
 			</li>
 		</operations>
 	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -68,6 +75,7 @@
 				<xpath>/Defs/BodyPartDef[defName="Jaw"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
+
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BodyPartDef[defName="Jaw"]</xpath>
 				<order>Append</order>
@@ -77,6 +85,7 @@
 			</li>
 		</operations>
 	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -84,6 +93,7 @@
 				<xpath>/Defs/BodyPartDef[defName="Leg"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
+
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BodyPartDef[defName="Leg"]</xpath>
 				<order>Append</order>
@@ -93,6 +103,7 @@
 			</li>
 		</operations>
 	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -100,6 +111,7 @@
 				<xpath>/Defs/BodyPartDef[defName="Foot"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
+
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BodyPartDef[defName="Foot"]</xpath>
 				<order>Append</order>

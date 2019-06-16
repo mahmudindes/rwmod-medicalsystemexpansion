@@ -54,14 +54,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Harmony\InstallArtificialBodyPart.cs" />
+    <Compile Include="Harmony\Harmony_AddedPart.cs" />
+    <Compile Include="Harmony\Harmony_Implant.cs" />
+    <Compile Include="Harmony\Harmony_InstallArtificialBodyPart.cs" />
+    <Compile Include="Harmony\Harmony_PawnGenerator.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
     <Compile Include="MSE_DefOf\MSE_HediffDefOf.cs" />
+    <Compile Include="MSE_HediffComp\HediffComp_AdditionalHediff.cs" />
+    <Compile Include="MSE_HediffComp\HediffComp_InitialZeroSeverity.cs" />
+    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_AdditionalHediff.cs" />
+    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_InitialZeroSeverity.cs" />
     <Compile Include="MSE_Hediff\Hediff_AddedPartModule.cs" />
     <Compile Include="MSE_Hediff\Hediff_AddedPartSystem.cs" />
     <Compile Include="MSE_Hediff\Hediff_AddedPartSystemNoModule.cs" />
     <Compile Include="MSE_Hediff\Hediff_BodyPartModule.cs" />
-    <Compile Include="MSE_Recipe\Recipe_InstallNaturalBodyPart.cs" />
+    <Compile Include="MSE_Hediff\Hediff_BodyPartNullModule.cs" />
+    <Compile Include="MSE_Recipe\Recipe_InstallNaturalPartSystem.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveBodyPart.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveBodyPartSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

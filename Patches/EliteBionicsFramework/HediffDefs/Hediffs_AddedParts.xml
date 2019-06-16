@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Elite Bionics Framework</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartSimple" or @Name="MSE_AddedBodyPartSimple_Organ"]/comps</xpath>
+							<value>
+								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+									<linearAdjustment>1</linearAdjustment>
+								</li>
+							</value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartBionic" or @Name="MSE_AddedBodyPartBionic_Organ"]/comps</xpath>
+							<value>
+								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+									<linearAdjustment>3</linearAdjustment>
+								</li>
+							</value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartArchotech" or @Name="MSE_AddedBodyPartArchotech_Organ"]/comps</xpath>
+							<value>
+								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+									<linearAdjustment>5</linearAdjustment>
+								</li>
+							</value>
+						</li>
+					</operations>
+				</li>
+
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedModuleBionic"]/comps</xpath>
+							<value>
+								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+									<linearAdjustment>3</linearAdjustment>
+								</li>
+							</value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedModuleArchotech"]/comps</xpath>
+							<value>
+								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+									<linearAdjustment>5</linearAdjustment>
+								</li>
+							</value>
+						</li>
+					</operations>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[1.0] Android tiers</li>
+			<li>Elite Bionics Framework</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartBionic-AT"]/comps</xpath>
+					<value>
+						<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+							<linearAdjustment>3</linearAdjustment>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartArchotech-AT"]/comps</xpath>
+					<value>
+						<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+							<linearAdjustment>5</linearAdjustment>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

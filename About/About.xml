@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
+
 	<name>Medical System Expansion</name>
 	<author>Oreno</author>
 	<supportedVersions>
@@ -13,8 +14,8 @@
 &lt;b&gt;This main features only work on bionic and archotech body parts.&lt;/b&gt; It doesn't make sense to me for basic and simple body parts can have this features.
 
 All Other Features
-- 2 new workbenches.
 - New research projects.
+- 2 new workbenches.
 - About 50+ new prostheses parts and implants.
 - Adds prostheses parts and implants to trader.
 - Balancing vanilla prostheses parts and implants.
@@ -24,4 +25,5 @@ All Other Features
 - Split rib cage to 12 pair of ribs.
 
 Many new features are still being planned. As much as possible this mod uses xpath or harmony to patch vanilla or any other mod so i can use it with 300+ mod modlist i have.</description>
+
 </ModMetaData>
