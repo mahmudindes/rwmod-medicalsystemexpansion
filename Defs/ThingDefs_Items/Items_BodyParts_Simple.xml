@@ -173,12 +173,12 @@
 		<label>prosthetic rib</label>
 		<description>A rib prosthesis. It is inferior to a real rib. Requires bone replacement research to install it.</description>
 		<costList>
-			<Steel>10</Steel>
+			<Steel>25</Steel>
 		</costList>
 		<statBases>
-			<MarketValue>25</MarketValue>
-			<WorkToMake>1200</WorkToMake>
-			<Mass>0.3</Mass>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>2</Mass>
 		</statBases>
 	</ThingDef>
 

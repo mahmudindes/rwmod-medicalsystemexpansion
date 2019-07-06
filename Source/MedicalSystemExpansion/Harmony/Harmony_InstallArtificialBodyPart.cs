@@ -4,7 +4,7 @@ using Harmony;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE
+namespace OrenoMSE.Harmony
 {
     public class Harmony_InstallArtificialBodyPart
     {
@@ -24,12 +24,10 @@ namespace OrenoMSE
                         BodyPartRecord record = bpList[j];
                         if (record.def == part)
                         {
-                            var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystem) && d.Part == record);
-                            var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystemNoModule) && d.Part == record);
-                            var check3 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartModule) && d.Part == record);
-                            var check4 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartNullModule) && d.Part == record);
-                            var check5 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == record);
-                            if (check1 || check2 || check3 || check4 || check5)
+                            var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystem || d is Hediff_AddedPartSystemNoModule) && d.Part == record);
+                            var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartModule) && d.Part == record);
+                            var check3 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == record);
+                            if (check1 || check2 || check3)
                             {
                                 bpList.Remove(record);
                             }

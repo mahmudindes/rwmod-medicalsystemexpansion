@@ -26,9 +26,9 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
-		<!-- <thingCategories>
+		<thingCategories>
 			<li>BodyPartsArtificial</li>
-		</thingCategories> -->
+		</thingCategories>
 		<pathCost>10</pathCost>
 		<!-- Vanilla Code END -->
 
@@ -38,10 +38,6 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>MSE_Assembling</soundWorking>
 		</recipeMaker>
-		<thingCategories>
-			<li>BodyPartsArtificial</li>
-			<li>Implants</li>
-		</thingCategories>
 		<thingSetMakerTags>
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
@@ -59,6 +55,9 @@
 			</recipeUsers>
 			<researchPrerequisite>MSE_Implants</researchPrerequisite>
 		</recipeMaker>
+		<thingCategories>
+			<li>Implants</li>
+		</thingCategories>
 		<tradeTags Inherit="False">
 			<li>MSE_BionicProstheses</li>
 		</tradeTags>

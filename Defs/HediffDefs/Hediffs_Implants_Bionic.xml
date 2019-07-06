@@ -24,8 +24,12 @@
 		<label>joywire complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<capMods>
 					<li>
@@ -99,8 +103,12 @@
 		<label>painstopper complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 				<capMods>
 					<li>
@@ -184,8 +192,12 @@
 		<lethalSeverity>1.00</lethalSeverity>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 			</li>
@@ -241,8 +253,12 @@
 		<label>arm muscle stimulator complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 			</li>
@@ -299,8 +315,12 @@
 		<label>leg muscle stimulator complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 			</li>
@@ -354,8 +374,12 @@
 		<label>appetite suppressant complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 				<capMods>
@@ -439,8 +463,12 @@
 		<label>builder AI complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 				<capMods>
@@ -518,8 +546,12 @@
 		<label>farmer AI complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 				<capMods>
@@ -599,8 +631,12 @@
 		<label>doctor AI complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 				<capMods>
@@ -678,8 +714,12 @@
 		<label>miner AI complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 				<capMods>
@@ -757,8 +797,12 @@
 		<label>diplomat AI complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 				<capMods>
@@ -836,8 +880,12 @@
 		<label>tamer AI complication</label>
 		<stages>
 			<li>
-				<label>mild</label>
 				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>mild</label>
+				<minSeverity>0.0002</minSeverity>
 				<painOffset>0.05</painOffset>
 				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 				<capMods>

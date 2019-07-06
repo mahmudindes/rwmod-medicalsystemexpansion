@@ -1,7 +1,7 @@
 ﻿using Harmony;
 using Verse;
 
-namespace OrenoMSE
+namespace OrenoMSE.Harmony
 {
     public class Harmony_AddedPart
     {
@@ -10,9 +10,9 @@ namespace OrenoMSE
         public class AddedPart_PostAdd
         {
             [HarmonyPostfix]
-            public static void AdditionalHediffComp(ref Hediff_AddedPart __instance)
+            public static void AdditionalHediffComp(Hediff_AddedPart __instance)
             {
-                MSE_VanillaExtender.ApplyAdditionalHediffs(__instance.pawn, __instance.Part);
+                MSE_VanillaExtender.ApplyAdditionalHediffs(__instance);
             }
         }
     }

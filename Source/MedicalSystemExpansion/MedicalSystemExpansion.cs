@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Reflection;
+﻿using System.Reflection;
 using Harmony;
 using Verse;
 
@@ -17,28 +16,48 @@ namespace OrenoMSE
 
     public static class MSE_VanillaExtender
     {
-        public static void ApplyAdditionalHediffs(Pawn pawn, BodyPartRecord part)
+        public static void ApplyAdditionalHediffs(Hediff hediff)
         {
-            List<HediffDef> hediffs = new List<HediffDef>();
-            foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
+            HediffComp_AdditionalHediff additionalHediffs = hediff.TryGetComp<HediffComp_AdditionalHediff>();
+            if (additionalHediffs != null)
             {
-                if (hediff.Part == part)
+                var hediffsToAdd = additionalHediffs.GetHediffs;
+                var hediffToAdd = hediffsToAdd.Count;
+                for (int i = 0; i < hediffToAdd; i++)
                 {
-                    HediffCompProperties_AdditionalHediff additionalHediff = hediff.def.CompProps<HediffCompProperties_AdditionalHediff>();
-                    if (additionalHediff != null)
-                    {
-                        hediffs = additionalHediff.hediffsToAdd;
-                    }
+                    hediff.pawn.health.AddHediff(hediffsToAdd[i], hediff.Part, null, null);
                 }
+            }
+        }
+
+        public static string PrettyLabel(Hediff hediff)
+        {
+            HediffComp_PrettyLabel prettyLabel = hediff.TryGetComp<HediffComp_PrettyLabel>();
+
+            if (prettyLabel != null && !hediff.pawn.Dead)
+            {
+                string labelGendered = "unknown";
+                string labelGenderless = prettyLabel.Props.labelGenderless;
+                string labelMale = prettyLabel.Props.labelMale;
+                string labelFemale = prettyLabel.Props.labelFemale;
+                if (labelGenderless != null && hediff.pawn.gender == Gender.None)
+                {
+                    labelGendered = labelGenderless;
+                }
+                else if (labelMale != null && hediff.pawn.gender == Gender.Male)
+                {
+                    labelGendered = labelMale;
+                }
+                else if (labelFemale != null && hediff.pawn.gender == Gender.Female)
+                {
+                    labelGendered = labelFemale;
+                }
+
+                string label = string.Format(prettyLabel.Props.labelPretty, hediff.Part.customLabel, labelGendered);
+                return label;
             }
 
-            if (hediffs != null)
-            {
-                for (int i = 0; i < hediffs.Count; i++)
-                {
-                    pawn.health.AddHediff(hediffs[i], part, null, null);
-                }
-            }
+            return hediff.def.label;
         }
     }
 }

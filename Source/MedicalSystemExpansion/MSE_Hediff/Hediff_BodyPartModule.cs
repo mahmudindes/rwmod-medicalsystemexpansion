@@ -8,7 +8,7 @@ namespace OrenoMSE
         {
             get
             {
-                return "ReadyForBodyPartModule".Translate();
+                return MSE_VanillaExtender.PrettyLabel(this);
             }
         }
 

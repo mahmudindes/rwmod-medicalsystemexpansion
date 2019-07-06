@@ -57,9 +57,9 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.001</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.001</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.001</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li>
@@ -94,9 +94,9 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.001</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.001</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.001</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li>
@@ -175,9 +175,9 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.002</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.002</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.002</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li>
@@ -211,9 +211,9 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.002</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.002</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.002</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li>
@@ -283,9 +283,9 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.003</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.003</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.003</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.03</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li>
@@ -318,9 +318,9 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.003</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.003</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.003</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.03</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li>
@@ -367,11 +367,6 @@
 
 	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial_Organ" ParentName="MSE_AddedBodyPartArchotech_Organ" Abstract="True">
 		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
-	</HediffDef>
-
-	<!--================== Cybertech ===================-->
-	<HediffDef Name="MSE_AddedBodyPartCybertech" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
-		<defaultLabelColor>(255, 61, 0)</defaultLabelColor>
 	</HediffDef>
 
 </Defs>

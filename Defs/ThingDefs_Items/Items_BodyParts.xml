@@ -12,6 +12,20 @@
 		<tradeTags Inherit="False">
 			<li>MSE_NaturalParts</li>
 		</tradeTags>
+
+		<!-- Make it consumable -->
+		<ingestible>
+			<foodType>Meat</foodType>
+			<preferability>RawBad</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>AteRawFood</tasteThought>
+			<sourceDef>Human</sourceDef>
+		</ingestible>
+		<statBases>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
 	</ThingDef>
 
 	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartArtificialBase" Abstract="True">

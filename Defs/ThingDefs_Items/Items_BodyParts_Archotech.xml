@@ -318,15 +318,15 @@
 		<label>archotech rib</label>
 		<description>An artifical rib built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
 		<costList>
-			<Uranium>5</Uranium>
-			<Gold>10</Gold>
-			<Plasteel>10</Plasteel>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>30</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>800</MarketValue>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>0.3</Mass>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -533,15 +533,15 @@
 		<label>advanced breathing support rib</label>
 		<description>An advanced breathing support rib built by an archotech. It can make user breath more ease and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
 		<costList>
-			<Uranium>15</Uranium>
-			<Gold>20</Gold>
-			<Plasteel>20</Plasteel>
+			<Uranium>25</Uranium>
+			<Gold>40</Gold>
+			<Plasteel>60</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>1500</MarketValue>
-			<WorkToMake>30000</WorkToMake>
-			<Mass>0.5</Mass>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -550,15 +550,15 @@
 		<label>advanced relaxation rib</label>
 		<description>An advanced relaxation rib built by an archotech. It can make user feel more relaxed and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
 		<costList>
-			<Uranium>15</Uranium>
-			<Gold>20</Gold>
-			<Plasteel>20</Plasteel>
+			<Uranium>25</Uranium>
+			<Gold>40</Gold>
+			<Plasteel>60</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>1500</MarketValue>
-			<WorkToMake>30000</WorkToMake>
-			<Mass>0.5</Mass>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -567,15 +567,15 @@
 		<label>advanced cold regulator rib</label>
 		<description>An advanced cold regulator rib built by an archotech. It can support blood to regulate cold temperature and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
 		<costList>
-			<Uranium>15</Uranium>
-			<Gold>20</Gold>
-			<Plasteel>20</Plasteel>
+			<Uranium>25</Uranium>
+			<Gold>40</Gold>
+			<Plasteel>60</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>1500</MarketValue>
-			<WorkToMake>30000</WorkToMake>
-			<Mass>0.5</Mass>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -584,15 +584,15 @@
 		<label>advanced heat regulator rib</label>
 		<description>An advanced heat regulator rib built by an archotech. It can support blood to regulate hot temperature and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
 		<costList>
-			<Uranium>15</Uranium>
-			<Gold>20</Gold>
-			<Plasteel>20</Plasteel>
+			<Uranium>25</Uranium>
+			<Gold>40</Gold>
+			<Plasteel>60</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>1500</MarketValue>
-			<WorkToMake>30000</WorkToMake>
-			<Mass>0.5</Mass>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 

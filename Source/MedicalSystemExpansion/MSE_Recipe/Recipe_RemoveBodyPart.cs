@@ -16,20 +16,21 @@ namespace OrenoMSE
                 while (enumerator.MoveNext())
                 {
                     BodyPartRecord part = enumerator.Current;
-                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_AddedPartSystem) && d.Part == part);
-                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_AddedPartSystemNoModule) && d.Part == part);
-                    if (pawn.health.hediffSet.HasDirectlyAddedPartFor(part) && (check1 || check2))
+                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_AddedPartSystem || d is Hediff_AddedPartSystemNoModule) && d.Part == part);
+                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_Injury) && d.def.isBad && d.Visible && d.Part == part);
+                    var check3 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_BodyPartModule) && d.Part == part);
+                    if (pawn.health.hediffSet.HasDirectlyAddedPartFor(part) && check1)
                     {
                         if (!pawn.health.hediffSet.AncestorHasDirectlyAddedParts(part))
                         {
                             yield return part;
-                        }                        
+                        }
                     }
-                    else if (MedicalRecipesUtility.IsCleanAndDroppable(pawn, part) && !pawn.health.hediffSet.PartOrAnyAncestorHasDirectlyAddedParts(part))
+                    else if (MedicalRecipesUtility.IsCleanAndDroppable(pawn, part) && !pawn.health.hediffSet.AncestorHasDirectlyAddedParts(part))
                     {
                         yield return part;
                     }
-                    else if (part != pawn.RaceProps.body.corePart && part.def.canSuggestAmputation && pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_Injury) && d.def.isBad && d.Visible && d.Part == part))
+                    else if (part != pawn.RaceProps.body.corePart && part.def.canSuggestAmputation && check2 && check3)
                     {
                         yield return part;
                     }

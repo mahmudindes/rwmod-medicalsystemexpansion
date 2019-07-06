@@ -3,7 +3,7 @@ using Harmony;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE
+namespace OrenoMSE.Harmony
 {
     public class Harmony_BirdsAndBees
     {

@@ -86,20 +86,17 @@
 		<researchPrerequisite>MSE_ArchotechSurgery</researchPrerequisite>
 	</RecipeDef>
 
-	<!-- Cybertech prostheses -->
-	<RecipeDef Name="MSE_SurgeryCybertech" ParentName="MSE_Surgery" Abstract="True">
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<surgerySuccessChanceFactor>1.15</surgerySuccessChanceFactor>
-		<!-- <researchPrerequisite>MSE_CybertechSurgery</researchPrerequisite> -->
-		<researchPrerequisite>MSE_ArchotechSurgery</researchPrerequisite>
-	</RecipeDef>
-
 	<!--============== Implants Surgery ================-->
 
 	<RecipeDef Name="MSE_SurgeryImplant" ParentName="MSE_Surgery" Abstract="True">
-		<workerClass>Recipe_InstallImplant</workerClass>
+		<workerClass>OrenoMSE.Recipe_InstallImplantSystem</workerClass>
 		<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
 		<researchPrerequisite>MSE_Implants</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryRemoveImplant" ParentName="MSE_SurgeryImplant" Abstract="True">
+		<workerClass>OrenoMSE.Recipe_RemoveImplantSystem</workerClass>
+		<surgerySuccessChanceFactor>0.85</surgerySuccessChanceFactor>
 	</RecipeDef>
 
 	<RecipeDef Name="MSE_SurgeryImplant_Organ" ParentName="MSE_SurgeryImplant" Abstract="True">
@@ -108,6 +105,11 @@
 
 	<RecipeDef Name="MSE_SurgeryImplant_Brain" ParentName="MSE_SurgeryImplant" Abstract="True">
 		<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+		<researchPrerequisite>MSE_BrainImplants</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryRemoveImplant_Brain" ParentName="MSE_SurgeryRemoveImplant" Abstract="True">
+		<deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
 		<researchPrerequisite>MSE_BrainImplants</researchPrerequisite>
 	</RecipeDef>
 

@@ -1,7 +1,7 @@
 ﻿using Harmony;
 using Verse;
 
-namespace OrenoMSE
+namespace OrenoMSE.Harmony
 {
     public class Harmony_PawnGenerator
     {
@@ -12,11 +12,13 @@ namespace OrenoMSE
             [HarmonyPostfix]
             public static void InitialZeroSeverityComp(Pawn pawn)
             {
-                foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
+                var hediffs = pawn.health.hediffSet.hediffs;
+                var hediff = hediffs.Count;
+                for (int i = 0; i < hediff; i++)
                 {
-                    if (hediff.def.HasComp(typeof(HediffComp_InitialZeroSeverity)))
+                    if (hediffs[i].def.HasComp(typeof(HediffComp_InitialZeroSeverity)))
                     {
-                        hediff.Severity = 0f;
+                        hediffs[i].Severity = 0f;
                     }
                 }
             }

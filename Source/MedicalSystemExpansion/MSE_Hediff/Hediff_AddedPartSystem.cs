@@ -32,7 +32,7 @@ namespace OrenoMSE
                 }
             }
 
-            MSE_VanillaExtender.ApplyAdditionalHediffs(this.pawn, base.Part);
+            MSE_VanillaExtender.ApplyAdditionalHediffs(this);
         }
 
         public override void ExposeData()

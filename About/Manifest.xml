@@ -2,22 +2,21 @@
 <Manifest>
 	<identifier>MedicalSystemExpansion</identifier>
 	<version>1.0.0.0</version>
-	<!-- <incompatibleWith>
-		<li>SomeOtherMod</li>
-	</incompatibleWith> -->
 	<!-- <loadBefore>
 		<li>SomeOtherMod</li>
 	</loadBefore> -->
 	<loadAfter>
+		<li>QuestionableEthics</li>
+		<li>TheBirdsandtheBees</li>
+		<!-- Compatible Only -->
 		<li>ArchotechExpanded</li>
+		<li>ArchotechExpandedProsthetics</li>
 		<li>ExpandedProstheticsandOrganEngineering</li>
 		<li>Rah'sBionicsandSurgeryExpansion</li>
-		<li>TheBirdsandtheBees</li>
+		<li>RBSEHardcoreEdition</li>
+		<li>[FSF]VanillaBionicsExpansion</li>
 	</loadAfter>
-	<!-- <suggests>
-		<li>ExpansionMod &gt;= 1.5</li>
-	</suggests> -->
 	<showCrossPromotions>true</showCrossPromotions>
 	<!-- <manifestUri>https://rawgit.com/FluffierThanThou/ModManager/master/About/Manifest.xml</manifestUri> -->
-	<!-- <downloadUri>https://github.com/FluffierThanThou/ModManager/releases/latest</downloadUri> -->
+	<downloadUri>https://github.com/MahmudinPURE/MedicalSystemExpansion/releases/tag/1.2</downloadUri>
 </Manifest>

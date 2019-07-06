@@ -333,9 +333,9 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.002</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.002</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.002</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 					<!----><ToxicSensitivity>-0.25</ToxicSensitivity>
 				</statOffsets>
 			</li>
@@ -403,9 +403,9 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.002</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.002</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.002</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 					<!----><ImmunityGainSpeed>0.25</ImmunityGainSpeed>
 				</statOffsets>
 			</li>
@@ -473,9 +473,9 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.002</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.002</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.002</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 				</statOffsets>
 				<!----><restFallFactor>0.75</restFallFactor>
 			</li>
@@ -600,9 +600,9 @@
 					</li>
 				</capMods>
 				<statOffsets>
-					<ArmorRating_Blunt>0.002</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.002</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.002</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 				</statOffsets>
 			</li>
 			<li>
@@ -649,9 +649,9 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.002</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.002</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.002</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 					<!----><MentalBreakThreshold>-0.10</MentalBreakThreshold>
 				</statOffsets>
 			</li>
@@ -691,9 +691,9 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.002</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.002</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.002</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 					<!----><ComfyTemperatureMin>-5.0</ComfyTemperatureMin>
 				</statOffsets>
 			</li>
@@ -734,9 +734,9 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.002</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.002</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.002</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 					<!----><ComfyTemperatureMax>5.0</ComfyTemperatureMax>
 				</statOffsets>
 			</li>

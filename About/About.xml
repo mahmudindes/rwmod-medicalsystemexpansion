@@ -6,24 +6,25 @@
 	<supportedVersions>
 		<li>1.0</li>
 	</supportedVersions>
-	<description>An expansion of vanilla medical system and how they work. Not only adds many new body part replacements and implants, but also new exclusive bionic and archotech body part system and modules, and many other features.
+	<description>&lt;b&gt;Not Just Another Prostheses Mod&lt;/b&gt;. An expansion of vanilla medical system and how they work. Adds full featured prosthesis that uses vanilla standard and integration with another mod. New Prosthesis System allows you to install prosthetic modules on installed prosthesis.
 
 &lt;size=24&gt;Main Features&lt;/size&gt;
-- Installed prostheses body parts can keep there child parts. So now you don't get missing fingers or toes when installed arm or leg prosthesis parts.
-- New exclusive body part system and modules. You can install modules on installed bionic and archotech body part counterparts.
-&lt;b&gt;This main features only work on bionic and archotech body parts.&lt;/b&gt; It doesn't make sense to me for basic and simple body parts can have this features.
+- Installed prostheses can keep there child parts. Now you don't get missing fingers when installed hand prosthesis or missing toes when installed foot prosthesis.
+- New exclusive body part system framework and it's modules. Allows you to install prosthetic modules on installed prosthesis.
+&lt;b&gt;This two main features only work on bionic and archotech body parts&lt;/b&gt;. It doesn't make sense to me for basic and simple body parts can have this features.
+- New organ transplant rejection, prosthesis limb and bone adaptation system, and implant complication. Some of this is never done by another mod.
+This mod not really that OP. &lt;b&gt;Raider chance to spawn with prostheses parts and implants now higher and also have same part system feature&lt;/b&gt;.
+- New exclusive implant system framework. Now you can install implant on installed prosthesis part. of course there's a limit of how many implant can be installed on installed prosthesis part.
 
-All Other Features
+&lt;b&gt;Other Features&lt;/b&gt;
 - New research projects.
 - 2 new workbenches.
 - About 50+ new prostheses parts and implants.
-- Adds prostheses parts and implants to trader.
-- Balancing vanilla prostheses parts and implants.
-- Almost all vanilla organs and limbs can be harvested.
-- Harvested organs and limbs can rot and decay.
+- Balancing vanilla prostheses body parts and implants.
+- Adds prostheses parts and implants to trader and raider.
+- Vanilla organs can be harvested and transplanted.
+- Harvested organs can rot and decay.
 - Now all bones can be destroyed by damage or attack.
-- Split rib cage to 12 pair of ribs.
-
-Many new features are still being planned. As much as possible this mod uses xpath or harmony to patch vanilla or any other mod so i can use it with 300+ mod modlist i have.</description>
+- And many other features.</description>
 
 </ModMetaData>

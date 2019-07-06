@@ -6,39 +6,48 @@
 			<li>NightVision</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionic" and defName="BionicEye"][not(child::comps)]</xpath>
-					<value>
-						<comps />
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionic"][defName="BionicEye"]/comps</xpath>
-					<value>
-						<li Class="NightVision.HediffCompProperties_NightVision">
-							<GrantsNightVision>false</GrantsNightVision>
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionic" and defName="BionicEye"][not(child::comps)]</xpath>
+							<value>
+								<comps />
+							</value>
 						</li>
-					</value>
-				</li>
 
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotech" and defName="ArchotechEye"][not(child::comps)]</xpath>
-					<value>
-						<comps />
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotech"][defName="ArchotechEye"]/comps</xpath>
-					<value>
-						<li Class="NightVision.HediffCompProperties_NightVision">
-							<GrantsNightVision>false</GrantsNightVision>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionic"][defName="BionicEye"]/comps</xpath>
+							<value>
+								<li Class="NightVision.HediffCompProperties_NightVision">
+									<GrantsNightVision>true</GrantsNightVision>
+								</li>
+							</value>
 						</li>
-					</value>
+					</operations>
+				</li>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotech" and defName="ArchotechEye"][not(child::comps)]</xpath>
+							<value>
+								<comps />
+							</value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotech"][defName="ArchotechEye"]/comps</xpath>
+							<value>
+								<li Class="NightVision.HediffCompProperties_NightVision">
+									<GrantsNightVision>true</GrantsNightVision>
+								</li>
+							</value>
+						</li>
+					</operations>
 				</li>
 
 			</operations>

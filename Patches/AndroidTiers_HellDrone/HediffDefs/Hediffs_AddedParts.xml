@@ -11,13 +11,13 @@
 			<operations>
 
 				<li Class="PatchOperationAttributeSet">
-					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPowerClaw"]</xpath>
+					<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPowerClaw"]</xpath>
 					<attribute>ParentName</attribute>
 					<value>MSE_AddedBodyPartBionic-AT</value>
 				</li>
 
 				<li Class="PatchOperationAttributeSet">
-					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPlasmaClaw"]</xpath>
+					<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPlasmaClaw"]</xpath>
 					<attribute>ParentName</attribute>
 					<value>MSE_AddedBodyPartArchotech-AT</value>
 				</li>

@@ -173,6 +173,48 @@
 	<!--================ Natural Organs ================-->
 
 	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalBrain</defName>
+		<label>install brain</label>
+		<description>Install a biological brain.</description>
+		<jobString>Installing brain.</jobString>
+		<workAmount>6100</workAmount>
+		<deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Brain</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Brain</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Brain</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
 		<defName>InstallNaturalStomach</defName>
 		<label>install stomach</label>
 		<description>Install a biological stomach.</description>
@@ -220,7 +262,7 @@
 		<label>install leg</label>
 		<description>Install a biological leg.</description>
 		<jobString>Installing leg.</jobString>
-		<workAmount>4900</workAmount>
+		<workAmount>3700</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
@@ -339,11 +381,52 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalShoulder</defName>
+		<label>install shoulder</label>
+		<description>Install a biological shoulder.</description>
+		<jobString>Installing shoulder.</jobString>
+		<workAmount>4900</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Shoulder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Shoulder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Shoulder</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
 		<defName>InstallNaturalArm</defName>
 		<label>install arm</label>
 		<description>Install a biological arm.</description>
 		<jobString>Installing arm.</jobString>
-		<workAmount>4900</workAmount>
+		<workAmount>3700</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>

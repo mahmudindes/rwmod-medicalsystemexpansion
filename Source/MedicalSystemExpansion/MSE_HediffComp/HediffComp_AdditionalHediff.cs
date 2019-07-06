@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using System.Collections.Generic;
+using Verse;
 
 namespace OrenoMSE
 {
@@ -9,6 +10,14 @@ namespace OrenoMSE
             get
             {
                 return (HediffCompProperties_AdditionalHediff)this.props;
+            }
+        }
+
+        public List<HediffDef> GetHediffs
+        {
+            get
+            {
+                return this.Props.hediffsToAdd;
             }
         }
     }

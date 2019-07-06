@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--============ Added Part Module Base ============-->
 	<HediffDef Name="MSE_AddedModule" Abstract="True">
 		<hediffClass>OrenoMSE.Hediff_AddedPartModule</hediffClass>
 		<isBad>false</isBad>
 	</HediffDef>
+	<!--===================== END ======================-->
 
 
+	<!--=================== Bionic =====================-->
 	<HediffDef Name="MSE_AddedModuleBionic" ParentName="MSE_AddedModule" Abstract="True">
 		<defaultLabelColor>(255, 171, 64)</defaultLabelColor>
 		<comps />
 	</HediffDef>
 
+	<!--================== Archotech ===================-->
 	<HediffDef Name="MSE_AddedModuleArchotech" ParentName="MSE_AddedModule" Abstract="True">
 		<defaultLabelColor>(255, 109, 0)</defaultLabelColor>
-		<comps />
-	</HediffDef>
-
-	<HediffDef Name="MSE_AddedModuleCybertech" ParentName="MSE_AddedModule" Abstract="True">
-		<defaultLabelColor>(255, 61, 0)</defaultLabelColor>
 		<comps />
 	</HediffDef>
 

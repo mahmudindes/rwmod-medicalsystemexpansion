@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<ReadyForBodyPartModule>ready for module</ReadyForBodyPartModule>
 	<RemovePartModule>remove part module</RemovePartModule>
 	<RemovePartSystem>remove part system</RemovePartSystem>
 

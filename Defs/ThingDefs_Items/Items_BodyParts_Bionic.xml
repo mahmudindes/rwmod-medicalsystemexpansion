@@ -300,13 +300,13 @@
 		<label>bionic rib</label>
 		<description>An advanced artificial rib. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
 		<costList>
-			<Plasteel>5</Plasteel>
+			<Plasteel>15</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>300</MarketValue>
-			<WorkToMake>4000</WorkToMake>
-			<Mass>0.3</Mass>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -473,13 +473,13 @@
 		<label>breathing support rib</label>
 		<description>An advanced artificial breathing support rib. With lattice-dust healing system allows it to recover from damage and it can make user breath more ease. Requires special bionics research to install it.</description>
 		<costList>
-			<Plasteel>10</Plasteel>
+			<Plasteel>30</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>0.5</Mass>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -488,13 +488,13 @@
 		<label>relaxation rib</label>
 		<description>An advanced artificial relaxation rib. With lattice-dust healing system allows it to recover from damage and it can make user feel more relaxed. Requires special bionics research to install it.</description>
 		<costList>
-			<Plasteel>10</Plasteel>
+			<Plasteel>30</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>0.5</Mass>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -503,13 +503,13 @@
 		<label>cold regulator rib</label>
 		<description>An advanced artificial cold regulator rib. With lattice-dust healing system allows it to recover from damage and it can support blood to regulate cold temperature. Requires special bionics research to install it.</description>
 		<costList>
-			<Plasteel>10</Plasteel>
+			<Plasteel>30</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>0.5</Mass>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -518,13 +518,13 @@
 		<label>heat regulator rib</label>
 		<description>An advanced artificial heat regulator rib. With lattice-dust healing system allows it to recover from damage and it can support blood to regulate hot temperature. Requires special bionics research to install it.</description>
 		<costList>
-			<Plasteel>10</Plasteel>
+			<Plasteel>30</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>0.5</Mass>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
 		</statBases>
 	</ThingDef>
 
