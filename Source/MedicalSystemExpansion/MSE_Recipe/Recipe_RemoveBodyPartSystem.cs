@@ -24,7 +24,6 @@ namespace OrenoMSE
                     }
                 }
             }
-
             yield break;
         }
 

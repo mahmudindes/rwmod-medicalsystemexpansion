@@ -34,26 +34,6 @@
 			<partEfficiency>0.80</partEfficiency>
 			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
-		<stages Inherit="False">
-			<li>
-				<minSeverity>0.00</minSeverity>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.35</minSeverity>
-				<painOffset>0.10</painOffset>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.80</minSeverity>
-				<painOffset>0.15</painOffset>
-			</li>
-		</stages>
 		<spawnThingOnRemoved>Denture</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -115,7 +95,6 @@
 			<partEfficiency>0.00</partEfficiency>
 			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
-		<comps Inherit="False" /><stages Inherit="False" />
 		<spawnThingOnRemoved>Eyepatch</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -128,26 +107,6 @@
 			<partEfficiency>0.00</partEfficiency>
 			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
-		<stages Inherit="False">
-			<li>
-				<minSeverity>0.00</minSeverity>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.35</minSeverity>
-				<painOffset>0.10</painOffset>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.80</minSeverity>
-				<painOffset>0.15</painOffset>
-			</li>
-		</stages>
 		<spawnThingOnRemoved>WoodenEar</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -159,26 +118,6 @@
 			<solid>true</solid>
 			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
-		<stages Inherit="False">
-			<li>
-				<minSeverity>0.00</minSeverity>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.35</minSeverity>
-				<painOffset>0.10</painOffset>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.80</minSeverity>
-				<painOffset>0.15</painOffset>
-			</li>
-		</stages>
 		<spawnThingOnRemoved>WoodenNose</spawnThingOnRemoved>
 	</HediffDef>
 

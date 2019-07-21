@@ -333,60 +333,11 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.02</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
 					<!----><ToxicSensitivity>-0.25</ToxicSensitivity>
 				</statOffsets>
-			</li>
-			<li>
-				<label>adapting</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-				<statOffsets>
-					<!----><ToxicSensitivity>-0.15</ToxicSensitivity>
-				</statOffsets>
-			</li>
-			<li>
-				<label>begin to adapt</label>
-				<minSeverity>0.60</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.10</painOffset>
-				<vomitMtbDays>1.0</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.05</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<!----><ToxicSensitivity>-0.05</ToxicSensitivity>
-				</statOffsets>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.85</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<vomitMtbDays>0.5</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.15</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.95</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.85</offset>
-					</li>
-				</capMods>
 			</li>
 		</stages>
 		<spawnThingOnRemoved>AntitoxinKidney</spawnThingOnRemoved>
@@ -403,60 +354,11 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.02</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
 					<!----><ImmunityGainSpeed>0.25</ImmunityGainSpeed>
 				</statOffsets>
-			</li>
-			<li>
-				<label>adapting</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-				<statOffsets>
-					<!----><ImmunityGainSpeed>0.15</ImmunityGainSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<label>begin to adapt</label>
-				<minSeverity>0.60</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.10</painOffset>
-				<vomitMtbDays>1.0</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.05</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<!----><ImmunityGainSpeed>0.05</ImmunityGainSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.85</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<vomitMtbDays>0.5</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.15</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.95</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.85</offset>
-					</li>
-				</capMods>
 			</li>
 		</stages>
 		<spawnThingOnRemoved>MedicalLiver</spawnThingOnRemoved>
@@ -473,56 +375,11 @@
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.02</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
 				</statOffsets>
 				<!----><restFallFactor>0.75</restFallFactor>
-			</li>
-			<li>
-				<label>adapting</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-				<!----><restFallFactor>0.85</restFallFactor>
-			</li>
-			<li>
-				<label>begin to adapt</label>
-				<minSeverity>0.60</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.10</painOffset>
-				<vomitMtbDays>1.0</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.05</offset>
-					</li>
-				</capMods>
-				<!----><restFallFactor>0.95</restFallFactor>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.85</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<vomitMtbDays>0.5</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.15</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.95</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.85</offset>
-					</li>
-				</capMods>
 			</li>
 		</stages>
 		<spawnThingOnRemoved>EnergizedLiver</spawnThingOnRemoved>
@@ -589,50 +446,21 @@
 
 	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
 		<defName>BreathingSupportRib</defName>
-		<label>breathing support rib</label>
-		<labelNoun>a breathing support rib</labelNoun>
+		<label>breathing support ribcage</label>
+		<labelNoun>a breathing support ribcage</labelNoun>
 		<stages Inherit="False">
 			<li>
-				<capMods>
-					<li>
-						<capacity>Breathing</capacity>
-						<!----><offset>0.10</offset>
-					</li>
-				</capMods>
 				<statOffsets>
-					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.02</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
 				</statOffsets>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
 				<capMods>
 					<li>
 						<capacity>Breathing</capacity>
 						<!----><offset>0.10</offset>
 					</li>
 				</capMods>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.50</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.10</painOffset>
-				<capMods>
-					<li>
-						<capacity>Breathing</capacity>
-						<!----><offset>0.10</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.90</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
 			</li>
 		</stages>
 		<spawnThingOnRemoved>BreathingSupportRib</spawnThingOnRemoved>
@@ -643,42 +471,19 @@
 
 	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
 		<defName>RelaxationRib</defName>
-		<label>relaxation rib</label>
-		<labelNoun>a relaxation rib</labelNoun>
-		<spawnThingOnRemoved>RelaxationRib</spawnThingOnRemoved>
+		<label>relaxation ribcage</label>
+		<labelNoun>a relaxation ribcage</labelNoun>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.02</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
 					<!----><MentalBreakThreshold>-0.10</MentalBreakThreshold>
 				</statOffsets>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-				<statOffsets>
-					<!----><MentalBreakThreshold>-0.10</MentalBreakThreshold>
-				</statOffsets>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.50</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.10</painOffset>
-				<statOffsets>
-					<!----><MentalBreakThreshold>-0.10</MentalBreakThreshold>
-				</statOffsets>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.90</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
 			</li>
 		</stages>
+		<spawnThingOnRemoved>RelaxationRib</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 		</addedPartProps>
@@ -686,39 +491,16 @@
 
 	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
 		<defName>ColdRegulatorRib</defName>
-		<label>cold regulator rib</label>
-		<labelNoun>a cold regulator rib</labelNoun>
+		<label>cold regulator ribcage</label>
+		<labelNoun>a cold regulator ribcage</labelNoun>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.02</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
 					<!----><ComfyTemperatureMin>-5.0</ComfyTemperatureMin>
 				</statOffsets>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-				<statOffsets>
-					<!----><ComfyTemperatureMin>-5.0</ComfyTemperatureMin>
-				</statOffsets>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.50</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.10</painOffset>
-				<statOffsets>
-					<!----><ComfyTemperatureMin>-5.0</ComfyTemperatureMin>
-				</statOffsets>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.90</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
 			</li>
 		</stages>
 		<spawnThingOnRemoved>ColdRegulatorRib</spawnThingOnRemoved>
@@ -729,39 +511,16 @@
 
 	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
 		<defName>HeatRegulatorRib</defName>
-		<label>heat regulator rib</label>
-		<labelNoun>a heat regulator rib</labelNoun>
+		<label>heat regulator ribcage</label>
+		<labelNoun>a heat regulator ribcage</labelNoun>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.02</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
 					<!----><ComfyTemperatureMax>5.0</ComfyTemperatureMax>
 				</statOffsets>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-				<statOffsets>
-					<!----><ComfyTemperatureMax>5.0</ComfyTemperatureMax>
-				</statOffsets>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.50</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.10</painOffset>
-				<statOffsets>
-					<!----><ComfyTemperatureMax>5.0</ComfyTemperatureMax>
-				</statOffsets>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.90</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
 			</li>
 		</stages>
 		<spawnThingOnRemoved>HeatRegulatorRib</spawnThingOnRemoved>

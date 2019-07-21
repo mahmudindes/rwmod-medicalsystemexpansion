@@ -12,7 +12,7 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartSimple" or @Name="MSE_AddedBodyPartSimple_Organ"]/comps</xpath>
+							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartSimpleBase"]/comps</xpath>
 							<value>
 								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
 									<linearAdjustment>1</linearAdjustment>
@@ -21,7 +21,7 @@
 						</li>
 
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartBionic" or @Name="MSE_AddedBodyPartBionic_Organ"]/comps</xpath>
+							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartBionicBase" or @Name="MSE_AddedBodyPartBionicSpecialBase"]/comps</xpath>
 							<value>
 								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
 									<linearAdjustment>3</linearAdjustment>
@@ -30,7 +30,7 @@
 						</li>
 
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartArchotech" or @Name="MSE_AddedBodyPartArchotech_Organ"]/comps</xpath>
+							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartArchotechBase" or @Name="MSE_AddedBodyPartArchotechSpecialBase"]/comps</xpath>
 							<value>
 								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
 									<linearAdjustment>5</linearAdjustment>
@@ -61,37 +61,6 @@
 							</value>
 						</li>
 					</operations>
-				</li>
-
-			</operations>
-		</match>
-	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>[1.0] Android tiers</li>
-			<li>Elite Bionics Framework</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartBionic-AT"]/comps</xpath>
-					<value>
-						<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
-							<linearAdjustment>3</linearAdjustment>
-						</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartArchotech-AT"]/comps</xpath>
-					<value>
-						<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
-							<linearAdjustment>5</linearAdjustment>
-						</li>
-					</value>
 				</li>
 
 			</operations>

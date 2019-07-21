@@ -11,16 +11,14 @@
 		<workSkillLearnFactor>16</workSkillLearnFactor>
 		<!-- Vanilla Code END -->
 
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		<recipeUsers />
 	</RecipeDef>
 
 	<!--================ Parts Surgery =================-->
 
 	<!-- Natural body parts -->
 	<RecipeDef Name="MSE_SurgeryNatural" ParentName="MSE_Surgery" Abstract="True">
-		<workerClass>OrenoMSE.Recipe_InstallNaturalPartSystem</workerClass>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
 		<surgerySuccessChanceFactor>1.10</surgerySuccessChanceFactor>
 		<researchPrerequisite>MSE_OrganTransplantation</researchPrerequisite>
 	</RecipeDef>
@@ -94,13 +92,18 @@
 		<researchPrerequisite>MSE_Implants</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef Name="MSE_SurgeryRemoveImplant" ParentName="MSE_SurgeryImplant" Abstract="True">
+	<RecipeDef Name="MSE_SurgeryRemoveImplant" ParentName="MSE_Surgery" Abstract="True">
 		<workerClass>OrenoMSE.Recipe_RemoveImplantSystem</workerClass>
 		<surgerySuccessChanceFactor>0.85</surgerySuccessChanceFactor>
+		<researchPrerequisite>MSE_Implants</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef Name="MSE_SurgeryImplant_Organ" ParentName="MSE_SurgeryImplant" Abstract="True">
 		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryRemoveImplant_Organ" ParentName="MSE_SurgeryRemoveImplant" Abstract="True">
+		<surgerySuccessChanceFactor>0.80</surgerySuccessChanceFactor>
 	</RecipeDef>
 
 	<RecipeDef Name="MSE_SurgeryImplant_Brain" ParentName="MSE_SurgeryImplant" Abstract="True">

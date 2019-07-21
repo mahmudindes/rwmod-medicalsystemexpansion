@@ -57,8 +57,30 @@
 									<appliedOnFixedBodyParts>
 										<li>ReproductiveOrgans</li>
 									</appliedOnFixedBodyParts>
-									<addsHediff>ReproductiveOrgans</addsHediff>
+									<modExtensions>
+										<li Class="OrenoMSE.MSE_AdditionalHediff">
+											<hediffsToAdd>
+												<li>ReproductiveOrgans</li>
+											</hediffsToAdd>
+										</li>
+									</modExtensions>
 								</RecipeDef>
+							</value>
+						</li>
+					</operations>
+				</li>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationTest">
+							<xpath>Defs/RecipeDef[defName="InstallBasicReproductiveOrgans"]</xpath>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/RecipeDef[defName="InstallBasicReproductiveOrgans"]/workerClass</xpath>
+							<value>
+								<workerClass>Recipe_Surgery</workerClass>
 							</value>
 						</li>
 					</operations>

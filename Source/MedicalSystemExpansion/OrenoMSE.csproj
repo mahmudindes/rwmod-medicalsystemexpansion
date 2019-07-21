@@ -17,7 +17,7 @@
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>C:\Program Files %28x86%29\Steam\steamapps\common\RimWorld\Mods\VanillaExpandedProsthetic\Assemblies\</OutputPath>
+    <OutputPath>C:\Program Files %28x86%29\Steam\steamapps\common\RimWorld\Mods\MedicalSystemExpansion\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,9 +34,8 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Dependencies\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\Dependencies\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -54,25 +53,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Harmony\Harmony_AddedPart.cs" />
-    <Compile Include="Harmony\Harmony_Implant.cs" />
-    <Compile Include="Harmony\Harmony_InstallArtificialBodyPart.cs" />
+    <Compile Include="Harmony\Harmony_HediffAddedPart.cs" />
+    <Compile Include="Harmony\Harmony_Hediff.cs" />
+    <Compile Include="Harmony\Harmony_HediffImplant.cs" />
+    <Compile Include="Harmony\Harmony_RecipeInstallArtificialBodyPart.cs" />
     <Compile Include="Harmony\Harmony_PawnGenerator.cs" />
+    <Compile Include="Harmony\Harmony_RecipeInstallNaturalBodyPart.cs" />
+    <Compile Include="Harmony\Harmony_RecipeRemoveBodyPart.cs" />
+    <Compile Include="Harmony\MSE_SafeReflections.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
+    <Compile Include="MSE_DefModExtension\MSE_AdditionalHediff.cs" />
+    <Compile Include="MSE_DefModExtension\MSE_HediffPrettyLabel.cs" />
+    <Compile Include="MSE_DefModExtension\MSE_SpawnInitialSeverity.cs" />
     <Compile Include="MSE_DefOf\MSE_HediffDefOf.cs" />
-    <Compile Include="MSE_HediffComp\HediffComp_AdditionalHediff.cs" />
-    <Compile Include="MSE_HediffComp\HediffComp_InitialZeroSeverity.cs" />
-    <Compile Include="MSE_HediffComp\HediffComp_PrettyLabel.cs" />
-    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_AdditionalHediff.cs" />
-    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_InitialZeroSeverity.cs" />
-    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_PrettyLabel.cs" />
+    <Compile Include="MSE_Hediff\Hediff_SurgerySupport.cs" />
     <Compile Include="MSE_Hediff\Hediff_AddedPartModule.cs" />
     <Compile Include="MSE_Hediff\Hediff_AddedPartSystem.cs" />
     <Compile Include="MSE_Hediff\Hediff_AddedPartSystemNoModule.cs" />
     <Compile Include="MSE_Hediff\Hediff_BodyPartModule.cs" />
     <Compile Include="MSE_Recipe\Recipe_InstallImplantSystem.cs" />
-    <Compile Include="MSE_Recipe\Recipe_InstallNaturalPartSystem.cs" />
-    <Compile Include="MSE_Recipe\Recipe_RemoveBodyPart.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveBodyPartSystem.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveImplantSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

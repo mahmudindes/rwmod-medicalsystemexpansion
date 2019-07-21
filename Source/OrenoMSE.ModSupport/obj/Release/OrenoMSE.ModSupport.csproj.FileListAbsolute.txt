@@ -1,9 +1,0 @@
-D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\OrenoMSE.ModSupport\obj\Release\OrenoMSE.ModSupport.csprojAssemblyReference.cache
-D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\OrenoMSE.ModSupport\obj\Release\OrenoMSE.ModSupport.csproj.CoreCompileInputs.cache
-D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\OrenoMSE.ModSupport\obj\Release\OrenoMSE.ModSupport.csproj.CopyComplete
-D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\OrenoMSE.ModSupport\obj\Release\OrenoMSE.ModSupport.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedicalSystemExpansion\Assemblies\OrenoMSE.ModSupport.dll
-D:\Documents\Visual Studio 2017\Projects\MedicalSystemExpansion\OrenoMSE.ModSupport\obj\Release\OrenoMSE.ModSupport.csprojAssemblyReference.cache
-D:\Documents\Visual Studio 2017\Projects\MedicalSystemExpansion\OrenoMSE.ModSupport\obj\Release\OrenoMSE.ModSupport.csproj.CoreCompileInputs.cache
-D:\Documents\Visual Studio 2017\Projects\MedicalSystemExpansion\OrenoMSE.ModSupport\obj\Release\OrenoMSE.ModSupport.csproj.CopyComplete
-D:\Documents\Visual Studio 2017\Projects\MedicalSystemExpansion\OrenoMSE.ModSupport\obj\Release\OrenoMSE.ModSupport.dll

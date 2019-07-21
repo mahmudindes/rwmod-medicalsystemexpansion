@@ -4,7 +4,6 @@
 	<HediffDef Name="MSE_NaturalBodyPartBase" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-		<isBad>false</isBad>
 	</HediffDef>
 
 	<HediffDef Name="MSE_NaturalBodyPartNormal" ParentName="MSE_NaturalBodyPartBase" Abstract="True">

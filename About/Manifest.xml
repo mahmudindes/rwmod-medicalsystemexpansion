@@ -2,11 +2,10 @@
 <Manifest>
 	<identifier>MedicalSystemExpansion</identifier>
 	<version>1.0.0.0</version>
-	<!-- <loadBefore>
-		<li>SomeOtherMod</li>
-	</loadBefore> -->
+	<loadBefore>
+		<li>MSE-RealOrganism</li>
+	</loadBefore>
 	<loadAfter>
-		<li>QuestionableEthics</li>
 		<li>TheBirdsandtheBees</li>
 		<!-- Compatible Only -->
 		<li>ArchotechExpanded</li>
@@ -18,5 +17,5 @@
 	</loadAfter>
 	<showCrossPromotions>true</showCrossPromotions>
 	<!-- <manifestUri>https://rawgit.com/FluffierThanThou/ModManager/master/About/Manifest.xml</manifestUri> -->
-	<downloadUri>https://github.com/MahmudinPURE/MedicalSystemExpansion/releases/tag/1.2</downloadUri>
+	<downloadUri>https://github.com/MahmudinPURE/MedicalSystemExpansion/releases</downloadUri>
 </Manifest>

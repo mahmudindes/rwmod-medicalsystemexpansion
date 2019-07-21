@@ -5,6 +5,18 @@ namespace OrenoMSE
 {
     public class Hediff_AddedPartSystem : Hediff_AddedPart
     {
+        public override TextureAndColor StateIcon
+        {
+            get
+            {
+                if (MSE_VanillaExtender.PartHasInjury(this.pawn, base.Part, true))
+                {
+                    return MedicalSystemExpansion.IconPartSystemDamaged;
+                }
+                return MedicalSystemExpansion.IconPartSystem;
+            }
+        }
+
         public override void PostAdd(DamageInfo? dinfo)
         {
             if (base.Part == null)
@@ -32,7 +44,7 @@ namespace OrenoMSE
                 }
             }
 
-            MSE_VanillaExtender.ApplyAdditionalHediffs(this);
+            MSE_VanillaExtender.HediffApplyHediffs(this, this.pawn, base.Part);
         }
 
         public override void ExposeData()

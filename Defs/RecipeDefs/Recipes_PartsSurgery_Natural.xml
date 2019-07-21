@@ -39,8 +39,14 @@
 		<appliedOnFixedBodyParts>
 			<li>Kidney</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Kidney</addsHediff>
 		<recipeUsers Inherit="False" />
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Kidney</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
@@ -81,8 +87,14 @@
 		<appliedOnFixedBodyParts>
 			<li>Liver</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Liver</addsHediff>
 		<recipeUsers Inherit="False" />
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Liver</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
@@ -123,8 +135,14 @@
 		<appliedOnFixedBodyParts>
 			<li>Lung</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Lung</addsHediff>
 		<recipeUsers Inherit="False" />
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Lung</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
@@ -166,8 +184,14 @@
 		<appliedOnFixedBodyParts>
 			<li>Heart</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Heart</addsHediff>
 		<recipeUsers Inherit="False" />
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Heart</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<!--================ Natural Organs ================-->
@@ -211,7 +235,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Brain</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Brain</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
@@ -252,7 +282,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Stomach</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Stomach</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Stomach</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<!--================= Natural Parts ================-->
@@ -295,7 +331,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Leg</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Leg</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Leg</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -336,7 +378,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Foot</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Foot</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Foot</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -377,7 +425,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Toe</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Toe</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Toe</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -418,7 +472,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Shoulder</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Shoulder</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Shoulder</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -459,7 +519,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Arm</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Arm</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Arm</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -500,7 +566,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Hand</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Hand</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Hand</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -541,7 +613,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Finger</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Finger</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Finger</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -582,7 +660,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Eye</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Eye</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Eye</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -623,7 +707,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Ear</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Ear</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Ear</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -664,7 +754,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Nose</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Nose</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Nose</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryNatural">
@@ -705,7 +801,13 @@
 		<appliedOnFixedBodyParts>
 			<li>Jaw</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Jaw</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Jaw</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 </Defs>

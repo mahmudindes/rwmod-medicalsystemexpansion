@@ -2,17 +2,17 @@
 
 namespace OrenoMSE
 {
-    public class Hediff_BodyPartNullModule : HediffWithComps
+    public class Hediff_SurgerySupport : HediffWithComps
     {
-        public override bool ShouldRemove
+        public override string LabelBase
         {
             get
             {
-                return false;
+                return MSE_VanillaExtender.PrettyLabel(this);
             }
         }
 
-        public override bool Visible
+        public override bool ShouldRemove
         {
             get
             {
@@ -25,7 +25,7 @@ namespace OrenoMSE
             base.ExposeData();
             if (Scribe.mode == LoadSaveMode.PostLoadInit && base.Part == null)
             {
-                Log.Error("Hediff_BodyPartNullModule has null part after loading.", false);
+                Log.Error("Hediff_SurgerySupport has null part after loading.", false);
                 this.pawn.health.hediffSet.hediffs.Remove(this);
                 return;
             }

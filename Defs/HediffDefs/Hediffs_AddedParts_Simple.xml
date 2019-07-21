@@ -55,26 +55,6 @@
 		<defName>CochlearImplant</defName>
 		<label>cochlear implant</label>
 		<labelNoun>a cochlear implant</labelNoun>
-		<stages Inherit="False">
-			<li>
-				<minSeverity>0.00</minSeverity>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.001</minSeverity>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.35</minSeverity>
-				<painOffset>0.15</painOffset>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.85</minSeverity>
-				<painOffset>0.30</painOffset>
-			</li>
-		</stages>
 		<spawnThingOnRemoved>CochlearImplant</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>0.65</partEfficiency>

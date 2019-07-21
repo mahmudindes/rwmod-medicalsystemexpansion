@@ -12,10 +12,10 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartBionic"]</xpath>
+							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartBionicBase"]</xpath>
 							<value>
-								<HediffDef Name="MSE_AddedBodyPartBionic-AT" ParentName="MSE_AddedBodyPartBionic" Abstract="True">
-									<comps Inherit="False" /><stages Inherit="False" />
+								<HediffDef Name="MSE_AddedBodyPartBionicAT" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
+									<comps /> <!-- Makes patching easier -->
 								</HediffDef>
 							</value>
 						</li>
@@ -23,13 +23,13 @@
 						<li Class="PatchOperationAttributeSet">
 							<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid2"][defName="ARArm"]</xpath>
 							<attribute>ParentName</attribute>
-							<value>MSE_AddedBodyPartBionic-AT</value>
+							<value>MSE_AddedBodyPartBionicAT</value>
 						</li>
 
 						<li Class="PatchOperationAttributeSet">
 							<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid2"][defName="ARLeg"]</xpath>
 							<attribute>ParentName</attribute>
-							<value>MSE_AddedBodyPartBionic-AT</value>
+							<value>MSE_AddedBodyPartBionicAT</value>
 						</li>
 					</operations>
 				</li>
@@ -38,10 +38,10 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartArchotech"]</xpath>
+							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartArchotechBase"]</xpath>
 							<value>
-								<HediffDef Name="MSE_AddedBodyPartArchotech-AT" ParentName="MSE_AddedBodyPartArchotech" Abstract="True">
-									<comps Inherit="False" /><stages Inherit="False" />
+								<HediffDef Name="MSE_AddedBodyPartArchotechAT" ParentName="MSE_AddedBodyPartArchotechBase" Abstract="True">
+									<comps /> <!-- Makes patching easier -->
 								</HediffDef>
 							</value>
 						</li>
@@ -49,15 +49,39 @@
 						<li Class="PatchOperationAttributeSet">
 							<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid3"][defName="AR2Arm"]</xpath>
 							<attribute>ParentName</attribute>
-							<value>MSE_AddedBodyPartArchotech-AT</value>
+							<value>MSE_AddedBodyPartArchotechAT</value>
 						</li>
 
 						<li Class="PatchOperationAttributeSet">
 							<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid3"][defName="AR2Leg"]</xpath>
 							<attribute>ParentName</attribute>
-							<value>MSE_AddedBodyPartArchotech-AT</value>
+							<value>MSE_AddedBodyPartArchotechAT</value>
 						</li>
 					</operations>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Android tiers HellDrone-Extension</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+
+							<li Class="PatchOperationAttributeSet">
+								<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPowerClaw"]</xpath>
+								<attribute>ParentName</attribute>
+								<value>MSE_AddedBodyPartBionicAT</value>
+							</li>
+
+							<li Class="PatchOperationAttributeSet">
+								<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPlasmaClaw"]</xpath>
+								<attribute>ParentName</attribute>
+								<value>MSE_AddedBodyPartArchotechAT</value>
+							</li>
+
+						</operations>
+					</match>
 				</li>
 
 			</operations>

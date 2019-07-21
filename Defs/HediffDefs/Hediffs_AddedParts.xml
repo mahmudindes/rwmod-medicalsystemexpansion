@@ -5,6 +5,15 @@
 	<HediffDef Name="MSE_AddedBodyPartBase" Abstract="True">
 		<hediffClass>Hediff_AddedPart</hediffClass>
 		<isBad>false</isBad>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+	<!--===================== END ======================-->
+
+	<!--============ Added Part System Base ============-->
+	<HediffDef Name="MSE_AddedBodyPartSystemBase" Abstract="True">
+		<hediffClass>OrenoMSE.Hediff_AddedPartSystem</hediffClass>
+		<isBad>false</isBad>
+		<comps /> <!-- Make patching easier -->
 	</HediffDef>
 	<!--===================== END ======================-->
 
@@ -12,361 +21,200 @@
 	<!--==================== Basic =====================-->
 	<HediffDef Name="MSE_AddedBodyPartBasic" ParentName="MSE_AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(100, 255, 218)</defaultLabelColor>
-		<initialSeverity>1.00</initialSeverity>
-		<comps>
-			<li Class="OrenoMSE.HediffCompProperties_InitialZeroSeverity" />
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.18</severityPerDay>
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationBasic</li>
+				</hediffsToAdd>
 			</li>
-		</comps>
-		<stages>
-			<li>
-				<minSeverity>0.00</minSeverity>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.35</minSeverity>
-				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.80</minSeverity>
-				<partEfficiencyOffset>-0.80</partEfficiencyOffset>
-				<painOffset>0.30</painOffset>
-			</li>
-		</stages>
+		</modExtensions>
 	</HediffDef>
 
 	<!--=================== Simple =====================-->
-	<HediffDef Name="MSE_AddedBodyPartSimple" ParentName="MSE_AddedBodyPartBase" Abstract="True">
+
+	<HediffDef Name="MSE_AddedBodyPartSimpleBase" ParentName="MSE_AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(64, 196, 255)</defaultLabelColor>
-		<initialSeverity>1.00</initialSeverity>
-		<comps>
-			<li Class="OrenoMSE.HediffCompProperties_InitialZeroSeverity" />
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.24</severityPerDay>
-			</li>
-		</comps>
+		<comps /> <!-- Makes patching easier -->
 		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.01</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.005</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.005</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.005</ArmorRating_Sharp>
 				</statOffsets>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.35</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.85</minSeverity>
-				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
-				<painOffset>0.30</painOffset>
 			</li>
 		</stages>
 	</HediffDef>
 
-	<HediffDef Name="MSE_AddedBodyPartSimple_Organ" ParentName="MSE_AddedBodyPartSimple" Abstract="True">
-		<chanceToCauseNoPain>0.15</chanceToCauseNoPain>
-		<comps Inherit="False">
-			<li Class="OrenoMSE.HediffCompProperties_InitialZeroSeverity" />
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.20</severityPerDay>
+	<HediffDef Name="MSE_AddedBodyPartSimple" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationSimple</li>
+				</hediffsToAdd>
 			</li>
-		</comps>
-		<stages Inherit="False">
-			<li>
-				<statOffsets>
-					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.01</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-				</statOffsets>
-			</li>
-			<li>
-				<label>adapting</label>
-				<minSeverity>0.0001</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.05</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.15</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>begin to adapt</label>
-				<minSeverity>0.60</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<vomitMtbDays>0.5</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.30</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.85</minSeverity>
-				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
-				<painOffset>0.30</painOffset>
-				<vomitMtbDays>0.3</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.50</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.90</minSeverity>
-				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
-				<painOffset>0.30</painOffset>
-				<vomitMtbDays>0.3</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.85</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
+		</modExtensions>
 	</HediffDef>
 
-
-	<!--============ Added Part System Base ============-->
-	<HediffDef Name="MSE_AddedBodyPartSystemBase" Abstract="True">
-		<hediffClass>OrenoMSE.Hediff_AddedPartSystem</hediffClass>
-		<isBad>false</isBad>
+	<HediffDef Name="MSE_AddedBodyPartSimple_Organ" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationSimple_Organ</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</HediffDef>
-	<!--===================== END ======================-->
-
 
 	<!--=================== Bionic =====================-->
-	<HediffDef Name="MSE_AddedBodyPartBionic" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
+
+	<HediffDef Name="MSE_AddedBodyPartBionicBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
 		<defaultLabelColor>(83, 109, 254)</defaultLabelColor>
-		<initialSeverity>1.00</initialSeverity>
-		<comps>
-			<li Class="OrenoMSE.HediffCompProperties_InitialZeroSeverity" />
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.38</severityPerDay>
-			</li>
-		</comps>
+		<comps /> <!-- Makes patching easier -->
 		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.02</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
 				</statOffsets>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.50</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.10</painOffset>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.90</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
 			</li>
 		</stages>
 	</HediffDef>
 
-	<HediffDef Name="MSE_AddedBodyPartBionic_Organ" ParentName="MSE_AddedBodyPartBionic" Abstract="True">
-		<chanceToCauseNoPain>0.30</chanceToCauseNoPain>
-		<comps Inherit="False">
-			<li Class="OrenoMSE.HediffCompProperties_InitialZeroSeverity" />
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.32</severityPerDay>
+	<HediffDef Name="MSE_AddedBodyPartBionic" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationBionic</li>
+				</hediffsToAdd>
 			</li>
-		</comps>
-		<stages Inherit="False">
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartBionic_Organ" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationBionic_Organ</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartBionicSpecialBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
+		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.02</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
 				</statOffsets>
-			</li>
-			<li>
-				<label>adapting</label>
-				<minSeverity>0.0001</minSeverity>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>begin to adapt</label>
-				<minSeverity>0.60</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.10</painOffset>
-				<vomitMtbDays>1.0</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.05</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.85</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<vomitMtbDays>0.5</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.15</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.95</minSeverity>
-				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.85</offset>
-					</li>
-				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
 
-	<HediffDef Name="MSE_AddedBodyPartBionicSpecial" ParentName="MSE_AddedBodyPartBionic" Abstract="True">
-		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
+	<HediffDef Name="MSE_AddedBodyPartBionicSpecial" ParentName="MSE_AddedBodyPartBionicSpecialBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationBionicSpecial</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</HediffDef>
 
-	<HediffDef Name="MSE_AddedBodyPartBionicSpecial_Organ" ParentName="MSE_AddedBodyPartBionic_Organ" Abstract="True">
-		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
+	<HediffDef Name="MSE_AddedBodyPartBionicSpecial_Organ" ParentName="MSE_AddedBodyPartBionicSpecialBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationBionicSpecial_Organ</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</HediffDef>
 
 	<!--================== Archotech ===================-->
-	<HediffDef Name="MSE_AddedBodyPartArchotech" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
+
+	<HediffDef Name="MSE_AddedBodyPartArchotechBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
 		<defaultLabelColor>(224, 64, 251)</defaultLabelColor>
-		<initialSeverity>1.00</initialSeverity>
-		<comps>
-			<li Class="OrenoMSE.HediffCompProperties_InitialZeroSeverity" />
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.42</severityPerDay>
-			</li>
-		</comps>
+		<comps /> <!-- Makes patching easier -->
 		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.03</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.020</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
 				</statOffsets>
-			</li>
-			<li>
-				<label>getting used to</label>
-				<minSeverity>0.001</minSeverity>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>not accustomed</label>
-				<minSeverity>0.60</minSeverity>
-				<painOffset>0.10</painOffset>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.90</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
 			</li>
 		</stages>
 	</HediffDef>
 
-	<HediffDef Name="MSE_AddedBodyPartArchotech_Organ" ParentName="MSE_AddedBodyPartArchotech" Abstract="True">
-		<chanceToCauseNoPain>0.38</chanceToCauseNoPain>
-		<comps Inherit="False">
-			<li Class="OrenoMSE.HediffCompProperties_InitialZeroSeverity" />
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.30</severityPerDay>
+	<HediffDef Name="MSE_AddedBodyPartArchotech" ParentName="MSE_AddedBodyPartArchotechBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationArchotech</li>
+				</hediffsToAdd>
 			</li>
-		</comps>
-		<stages Inherit="False">
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartArchotech_Organ" ParentName="MSE_AddedBodyPartArchotechBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationArchotech_Organ</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartArchotechSpecialBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
+		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.03</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.020</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
 				</statOffsets>
-			</li>
-			<li>
-				<label>adapting</label>
-				<minSeverity>0.001</minSeverity>
-				<painOffset>0.05</painOffset>
-			</li>
-			<li>
-				<label>begin to adapt</label>
-				<minSeverity>0.60</minSeverity>
-				<painOffset>0.10</painOffset>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.85</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<vomitMtbDays>1.0</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.15</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>newly installed</label>
-				<minSeverity>0.95</minSeverity>
-				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.85</offset>
-					</li>
-				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
 
-	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial" ParentName="MSE_AddedBodyPartArchotech" Abstract="True">
-		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
+	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial" ParentName="MSE_AddedBodyPartArchotechSpecialBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationArchotechSpecial</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</HediffDef>
 
-	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial_Organ" ParentName="MSE_AddedBodyPartArchotech_Organ" Abstract="True">
-		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
+	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial_Organ" ParentName="MSE_AddedBodyPartArchotechSpecialBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationArchotechSpecial_Organ</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
 	</HediffDef>
 
 </Defs>

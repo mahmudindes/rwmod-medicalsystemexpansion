@@ -1,4 +1,5 @@
-﻿using Harmony;
+﻿using System.Collections.Generic;
+using Harmony;
 using Verse;
 
 namespace OrenoMSE.Harmony
@@ -7,18 +8,20 @@ namespace OrenoMSE.Harmony
     {
         [HarmonyPatch(typeof(PawnGenerator))]
         [HarmonyPatch("GenerateInitialHediffs")]
-        public class PawnGenerator_GenerateInitialHediffs
+        internal class PawnGenerator_GenerateInitialHediffs
         {
-            [HarmonyPostfix]
-            public static void InitialZeroSeverityComp(Pawn pawn)
+            private static void Postfix(Pawn pawn)
             {
-                var hediffs = pawn.health.hediffSet.hediffs;
-                var hediff = hediffs.Count;
-                for (int i = 0; i < hediff; i++)
+                List<Hediff> hediffs = pawn.health.hediffSet?.hediffs;
+                if (hediffs != null)
                 {
-                    if (hediffs[i].def.HasComp(typeof(HediffComp_InitialZeroSeverity)))
+                    for (int i = 0; i < hediffs.Count; i++)
                     {
-                        hediffs[i].Severity = 0f;
+                        MSE_SpawnInitialSeverity spawnInitialSeverity = hediffs[i].def.GetModExtension<MSE_SpawnInitialSeverity>();
+                        if (spawnInitialSeverity != null)
+                        {
+                            hediffs[i].Severity = spawnInitialSeverity.initialSeverity;
+                        }
                     }
                 }
             }
