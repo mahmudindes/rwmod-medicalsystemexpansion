@@ -19,16 +19,16 @@
 		<tickerType>Never</tickerType>
 		<alwaysHaulable>true</alwaysHaulable>
 		<isTechHediff>true</isTechHediff>
-		<techLevel>Spacer</techLevel>
+		<!-- <techLevel>Spacer</techLevel> -->
 		<tradeTags>
 			<li>TechHediff</li>
 		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
-		<thingCategories>
+		<!-- <thingCategories>
 			<li>BodyPartsArtificial</li>
-		</thingCategories>
+		</thingCategories> -->
 		<pathCost>10</pathCost>
 		<!-- Vanilla Code END -->
 
@@ -38,6 +38,10 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>MSE_Assembling</soundWorking>
 		</recipeMaker>
+		<thingCategories>
+			<li>BodyPartsArtificial</li>
+			<li>Implants</li>
+		</thingCategories>
 		<thingSetMakerTags>
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
@@ -53,11 +57,13 @@
 			<recipeUsers>
 				<li>TableBionicProstheses</li>
 			</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 			<researchPrerequisite>MSE_Implants</researchPrerequisite>
 		</recipeMaker>
-		<thingCategories>
-			<li>Implants</li>
-		</thingCategories>
+		<techLevel>Spacer</techLevel>
 		<tradeTags Inherit="False">
 			<li>MSE_BionicProstheses</li>
 		</tradeTags>
@@ -69,6 +75,28 @@
 		<recipeMaker>
 			<researchPrerequisite>MSE_BrainImplants</researchPrerequisite>
 		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="MSE_ImplantArchotech" ParentName="MSE_ImplantBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemArchotech2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ArchotechProsthesesBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<researchPrerequisite>MSE_ArchotechImplantsCrafting</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Archotech</techLevel>
+		<techHediffsTags>
+			<li>Archotech</li>
+		</techHediffsTags>
 	</ThingDef>
 
 </Defs>

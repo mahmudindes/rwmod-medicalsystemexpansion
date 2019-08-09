@@ -19,10 +19,9 @@ namespace OrenoMSE.Harmony
                 for (int i = 0; i < bpList.Count; i++)
                 {
                     BodyPartRecord record = bpList[i];
-                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystem || d is Hediff_AddedPartSystemNoModule) && d.Part == record);
-                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartModule) && d.Part == record);
-                    var check3 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == record);
-                    if (check1 || check2 || check3)
+                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartModule) && d.Part == record);
+                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartModule)) && d.Part == record);
+                    if (check1 || check2)
                     {
                         bpList.Remove(record);
                     }

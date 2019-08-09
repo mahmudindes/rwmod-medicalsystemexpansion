@@ -17,10 +17,13 @@ namespace OrenoMSE.Harmony
                 {
                     for (int i = 0; i < hediffs.Count; i++)
                     {
-                        MSE_SpawnInitialSeverity spawnInitialSeverity = hediffs[i].def.GetModExtension<MSE_SpawnInitialSeverity>();
-                        if (spawnInitialSeverity != null)
+                        if (hediffs[i].def.HasModExtension<MSE_SpawnInitialSeverity>())
                         {
-                            hediffs[i].Severity = spawnInitialSeverity.initialSeverity;
+                            MSE_SpawnInitialSeverity spawnInitialSeverity = hediffs[i].def.GetModExtension<MSE_SpawnInitialSeverity>();
+                            if (spawnInitialSeverity != null)
+                            {
+                                hediffs[i].Severity = spawnInitialSeverity.initialSeverity;
+                            }
                         }
                     }
                 }

@@ -33,7 +33,7 @@
 		</statBases>
 	</ThingDef>
 
-	<!--=============== Muscle Implants ================-->
+	<!--================ Bone Implants =================-->
 
 	<ThingDef ParentName="MSE_ImplantBionic">
 		<defName>MSE_EndoskeletonStimulator</defName>
@@ -50,6 +50,8 @@
 			<Mass>0.2</Mass>
 		</statBases>
 	</ThingDef>
+
+	<!--=============== Muscle Implants ================-->
 
 	<ThingDef ParentName="MSE_ImplantBionic">
 		<defName>MSE_MuscleStimulator</defName>
@@ -136,7 +138,7 @@
 	<ThingDef ParentName="MSE_ImplantBionic_Brain">
 		<defName>MSE_DiplomatAI</defName>
 		<label>diplomat AI</label>
-		<description>A brain implant that contain AI. Able to communicate with the user's brain and act as a guide for diplomacy. Requires brain implants research before installing.</description>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for diplomacy. Requires brain implants research before installing.</description>
 		<costList>
 			<Uranium>10</Uranium>
 			<Plasteel>5</Plasteel>
@@ -152,7 +154,55 @@
 	<ThingDef ParentName="MSE_ImplantBionic_Brain">
 		<defName>MSE_TamerAI</defName>
 		<label>tamer AI</label>
-		<description>A brain implant that contain AI. Able to communicate with the user's brain and act as a guide for taming. Requires brain implants research before installing.</description>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for taming. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_ChefAI</defName>
+		<label>chef AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for cooking. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_HunterAI</defName>
+		<label>hunter AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for hunting. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_BasicLaborAI</defName>
+		<label>basic labor AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for basic unskilled labor. Requires brain implants research before installing.</description>
 		<costList>
 			<Uranium>10</Uranium>
 			<Plasteel>5</Plasteel>
@@ -179,7 +229,7 @@
 		<statBases>
 			<MarketValue>800</MarketValue>
 			<WorkToMake>57000</WorkToMake>
-			<Mass>0.2</Mass>
+			<Mass>0.1</Mass>
 		</statBases>
 	</ThingDef>
 

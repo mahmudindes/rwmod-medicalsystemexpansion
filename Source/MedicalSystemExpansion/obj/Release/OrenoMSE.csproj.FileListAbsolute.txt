@@ -9,3 +9,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedicalSystemExpansi
 D:\Documents\Visual Studio 2017\Projects\Oreno\Framework\MedicalSystemExpansion\obj\Release\OrenoMSE.csproj.CoreCompileInputs.cache
 D:\Documents\Visual Studio 2017\Projects\Oreno\Framework\MedicalSystemExpansion\obj\Release\OrenoMSE.csproj.CopyComplete
 D:\Documents\Visual Studio 2017\Projects\Oreno\Framework\MedicalSystemExpansion\obj\Release\OrenoMSE.dll
+D:\Documents\Visual Studio 2017\Projects\Oreno\Framework\MedicalSystemExpansion\obj\Release\OrenoMSE.csprojAssemblyReference.cache

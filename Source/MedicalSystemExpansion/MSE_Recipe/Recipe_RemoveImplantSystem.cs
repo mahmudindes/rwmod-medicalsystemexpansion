@@ -14,7 +14,7 @@ namespace OrenoMSE
                 while (enumerator.MoveNext())
                 {
                     BodyPartRecord part = enumerator.Current;
-                    if (pawn.health.hediffSet.hediffs.Any((Hediff d) => d.Part == part && d is Hediff_Implant && d.def == recipe.removesHediff && d.Visible))
+                    if (pawn.health.hediffSet.hediffs.Any((Hediff d) => d is Hediff_Implant && d.Part == part && d.def == recipe.removesHediff && d.Visible))
                     {
                         yield return part;
                     }

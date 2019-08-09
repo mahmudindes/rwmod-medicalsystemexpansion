@@ -11,7 +11,9 @@
 		<workSkillLearnFactor>16</workSkillLearnFactor>
 		<!-- Vanilla Code END -->
 
-		<recipeUsers />
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 	</RecipeDef>
 
 	<!--================ Parts Surgery =================-->
@@ -86,33 +88,49 @@
 
 	<!--============== Implants Surgery ================-->
 
-	<RecipeDef Name="MSE_SurgeryImplant" ParentName="MSE_Surgery" Abstract="True">
+	<!-- Bionic implants -->
+	<RecipeDef Name="MSE_SurgeryImplantBionic" ParentName="MSE_Surgery" Abstract="True">
 		<workerClass>OrenoMSE.Recipe_InstallImplantSystem</workerClass>
 		<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
 		<researchPrerequisite>MSE_Implants</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef Name="MSE_SurgeryRemoveImplant" ParentName="MSE_Surgery" Abstract="True">
-		<workerClass>OrenoMSE.Recipe_RemoveImplantSystem</workerClass>
-		<surgerySuccessChanceFactor>0.85</surgerySuccessChanceFactor>
-		<researchPrerequisite>MSE_Implants</researchPrerequisite>
-	</RecipeDef>
-
-	<RecipeDef Name="MSE_SurgeryImplant_Organ" ParentName="MSE_SurgeryImplant" Abstract="True">
+	<RecipeDef Name="MSE_SurgeryImplantBionic_Organ" ParentName="MSE_SurgeryImplantBionic" Abstract="True">
 		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
 	</RecipeDef>
 
-	<RecipeDef Name="MSE_SurgeryRemoveImplant_Organ" ParentName="MSE_SurgeryRemoveImplant" Abstract="True">
-		<surgerySuccessChanceFactor>0.80</surgerySuccessChanceFactor>
-	</RecipeDef>
-
-	<RecipeDef Name="MSE_SurgeryImplant_Brain" ParentName="MSE_SurgeryImplant" Abstract="True">
+	<RecipeDef Name="MSE_SurgeryImplantBionic_Brain" ParentName="MSE_SurgeryImplantBionic" Abstract="True">
 		<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
 		<researchPrerequisite>MSE_BrainImplants</researchPrerequisite>
 	</RecipeDef>
 
+	<!-- Archotech implants -->
+	<RecipeDef Name="MSE_SurgeryImplantArchotech" ParentName="MSE_Surgery" Abstract="True">
+		<workerClass>OrenoMSE.Recipe_InstallImplantSystem</workerClass>
+		<researchPrerequisite>MSE_ArchotechImplantsSurgery</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryImplantArchotech_Organ" ParentName="MSE_SurgeryImplantArchotech" Abstract="True">
+		<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryImplantArchotech_Brain" ParentName="MSE_SurgeryImplantArchotech" Abstract="True">
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	</RecipeDef>
+
+	<!-- Implants removal -->
+	<RecipeDef Name="MSE_SurgeryRemoveImplant" ParentName="MSE_Surgery" Abstract="True">
+		<workerClass>OrenoMSE.Recipe_RemoveImplantSystem</workerClass>
+		<surgerySuccessChanceFactor>0.80</surgerySuccessChanceFactor>
+		<researchPrerequisite>MSE_Implants</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef Name="MSE_SurgeryRemoveImplant_Organ" ParentName="MSE_SurgeryRemoveImplant" Abstract="True">
+		<surgerySuccessChanceFactor>0.75</surgerySuccessChanceFactor>
+	</RecipeDef>
+
 	<RecipeDef Name="MSE_SurgeryRemoveImplant_Brain" ParentName="MSE_SurgeryRemoveImplant" Abstract="True">
-		<deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
+		<deathOnFailedSurgeryChance>0.20</deathOnFailedSurgeryChance>
 		<researchPrerequisite>MSE_BrainImplants</researchPrerequisite>
 	</RecipeDef>
 

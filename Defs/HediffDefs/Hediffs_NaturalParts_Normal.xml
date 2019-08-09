@@ -3,7 +3,7 @@
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
 		<defName>Brain</defName>
-		<label>brain transplant rejection</label>
+		<label>brain cells transplant rejection</label>
 		<initialSeverity>0.65</initialSeverity>
 		<comps Inherit="False">
 			<li Class="HediffCompProperties_TendDuration">

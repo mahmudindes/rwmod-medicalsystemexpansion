@@ -16,7 +16,7 @@
 		<!-- Make it consumable -->
 		<ingestible>
 			<foodType>Meat</foodType>
-			<preferability>RawBad</preferability>
+			<preferability>NeverForNutrition</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>AteRawFood</tasteThought>
@@ -25,7 +25,6 @@
 		<statBases>
 			<Nutrition>0.25</Nutrition>
 		</statBases>
-		<socialPropernessMatters>true</socialPropernessMatters>
 	</ThingDef>
 
 	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartArtificialBase" Abstract="True">
@@ -154,7 +153,7 @@
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	<ThingDef Name="MSE_BodyPartArchotechSpecial" ParentName="BodyPartArchotechBase" Abstract="True">
+	<ThingDef Name="MSE_BodyPartArchotechSpecial" ParentName="MSE_BodyPartArchotech" Abstract="True">
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>15</Crafting>

@@ -18,24 +18,6 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Brain"]/spawnThingOnRemoved</xpath>
-				<success>Invert</success>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/BodyPartDef[defName="Brain"]</xpath>
-				<order>Append</order>
-				<value>
-					<spawnThingOnRemoved>Brain</spawnThingOnRemoved>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
 				<xpath>Defs/BodyPartDef[defName="Eye"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>

@@ -33,6 +33,20 @@
 		<researchViewY>1.0</researchViewY>
 	</ResearchProjectDef>
 
+	<!-- <ResearchProjectDef>
+		<defName>MSE_FingerAndToeTransplantation</defName>
+		<label>finger and toe transplantation</label>
+		<description>Allows removed finger and toe from one body to be placed in the body of a recipient, to replace a damaged or missing organ.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MSE_OrganTransplantation</li>
+		</prerequisites>
+		<tab>MSE</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.0</researchViewY>
+	</ResearchProjectDef> -->
+
 	<ResearchProjectDef>
 		<defName>Prosthetics</defName>
 		<label>prosthetics</label>
@@ -51,28 +65,28 @@
 	<ResearchProjectDef>
 		<defName>MSE_BoneReplacement</defName>
 		<label>bone replacement</label>
-		<description>Craft prosthetic bone and replace broken bone with it. Requires a skilled doctor to replace.</description>
+		<description>Craft inexpensive prosthetic bone and replace broken bone with it. Requires a skilled crafter to make.</description>
 		<baseCost>400</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>Prosthetics</li>
 		</prerequisites>
 		<tab>MSE</tab>
-		<researchViewX>1</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>2.5</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>MSE_ProstheticOrgans</defName>
 		<label>prosthetic organs</label>
-		<description>Craft prosthetic organ and replace unhealthy or missing organ with it. Requires a skilled doctor to replace.</description>
+		<description>Craft inexpensive prosthetic organ and replace unhealthy or missing organ with it. Requires a skilled crafter to make.</description>
 		<baseCost>400</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>MSE_BoneReplacement</li>
 		</prerequisites>
 		<tab>MSE</tab>
-		<researchViewX>1</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>3.0</researchViewY>
 	</ResearchProjectDef>
 
@@ -93,7 +107,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>2.0</researchViewY>
 	</ResearchProjectDef>
 
@@ -112,7 +126,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>2</researchViewX>
+		<researchViewX>4</researchViewX>
 		<researchViewY>2.5</researchViewY>
 	</ResearchProjectDef>
 
@@ -131,7 +145,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>2</researchViewX>
+		<researchViewX>4</researchViewX>
 		<researchViewY>3.0</researchViewY>
 	</ResearchProjectDef>
 
@@ -150,29 +164,11 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>2</researchViewX>
+		<researchViewX>4</researchViewX>
 		<researchViewY>3.5</researchViewY>
 	</ResearchProjectDef>
 
 	<!--=============================== Tier 3 ===================================-->
-
-	<ResearchProjectDef>
-		<defName>MSE_ArchotechSurgery</defName>
-		<label>archotech surgery</label>
-		<description>Allows you to perform surgery to attach archotech body parts. Requires a very skilled doctor to attach.</description>
-		<baseCost>3000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>Bionics</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<tab>MSE</tab>
-		<researchViewX>3</researchViewX>
-		<researchViewY>1.0</researchViewY>
-	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>MSE_ModulesSurgery</defName>
@@ -188,14 +184,14 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>3</researchViewX>
-		<researchViewY>2.0</researchViewY>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1.0</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>MSE_Implants</defName>
 		<label>implants</label>
-		<description>Build high-tech bionic implants at a bionic machining table. Requires a very skilled doctor to attach.</description>
+		<description>Build high-tech bionic implants at a bionic machining table. Requires a very skilled doctor to install.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -206,14 +202,14 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>3</researchViewX>
+		<researchViewX>5</researchViewX>
 		<researchViewY>3.0</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>MSE_BrainImplants</defName>
 		<label>brain implants</label>
-		<description>Build high-tech bionic brain implants at a bionic machining table. Requires a very skilled doctor to attach.</description>
+		<description>Build high-tech bionic brain implants at a bionic machining table. Requires a very skilled doctor to install.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -224,8 +220,26 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>3</researchViewX>
+		<researchViewX>5</researchViewX>
 		<researchViewY>3.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MSE_ArchotechSurgery</defName>
+		<label>archotech surgery</label>
+		<description>Allows you to perform surgery to attach archotech body parts. Requires a very skilled doctor to attach.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MSE_SpecialBionics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSE</tab>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2.0</researchViewY>
 	</ResearchProjectDef>
 
 	<!--=============================== Tier 4 ===================================-->
@@ -233,30 +247,11 @@
 	<ResearchProjectDef>
 		<defName>MSE_ModulesCrafting</defName>
 		<label>modules crafting</label>
-		<description>Allows you to craft modules. Requires a very skilled crafter to make.</description>
+		<description>Allows you to craft modules. Requires a skilled crafter to make.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>MSE_ModulesSurgery</li>
-			<li>AdvancedFabrication</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<tab>MSE</tab>
-		<researchViewX>4</researchViewX>
-		<researchViewY>2.0</researchViewY>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
-		<defName>MSE_ArchotechCrafting</defName>
-		<label>archotech crafting</label>
-		<description>Allows you to uncover the secret of an archotech technology so you can able to craft archotech body part. Requires a very skilled crafter to make.</description>
-		<baseCost>3000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>MSE_ArchotechSurgery</li>
 			<li>AdvancedFabrication</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -269,10 +264,48 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
+		<defName>MSE_ArchotechImplantsSurgery</defName>
+		<label>archotech implants surgery</label>
+		<description>Allows you to perform surgery to install archotech implants on body parts. Requires a very skilled doctor to install.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MSE_ArchotechSurgery</li>
+			<li>MSE_BrainImplants</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSE</tab>
+		<researchViewX>6</researchViewX>
+		<researchViewY>3.0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MSE_ArchotechCrafting</defName>
+		<label>archotech crafting</label>
+		<description>Allows you to uncover the secret of an archotech technology so you can able to craft archotech body parts. Requires a very skilled crafter to make.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MSE_ArchotechSurgery</li>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSE</tab>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2.0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
 		<defName>MSE_ArchotechModules</defName>
 		<label>archotech modules</label>
-		<description>Allows you to craft and install archotech module. Requires a very skilled crafter to make.</description>
-		<baseCost>1500</baseCost>
+		<description>Build high-tech archotech modules at a archotech fabrication bench. Requires a very skilled doctor to attach.</description>
+		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>MSE_ModulesCrafting</li>
@@ -283,8 +316,27 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>5</researchViewX>
-		<researchViewY>2.0</researchViewY>
+		<researchViewX>8</researchViewX>
+		<researchViewY>1.0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MSE_ArchotechImplantsCrafting</defName>
+		<label>archotech implants crafting</label>
+		<description>Allows you to craft archotech implant. Requires a very skilled crafter to make.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MSE_ArchotechImplantsSurgery</li>
+			<li>MSE_ArchotechCrafting</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSE</tab>
+		<researchViewX>8</researchViewX>
+		<researchViewY>3.0</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>

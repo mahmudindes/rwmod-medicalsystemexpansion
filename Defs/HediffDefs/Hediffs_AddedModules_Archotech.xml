@@ -256,7 +256,7 @@
 					</li>
 				</capMods>
 				<statOffsets>
-					<ShootingAccuracyPawn>0.20</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>20.0</ShootingAccuracyPawn>
 					<AimingDelayFactor>-0.30</AimingDelayFactor>
 				</statOffsets>
 			</li>

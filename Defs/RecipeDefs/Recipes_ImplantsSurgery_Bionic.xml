@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant_Brain">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
 		<defName>InstallJoywire</defName>
 		<label>install joywire</label>
 		<description>Install a joywire.</description>
@@ -43,7 +43,7 @@
 		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant_Brain">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
 		<defName>InstallPainstopper</defName>
 		<label>install painstopper</label>
 		<description>Install a painstopper.</description>
@@ -85,9 +85,9 @@
 		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
-	<!--=============== Muscle Implants ================-->
+	<!--================ Bone Implants =================-->
 
-	<RecipeDef ParentName="MSE_SurgeryImplant">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic">
 		<defName>MSE_InstallEndoskeletonStimulator</defName>
 		<label>install endoskeleton stimulator</label>
 		<description>Install an endoskeleton stimulator.</description>
@@ -126,9 +126,16 @@
 			<li>Torso</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>MSE_EndoskeletonStimulator</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_ImplantSystem">
+				<isSpecial>true</isSpecial>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant">
+	<!--=============== Muscle Implants ================-->
+
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic">
 		<defName>MSE_InstallArmMuscleStimulator</defName>
 		<label>install arm muscle stimulator</label>
 		<description>Install an arm muscle stimulator.</description>
@@ -167,9 +174,14 @@
 			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>MSE_ArmMuscleStimulator</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_ImplantSystem">
+				<isSpecial>true</isSpecial>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic">
 		<defName>MSE_InstallLegMuscleStimulator</defName>
 		<label>install leg muscle stimulator</label>
 		<description>Install a leg muscle stimulator.</description>
@@ -208,11 +220,16 @@
 			<li>Leg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>MSE_LegMuscleStimulator</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_ImplantSystem">
+				<isSpecial>true</isSpecial>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<!--================ Brain Implants ================-->
 
-	<RecipeDef ParentName="MSE_SurgeryImplant_Brain">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
 		<defName>MSE_InstallBuilderAI</defName>
 		<label>install builder AI</label>
 		<description>Install a builder AI.</description>
@@ -253,7 +270,7 @@
 		<addsHediff>MSE_BuilderAI</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant_Brain">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
 		<defName>MSE_InstallFarmerAI</defName>
 		<label>install farmer AI</label>
 		<description>Install a farmer AI.</description>
@@ -294,7 +311,7 @@
 		<addsHediff>MSE_FarmerAI</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant_Brain">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
 		<defName>MSE_InstallDoctorAI</defName>
 		<label>install doctor AI</label>
 		<description>Install a doctor AI.</description>
@@ -335,7 +352,7 @@
 		<addsHediff>MSE_DoctorAI</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant_Brain">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
 		<defName>MSE_InstallMinerAI</defName>
 		<label>install miner AI</label>
 		<description>Install a miner AI.</description>
@@ -376,7 +393,7 @@
 		<addsHediff>MSE_MinerAI</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant_Brain">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
 		<defName>MSE_InstallDiplomatAI</defName>
 		<label>install diplomat AI</label>
 		<description>Install a diplomat AI.</description>
@@ -417,7 +434,7 @@
 		<addsHediff>MSE_DiplomatAI</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant_Brain">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
 		<defName>MSE_InstallTamerAI</defName>
 		<label>install tamer AI</label>
 		<description>Install a tamer AI.</description>
@@ -458,7 +475,130 @@
 		<addsHediff>MSE_TamerAI</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryImplant_Organ">
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
+		<defName>MSE_InstallChefAI</defName>
+		<label>install chef AI</label>
+		<description>Install a chef AI.</description>
+		<jobString>Installing chef AI.</jobString>
+		<workAmount>5600</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_ChefAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_ChefAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_ChefAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
+		<defName>MSE_InstallHunterAI</defName>
+		<label>install hunter AI</label>
+		<description>Install a hunter AI.</description>
+		<jobString>Installing hunter AI.</jobString>
+		<workAmount>5600</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_HunterAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_HunterAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_HunterAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
+		<defName>MSE_InstallBasicLaborAI</defName>
+		<label>install basic labor AI</label>
+		<description>Install a basic labor AI.</description>
+		<jobString>Installing basic labor AI.</jobString>
+		<workAmount>5600</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_BasicLaborAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_BasicLaborAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_BasicLaborAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Organ">
 		<defName>MSE_InstallAppetiteSuppressant</defName>
 		<label>install appetite suppressant</label>
 		<description>Install an appetite suppressant.</description>

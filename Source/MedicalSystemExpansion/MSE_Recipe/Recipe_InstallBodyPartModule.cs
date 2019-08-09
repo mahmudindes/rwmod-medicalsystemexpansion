@@ -23,7 +23,7 @@ namespace OrenoMSE
                         {
                             if (record.parent == null || pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null).Contains(record.parent))
                             {
-                                if (pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartModule) && d.Part == record))
+                                if (pawn.health.hediffSet.hediffs.Any((Hediff d) => d is Hediff_BodyPartModule && d.Part == record))
                                 {
                                     yield return record;
                                 }

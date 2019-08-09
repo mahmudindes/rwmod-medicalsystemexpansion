@@ -36,67 +36,109 @@ namespace OrenoMSE
             return false;
         }
 
-        public static void RecipeApplyHediffs(Recipe_Surgery surgery, Pawn pawn, BodyPartRecord record)
+        public static bool PartHasAdvancedImplantSystem(Pawn pawn, BodyPartRecord record)
         {
-            MSE_AdditionalHediff additionalHediffs = surgery.recipe.GetModExtension<MSE_AdditionalHediff>();
-            if (additionalHediffs != null)
+            List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
+            for (int i = 0; i < hediffs.Count; i++)
             {
-                List<HediffDef> hediffsToAdd = additionalHediffs.hediffsToAdd;
-                for (int i = 0; i < hediffsToAdd.Count; i++)
+                if (hediffs[i].def.HasModExtension<MSE_ImplantSystem>() && hediffs[i].Part == record)
                 {
-                    pawn.health.AddHediff(hediffsToAdd[i], record, null, null);
+                    MSE_ImplantSystem implantSystem = hediffs[i].def.GetModExtension<MSE_ImplantSystem>();
+                    if (implantSystem.isSpecial)
+                    {
+                        return true;
+                    }
                 }
             }
+            return false;
+        }
+
+        public static void RecipeApplyHediffs(Recipe_Surgery surgery, Pawn pawn, BodyPartRecord record)
+        {
+            if (surgery.recipe.HasModExtension<MSE_AdditionalHediff>())
+            {
+                MSE_AdditionalHediff additionalHediffs = surgery.recipe.GetModExtension<MSE_AdditionalHediff>();
+                if (additionalHediffs != null && !additionalHediffs.hediffsToAdd.NullOrEmpty())
+                {
+                    List<HediffDef> hediffsToAdd = additionalHediffs.hediffsToAdd;
+                    for (int i = 0; i < hediffsToAdd.Count; i++)
+                    {
+                        pawn.health.AddHediff(hediffsToAdd[i], record, null, null);
+                    }
+                }
+            }
+            return;
         }
 
         public static void HediffApplyHediffs(Hediff hediff, Pawn pawn, BodyPartRecord record)
         {
-            MSE_AdditionalHediff additionalHediffs = hediff.def.GetModExtension<MSE_AdditionalHediff>();
-            if (additionalHediffs != null)
+            if (hediff.def.HasModExtension<MSE_AdditionalHediff>())
             {
-                List<HediffDef> hediffsToAdd = additionalHediffs.hediffsToAdd;
-                for (int i = 0; i < hediffsToAdd.Count; i++)
+                MSE_AdditionalHediff additionalHediffs = hediff.def.GetModExtension<MSE_AdditionalHediff>();
+                if (additionalHediffs != null && !additionalHediffs.hediffsToAdd.NullOrEmpty())
                 {
-                    pawn.health.AddHediff(hediffsToAdd[i], record, null, null);
+                    List<HediffDef> hediffsToAdd = additionalHediffs.hediffsToAdd;
+                    for (int i = 0; i < hediffsToAdd.Count; i++)
+                    {
+                        pawn.health.AddHediff(hediffsToAdd[i], record, null, null);
+                    }
                 }
             }
+            return;
         }
 
         public static string PrettyLabel(Hediff hediff)
         {
-            MSE_HediffPrettyLabel hediffPrettyLabel = hediff.def.GetModExtension<MSE_HediffPrettyLabel>();
-            if (hediffPrettyLabel != null)
+            if (hediff.def.HasModExtension<MSE_HediffPrettyLabel>())
             {
-                string sourcePart = "unknown";
-                if (hediff.Part.customLabel != null)
+                MSE_HediffPrettyLabel hediffPrettyLabel = hediff.def.GetModExtension<MSE_HediffPrettyLabel>();
+                if (hediffPrettyLabel != null && !hediffPrettyLabel.labelPretty.NullOrEmpty())
                 {
-                    sourcePart = hediff.Part.customLabel;
+                    string genderNoun = "unknown";
+                    string genderlessNoun = hediffPrettyLabel.genderlessNoun;
+                    string maleNoun = hediffPrettyLabel.maleNoun;
+                    string femaleNoun = hediffPrettyLabel.femaleNoun;
+                    if (genderlessNoun != null && hediff.pawn.gender == Gender.None)
+                    {
+                        genderNoun = genderlessNoun;
+                    }
+                    else if (maleNoun != null && hediff.pawn.gender == Gender.Male)
+                    {
+                        genderNoun = maleNoun;
+                    }
+                    else if (femaleNoun != null && hediff.pawn.gender == Gender.Female)
+                    {
+                        genderNoun = femaleNoun;
+                    }
+                    return string.Format(hediffPrettyLabel.labelPretty, hediff.Part.Label, genderNoun);
                 }
-                else
-                {
-                    sourcePart = hediff.Part.def.ToString();
-                }
-
-                string genderNoun = "Unknown";
-                string genderlessNoun = hediffPrettyLabel.genderlessNoun;
-                string maleNoun = hediffPrettyLabel.maleNoun;
-                string femaleNoun = hediffPrettyLabel.femaleNoun;
-                if (genderlessNoun != null && hediff.pawn.gender == Gender.None)
-                {
-                    genderNoun = genderlessNoun;
-                }
-                else if (maleNoun != null && hediff.pawn.gender == Gender.Male)
-                {
-                    genderNoun = maleNoun;
-                }
-                else if (femaleNoun != null && hediff.pawn.gender == Gender.Female)
-                {
-                    genderNoun = femaleNoun;
-                }
-                return string.Format(hediffPrettyLabel.labelPretty, sourcePart, genderNoun);
             }
-
             return hediff.def.label;
         }
+
+        public static Texture2D GetIcon(string loadID, string iconPath)
+        {
+            if (iconsCache.ContainsKey(loadID))
+            {
+                return iconsCache[loadID];
+            }
+            else
+            {
+                Texture2D icon = BaseContent.BadTex;
+                if (!iconPath.NullOrEmpty())
+                {
+                    icon = ContentFinder<Texture2D>.Get(iconPath, true);
+                    iconsCache.Add(loadID, icon);
+                }
+                return icon;
+            }
+        }
+
+        public static void ClearIcon(string loadID)
+        {
+            iconsCache.Remove(loadID);
+        }
+
+        public static readonly Dictionary<string, Texture2D> iconsCache = new Dictionary<string, Texture2D>();
     }
 }

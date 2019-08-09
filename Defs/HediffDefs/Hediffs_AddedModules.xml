@@ -3,9 +3,11 @@
 
 	<!--============ Added Part Module Base ============-->
 	<HediffDef Name="MSE_AddedModule" Abstract="True">
-		<hediffClass>OrenoMSE.Hediff_AddedPartModule</hediffClass>
+		<hediffClass>HediffWithComps</hediffClass>
 		<isBad>false</isBad>
-		<comps /> <!-- Makes patching easier -->
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_PartModule" />
+		</comps>
 	</HediffDef>
 	<!--===================== END ======================-->
 
@@ -18,7 +20,7 @@
 
 	<!--================== Archotech ===================-->
 	<HediffDef Name="MSE_AddedModuleArchotech" ParentName="MSE_AddedModule" Abstract="True">
-		<defaultLabelColor>(255, 109, 0)</defaultLabelColor>
+		<defaultLabelColor>(255, 110, 64)</defaultLabelColor>
 		<comps /> <!-- Makes patching easier -->
 	</HediffDef>
 

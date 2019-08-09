@@ -37,9 +37,10 @@ namespace OrenoMSE.Harmony
                     while (enumerator.MoveNext())
                     {
                         BodyPartRecord part = enumerator.Current;
-                        var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_AddedPartSystem || d is Hediff_AddedPartSystemNoModule || d is Hediff_SurgerySupport) && d.Part == part);
-                        var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_Injury || d is Hediff_SurgerySupport) && d.def.isBad && d.Visible && d.Part == part);
-                        if (pawn.health.hediffSet.HasDirectlyAddedPartFor(part) && check1)
+                        var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == part);
+                        var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_SurgerySupport) && d.Part == part);
+                        var check3 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_Injury || d is Hediff_SurgerySupport) && d.def.isBad && d.Visible && d.Part == part);
+                        if (pawn.health.hediffSet.HasDirectlyAddedPartFor(part) && check1 && check2)
                         {
                             if (!pawn.health.hediffSet.AncestorHasDirectlyAddedParts(part))
                             {
@@ -50,7 +51,7 @@ namespace OrenoMSE.Harmony
                         {
                             yield return part;
                         }
-                        else if (part != pawn.RaceProps.body.corePart && part.def.canSuggestAmputation && check2)
+                        else if (part != pawn.RaceProps.body.corePart && part.def.canSuggestAmputation && check3)
                         {
                             yield return part;
                         }

@@ -27,6 +27,15 @@ namespace OrenoMSE
                                 yield break;
                             }
 
+                            MSE_ImplantSystem implantSystem = recipe.GetModExtension<MSE_ImplantSystem>();
+                            if (implantSystem != null && implantSystem.isSpecial)
+                            {
+                                if (pawn.health.hediffSet.HasDirectlyAddedPartFor(record) && !MSE_VanillaExtender.PartHasAdvancedImplantSystem(pawn, record))
+                                {
+                                    yield break;
+                                }
+                            }
+
                             if (!pawn.health.hediffSet.hediffs.Any((Hediff x) => x.Part == record && x.def == recipe.addsHediff))
                             {
                                 yield return record;

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
+
 	<identifier>MedicalSystemExpansion</identifier>
-	<version>1.0.0.0</version>
+	<version>2.0.0.0</version>
 	<loadBefore>
 		<li>MSE-RealOrganism</li>
 	</loadBefore>
 	<loadAfter>
-		<li>TheBirdsandtheBees</li>
 		<!-- Compatible Only -->
 		<li>ArchotechExpanded</li>
 		<li>ArchotechExpandedProsthetics</li>
@@ -16,6 +16,7 @@
 		<li>[FSF]VanillaBionicsExpansion</li>
 	</loadAfter>
 	<showCrossPromotions>true</showCrossPromotions>
-	<!-- <manifestUri>https://rawgit.com/FluffierThanThou/ModManager/master/About/Manifest.xml</manifestUri> -->
+	<manifestUri>https://raw.githubusercontent.com/IndoOreno/MedicalSystemExpansion/master/About/Manifest.xml</manifestUri>
 	<downloadUri>https://github.com/MahmudinPURE/MedicalSystemExpansion/releases</downloadUri>
+
 </Manifest>

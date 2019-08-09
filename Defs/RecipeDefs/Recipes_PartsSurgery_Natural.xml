@@ -198,9 +198,9 @@
 
 	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
 		<defName>InstallNaturalBrain</defName>
-		<label>install brain</label>
-		<description>Install a biological brain.</description>
-		<jobString>Installing brain.</jobString>
+		<label>install brain cells</label>
+		<description>Install a biological brain cells.</description>
+		<jobString>Installing brain cells.</jobString>
 		<workAmount>6100</workAmount>
 		<deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
 		<skillRequirements>

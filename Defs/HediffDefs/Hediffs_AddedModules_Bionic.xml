@@ -250,7 +250,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>10.0</ShootingAccuracyPawn>
 					<AimingDelayFactor>-0.15</AimingDelayFactor>
 				</statOffsets>
 			</li>

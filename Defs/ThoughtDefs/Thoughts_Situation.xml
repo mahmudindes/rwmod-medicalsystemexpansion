@@ -2,6 +2,20 @@
 <Defs>
 
 	<ThoughtDef>
+		<defName>AdvancedJoywire</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AdvancedJoywire</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>advanced joywire</label>
+				<description>It feels amazing.</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
 		<defName>BionicRib</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<workerClass>ThoughtWorker_Hediff</workerClass>

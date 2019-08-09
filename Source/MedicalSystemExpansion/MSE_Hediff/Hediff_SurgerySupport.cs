@@ -12,14 +12,6 @@ namespace OrenoMSE
             }
         }
 
-        public override bool ShouldRemove
-        {
-            get
-            {
-                return false;
-            }
-        }
-
         public override void ExposeData()
         {
             base.ExposeData();

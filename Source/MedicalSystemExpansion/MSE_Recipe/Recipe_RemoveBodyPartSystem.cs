@@ -16,8 +16,8 @@ namespace OrenoMSE
                 while (enumerator.MoveNext())
                 {
                     BodyPartRecord part = enumerator.Current;
-                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystem || d is Hediff_AddedPartSystemNoModule) && d.Part == part);
-                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == part);
+                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == part);
+                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartModule)) && d.Part == part);
                     if (check1 || check2)
                     {
                         yield return part;
@@ -29,7 +29,7 @@ namespace OrenoMSE
 
         public override void ApplyOnPawn(Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill)
         {
-            bool flag1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == part);
+            bool flag1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartModule)) && d.Part == part);
             bool flag2 = this.IsViolationOnPawn(pawn, part, Faction.OfPlayer);
 
             if (billDoer != null)
@@ -50,7 +50,7 @@ namespace OrenoMSE
             if (flag1)
             {
                 pawn.health.RestorePart(part, null, true);
-                Hediff_BodyPartModule hediff_BodyPartModule = (Hediff_BodyPartModule)HediffMaker.MakeHediff(MSE_HediffDefOf.MSE_BodyPartModule, pawn, null);
+                HediffWithComps hediff_BodyPartModule = (HediffWithComps)HediffMaker.MakeHediff(MSE_HediffDefOf.MSE_BodyPartModule, pawn, null);
                 hediff_BodyPartModule.Part = part;
                 pawn.health.hediffSet.AddDirect(hediff_BodyPartModule, null, null);
             }
@@ -75,13 +75,13 @@ namespace OrenoMSE
 
         public override string GetLabelWhenUsedOn(Pawn pawn, BodyPartRecord part)
         {
-            var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartSystem || d is Hediff_AddedPartSystemNoModule) && d.Part == part);
+            var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == part);
             if (check1)
             {               
                 return "RemovePartSystem".Translate();
             }
 
-            var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_AddedPartModule) && d.Part == part);
+            var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartModule)) && d.Part == part);
             if (check2)
             {
                 return "RemovePartModule".Translate();
