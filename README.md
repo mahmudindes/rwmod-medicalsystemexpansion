@@ -1,14 +1,14 @@
 # Medical System Expansion
-**Not Just Another Prostheses Mod**. An expansion of vanilla medical system and how they work. Adds full featured prosthesis that uses vanilla standard and integration with another mod. New Prosthesis System allows you to install prosthetic modules on installed prosthesis.
+**Not Just Another Prostheses Mod**. An expansion of vanilla medical system and how they work. Adds full featured prosthesis that uses vanilla standard and integration with another mod.
 
 ## Main Features
-- Installed prostheses can keep there child parts. Now you don't get missing fingers when installed hand prosthesis or missing toes when installed foot prosthesis.
-- New exclusive body part system and it's modules. Allows you to install prosthetic modules on installed prosthesis.
-
-**This two main features only work on bionic and archotech body parts**. It doesn't make sense to me for basic and simple body parts can have this features.
+- Installed prosthesis can keep its child parts. In vanilla or other mod, if you install prosthesis part like peg leg then you lost its foot and toe.
+- Exclusive body part system framework and it's modules. This allows you to install prosthetic modules on installed prosthesis.
+**Note that above two main features only work on bionic and archotech prosthesis**. It's not make sense to me if basic and simple body parts can have this features.
 - New organ transplant rejection, prosthesis limb and bone adaptation system, and implant complication. Some of this is never done by another mod.
-
-This mod not really that OP. **Raider chance to spawn with prostheses parts and implants now higher and also have same part system feature**.
+This mod not really that OP. **Raider chance to spawn with prostheses parts and implants now higher and also have same feature.**
+- Exclusive implant system framework. Prosthesis part that support this can install implant on installed prosthesis part. of course there's a limit of how many implant can be installed on installed prosthesis part.
+- Fixed vanilla bug where installed basic or simple prosthetic parts can naturally heal. Now you don't get your installed hook hand naturally healed.
 
 ###### All Other Features
 - New research projects.
