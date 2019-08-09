@@ -1,11 +1,11 @@
 # Medical System Expansion
-**Not Just Another Prostheses Mod**. An expansion of vanilla medical system and how they work. Adds full featured prosthesis that uses vanilla standard and integration with another mod.
+**Not Just Another Prostheses Mod.** An expansion of vanilla medical system and how they work. Adds full featured prosthesis that uses vanilla standard and integration with another mod.
 
 ## Main Features
 - Installed prosthesis can keep its child parts. In vanilla or other mod, if you install prosthesis part like peg leg then you lost its foot and toe.
 - Exclusive body part system framework and it's modules. This allows you to install prosthetic modules on installed prosthesis.
 
-**Note that above two main features only work on bionic and archotech prosthesis**. It's not make sense to me if basic and simple body parts can have this features.
+**Note that above two main features only work on bionic and archotech prosthesis.** It's not make sense to me if basic and simple body parts can have this features.
 
 - New organ transplant rejection, prosthesis limb and bone adaptation system, and implant complication. Some of this is never done by another mod.
 
